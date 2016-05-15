@@ -1,0 +1,28 @@
+###################
+# HTTP Cache
+###################
+config.sendCacheHeaders = 1
+
+## -----------------------------------
+## Sprache
+## -----------------------------------
+
+# Nicht übersetze Elemente verstecken
+config.sys_language_mode = hideNonTranslated
+
+# GET-Parameter für Sprache
+config.linkVars = L(0-2)
+config.uniqueLinkVars = 1
+
+# Deutsch / Hauptsprache
+config.sys_language_uid = 0
+config.language = de
+config.locale_all = de_DE.utf-8
+page.config.htmlTag_langKey = de
+
+[globalVar = GP:L = 1]
+config.sys_language_uid = 1
+config.language = en
+config.locale_all = en_US.utf8
+page.config.htmlTag_langKey = en
+[global]

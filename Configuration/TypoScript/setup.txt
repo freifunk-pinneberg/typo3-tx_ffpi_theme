@@ -1,0 +1,3 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/lib/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/plugins/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/pages/" extensions="ts">
