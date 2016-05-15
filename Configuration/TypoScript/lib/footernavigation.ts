@@ -5,7 +5,7 @@ lib.footernavigation.10 {
 	entryLevel = 0
 
 	special = directory
-	special.value = {$ffpi.footernavigation.pid}
+	special.value = {$plugin.ffpi_theme.footernavigation.pid}
 
 	1 = TMENU
 	1.wrap = <ul> | </ul>

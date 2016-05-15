@@ -1,5 +1,5 @@
-// customcategory=ffpi
-ffpi {
+// customcategory=ffpi=Freifunk Pinneberg
+plugin.ffpi_theme {
     // cat=ffpi; type=string; label= Base URL
     baseurl = //pinneberg.freifunk.net/
 
