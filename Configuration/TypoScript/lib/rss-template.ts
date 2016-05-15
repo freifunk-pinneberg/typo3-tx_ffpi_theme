@@ -41,7 +41,7 @@ temp.rssTemplate {
 
 		# template einbinden
 		template = FILE
-		template.file = fileadmin/layout/ffpi/templates/rss.xml
+		template.file = EXT:ffpi_theme/Resources/Private/Templates/rss.xml
 
 		marks {
 

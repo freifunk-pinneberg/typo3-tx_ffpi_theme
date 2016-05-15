@@ -7,8 +7,8 @@ lib.donation {
 	)
 	
 	20 = TEXT
-	20.value = Schon gespendet?
-	20.typolink.parameter = 56
+	20.value = {$ffpi.donation.label}
+	20.typolink.parameter = {$ffpi.donation.pid}
 	20.typolink.ATagParams = class="button"
 	
 	30 = TEXT

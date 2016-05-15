@@ -1,0 +1,15 @@
+# customcategory=ffpi
+ffpi {
+	# cat=ffpi type=int+; label= Page ID for footer navigation
+	footernavigation.pid = 34
+
+	# cat=ffpi type=int+; label= Page ID for donation page
+	donation.pid = 56
+	# cat=ffpi type=string; label= Label for donation overlay
+	donation.label = Schon gespendet?
+
+	# cat=ffpi type=file; label= Header logo
+	header.logo.path = /fileadmin/layout/ffpi/bilder/logo.svg
+	# cat=ffpi type=string; label= Header logo alt text
+	header.logo.alt = Freifunk Pinneberg Logo
+}
