@@ -9,7 +9,7 @@ page.bodyTagCObject.value.field = pid
 page.bodyTagCObject.value.wrap = <body id="p|">
 
 ## ------- base URL --------------------
-config.baseURL = //pinneberg.freifunk.net/
+config.baseURL = {$ffpi.baseurl}
 
 config.noPageTitle = 2
 page.headerData.10 = TEXT
