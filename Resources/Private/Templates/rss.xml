@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<atom:link href="###RSS_link###" rel="self" type="application/rss+xml" />
+		<title>###RSS_title###</title>
+		<link>###RSS_link###</link>
+		<description>###RSS_description###</description>
+		<copyright>###RSS_copyright###</copyright>
+		<language>###RSS_language###</language>
+		<image>
+			<title>###RSS_title###</title>
+			<url>###RSS_image_url###</url>
+			<link>###RSS_image_link###</link>
+			<width>###RSS_image_width###</width>
+			<height>###RSS_image_height###</height>
+			<description>###RSS_image_description###</description>
+		</image>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<pubDate>###RSS_pubDate###</pubDate>
+		<lastBuildDate>###RSS_lastBuildDate###</lastBuildDate>
+
+		###RSS_ITEMS###
+
+	</channel>
+</rss>

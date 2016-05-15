@@ -1,9 +1,9 @@
 ### ------ Fluid Template --------
 page.10 = FLUIDTEMPLATE
 page.10 {
-	file = fileadmin/layout/ffpi/templates/default.html
-	layoutRootPath = fileadmin/layout/ffpi/templates/layouts/
-	partialRootPath = fileadmin/layout/ffpi/templates/partials/
+	file = EXT:ffpi_theme/Resources/Private/Templates/default.html
+	layoutRootPath = EXT:ffpi_theme/Resources/Private/Layouts/
+	partialRootPath = EXT:ffpi_theme/Resources/Private/Partials/
 
 	variables {
 		NAVIGATION < lib.navigation.10
@@ -11,7 +11,7 @@ page.10 {
 }
 
 ### --------- CSS -----------
-page.includeCSS.main = fileadmin/layout/ffpi/css/default.css
+page.includeCSS.main = EXT:ffpi_theme/Resources/Public/css/default.css
 page.includeCSS.main.media = all
 
 
