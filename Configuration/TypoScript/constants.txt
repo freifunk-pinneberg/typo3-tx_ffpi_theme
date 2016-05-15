@@ -12,4 +12,6 @@ ffpi {
 	header.logo.path = /fileadmin/layout/ffpi/bilder/logo.svg
 	# cat=ffpi type=string; label= Header logo alt text
 	header.logo.alt = Freifunk Pinneberg Logo
+	# cat=ffpi type=string; label= Header logo link title
+	header.logo.title = Freifunk Pinneberg
 }

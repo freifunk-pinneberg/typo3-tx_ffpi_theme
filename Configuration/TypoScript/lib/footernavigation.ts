@@ -5,7 +5,7 @@ lib.footernavigation.10 {
 	entryLevel = 0
 
 	special = directory
-	special.value = 34 #{TSFE:page|pid}
+	special.value = {$ffpi.footernavigation.pid}
 
 	1 = TMENU
 	1.wrap = <ul> | </ul>
