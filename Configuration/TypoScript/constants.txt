@@ -17,4 +17,8 @@ plugin.ffpi_theme {
     header.logo.alt = Freifunk Pinneberg Logo
     // cat=ffpi; type=string; label= Header logo link title
     header.logo.title = Freifunk Pinneberg
+    // cat=ffpi; type=string; label= Homepage title
+    header.title = Freifunk Pinneberg
+    // cat=ffpi; type=string; label= Homepage subtitle
+    header.subtitle = Freies WLAN im Kreis Pinneberg
 }

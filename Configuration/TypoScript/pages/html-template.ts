@@ -7,6 +7,11 @@ page.10 {
 
 	variables {
 		NAVIGATION < lib.navigation.10
+		ffpi_theme.header.logo.path < plugin.ffpi_theme.header.logo.path
+		ffpi_theme.header.logo.title < plugin.ffpi_theme.header.logo.title
+		ffpi_theme.header.logo.alt < plugin.ffpi_theme.header.logo.alt
+		ffpi_theme.header.title < plugin.ffpi_theme.header.title
+		ffpi_theme.header.subtitle < plugin.ffpi_theme.header.subtitle
 	}
 }
 
