@@ -1,25 +1,29 @@
 ### ------ Fluid Template --------
 page.10 = FLUIDTEMPLATE
 page.10 {
-	file = EXT:ffpi_theme/Resources/Private/Templates/default.html
-	layoutRootPath = EXT:ffpi_theme/Resources/Private/Layouts/
-	partialRootPath = EXT:ffpi_theme/Resources/Private/Partials/
+    file = EXT:ffpi_theme/Resources/Private/Templates/default.html
+    layoutRootPath = EXT:ffpi_theme/Resources/Private/Layouts/
+    partialRootPath = EXT:ffpi_theme/Resources/Private/Partials/
 
-	variables {
-		NAVIGATION < lib.navigation.10
-		ffpi_theme < plugin.ffpi_theme
-		ffpi_theme_header_logo_path < plugin.ffpi_theme.header.logo.path
-		ffpi_theme_header_logo_title < plugin.ffpi_theme.header.logo.title
-		ffpi_theme_header_logo_alt < plugin.ffpi_theme.header.logo.alt
-		ffpi_theme_header_title < plugin.ffpi_theme.header.title
-		ffpi_theme_header_subtitle < plugin.ffpi_theme.header.subtitle
-	}
+    variables {
+        NAVIGATION < lib.navigation.10
+        ffpi_theme < plugin.ffpi_theme
+        ffpi_theme_header_logo_path = TEXT
+        ffpi_theme_header_logo_path.value = {$plugin.ffpi_theme.header.logo.path}
+        ffpi_theme_header_logo_title = TEXT
+        ffpi_theme_header_logo_title.value = {$plugin.ffpi_theme.header.logo.title}
+        ffpi_theme_header_logo_alt = TEXT
+        ffpi_theme_header_logo_alt.value = {$plugin.ffpi_theme.header.logo.alt}
+        ffpi_theme_header_title = TEXT
+        ffpi_theme_header_title.value = {$plugin.ffpi_theme.header.title}
+        ffpi_theme_header_subtitle = TEXT
+        ffpi_theme_header_subtitle.value = {$plugin.ffpi_theme.header.subtitle}
+    }
 }
 
 ### --------- CSS -----------
 page.includeCSS.main = EXT:ffpi_theme/Resources/Public/css/default.css
 page.includeCSS.main.media = all
-
 
 ###################
 # Content Elemente
@@ -27,19 +31,21 @@ page.includeCSS.main.media = all
 
 # Bilder sollen keine Breite oder Höhe bekommen
 tt_content.image.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-	width.unset = 1
-	height.unset = 1
-	style.unset = 1
+    width.unset = 1
+    height.unset = 1
+    style.unset = 1
 }
+
 tt_content.textpic.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-	width.unset = 1
-	height.unset = 1
-	style.unset = 1
+    width.unset = 1
+    height.unset = 1
+    style.unset = 1
 }
+
 lib.parseFunc_RTE.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-	width.unset = 1
-	height.unset = 1
-	style.unset = 1
+    width.unset = 1
+    height.unset = 1
+    style.unset = 1
 }
 
 # default css entfernen
@@ -53,12 +59,12 @@ content.defaultHeaderType = 2
 
 #Überschriften von Klassen Attribut befreien
 lib.stdheader {
-	10.1.fontTag = |
-	10.2.fontTag = |
-	10.3.fontTag = |
-	10.4.fontTag = |
-	10.5.fontTag = |
-	stdWrap.dataWrap = |
+    10.1.fontTag = |
+    10.2.fontTag = |
+    10.3.fontTag = |
+    10.4.fontTag = |
+    10.5.fontTag = |
+    stdWrap.dataWrap = |
 }
 
 #csc-header entfernen
@@ -81,45 +87,46 @@ tt_content.menu.20.4.1.wrap >
 
 tt_content.menu.20.4.1.NO.wrapItemAndSub = |
 tt_content.menu.20.4.1.NO {
-	linkWrap = |
-	allWrap = <section class="bloglist-item" itemscope itemtype="http://schema.org/BlogPosting">|</section>
-	ATagBeforeWrap = 0
-	doNotLinkIt = 1
-	stdWrap.htmlSpecialChars = 0
-	stdWrap.typolink.parameter.field = uid
-	stdWrap.cObject = COA
-	stdWrap.cObject {
-		# Untertitel 
-		20 = TEXT
-		20 {
-			field = crdate
-			strftime = %d.%m.%Y
-			wrap = <span class="date" itemprop="dateCreated">|</span>
-		}
-		# Titel 
-		10 = TEXT
-		10 {
-			field = title
-			wrap = <h4 class="title">|</h4>
-			
-		}
-		# Inhaltsangabe (Abstract)
-		30 = TEXT
-		30 {
-			field = abstract
-			htmlSpecialChars = 1
-			wrap = <div class="text" itemprop="description">|</div>
-		}
-	}
+    linkWrap = |
+    allWrap = <section class="bloglist-item" itemscope itemtype="http://schema.org/BlogPosting">|</section>
+    ATagBeforeWrap = 0
+    doNotLinkIt = 1
+    stdWrap.htmlSpecialChars = 0
+    stdWrap.typolink.parameter.field = uid
+    stdWrap.cObject = COA
+    stdWrap.cObject {
+        # Untertitel
+        20 = TEXT
+        20 {
+            field = crdate
+            strftime = %d.%m.%Y
+            wrap = <span class="date" itemprop="dateCreated">|</span>
+        }
+
+        # Titel
+        10 = TEXT
+        10 {
+            field = title
+            wrap = <h4 class="title">|</h4>
+        }
+
+        # Inhaltsangabe (Abstract)
+        30 = TEXT
+        30 {
+            field = abstract
+            htmlSpecialChars = 1
+            wrap = <div class="text" itemprop="description">|</div>
+        }
+    }
 }
 
 # Typo3 Layout Optionen Content-Elemente
-		tt_content.stdWrap.innerWrap.cObject = CASE
-		tt_content.stdWrap.innerWrap.cObject {
-				key.field = layout
-				1 = TEXT
-				1.value = <div class="csc-default big-box">|</div>
+tt_content.stdWrap.innerWrap.cObject = CASE
+tt_content.stdWrap.innerWrap.cObject {
+    key.field = layout
+    1 = TEXT
+    1.value = <div class="csc-default big-box">|</div>
 
-				2 = TEXT
-				2.value = <div class="csc-default small-box">|</div>
-		}
+    2 = TEXT
+    2.value = <div class="csc-default small-box">|</div>
+}

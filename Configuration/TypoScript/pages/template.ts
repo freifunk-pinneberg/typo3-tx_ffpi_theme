@@ -15,7 +15,7 @@ config.noPageTitle = 2
 page.headerData.10 = TEXT
 page.headerData.10.field = title
 page.headerData.10.noTrimWrap = | <title>| - Freifunk Pinneberg</title> |
-page.headerData.10.insertData =	1
+page.headerData.10.insertData = 1
 
 ## ------ Facebook ---------------------
 page.headerData.20 = TEXT
