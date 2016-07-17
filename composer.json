@@ -1,18 +1,27 @@
 {
   "name": "ffpi/ffpi-theme",
   "description": "Theme for Freifunk Pinneberg",
+  "homepage": "https://pinneberg.freifunk.net",
   "authors": [
     {
       "name": "Kevin Quiatkowski",
-      "role": "Developer",
-      "homepage": "https://pinneberg.freifunk.net"
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "forum": "https://pinneberg.freifunk.net/forum/",
+    "source": "https://github.com/freifunk-pinneberg/typo3-tx_ffpi_theme"
+  },
+  "keywords": [
+    "Freifunk",
+    "Pinneberg",
+    "Theme"
   ],
   "license": "GPL-3.0",
   "type": "typo3-cms-extension",
-  "version": "1.0.0",
   "replace": {
-    "ffpi-theme": "self.version"
+    "ffpi-theme": "self.version",
+    "ffpi/ffpi-theme": "self.version"
   },
   "require": {
     "typo3/cms-core": "6.2.0 - 7.6.99"
