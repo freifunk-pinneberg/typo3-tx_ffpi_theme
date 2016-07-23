@@ -1,4 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
 <f:layout name="default" />
+<body>
 
 <f:section name="top">
 	<f:format.html parseFuncTSPath="">
@@ -24,5 +29,9 @@
 		<nav>
 			<f:cObject typoscriptObjectPath="lib.footernavigation.10" />
 		</nav>
+        <f:cObject typoscriptObjectPath="lib.languageNavigation.10" />
 	</f:format.html>
 </f:section>
+
+</body>
+</html>
