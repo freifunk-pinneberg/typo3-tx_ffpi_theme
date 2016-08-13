@@ -324,7 +324,7 @@ img.arrow {
 	padding: 5px;
 }
 .footer nav ul, .languageNavigation {
-	display: inline;
+	display: block;
 	position: relative;
 	margin: 0;
 	max-width: 1000px;
