@@ -111,7 +111,7 @@ video {
 	text-decoration: underline;
 	color: #E5287A;
 }
-.pageHeader .tx-ffpinodecounter-pi1 {
+.pageHeader .tx-ffpinodecounter-pi1, .pageHeader .tx-ffpi-nodecounter {
 	display: none;
 }
 /* Content */
@@ -431,7 +431,7 @@ div.csc-mailform legend {
 	}
 }
 @media (min-width: 570px) {
-	.pageHeader .tx-ffpinodecounter-pi1 {
+	.pageHeader .tx-ffpinodecounter-pi1, .pageHeader .tx-ffpi-nodecounter {
 		display: block;
 		position: absolute;
 		top: 0;
