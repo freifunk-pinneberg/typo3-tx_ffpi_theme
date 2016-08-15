@@ -20,7 +20,7 @@
   "license": "GPL-3.0",
   "type": "typo3-cms-extension",
   "replace": {
-    "ffpi-theme": "self.version",
+    "ffpi_theme": "self.version",
     "ffpi/ffpi-theme": "self.version"
   },
   "require": {
