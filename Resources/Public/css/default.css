@@ -323,8 +323,8 @@ img.arrow {
 	margin: 0;
 	padding: 5px;
 }
-.footer nav ul {
-	display: inline;
+.footer nav ul, .languageNavigation {
+	display: block;
 	position: relative;
 	margin: 0;
 	max-width: 1000px;
@@ -333,7 +333,7 @@ img.arrow {
 	list-style: none;
 	padding: 0;
 }
-.footer nav ul li {
+.footer nav ul li, .languageNavigation li {
 	display: inline-block;
 	margin-left: 5px;
 	margin-right: 5px;
