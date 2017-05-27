@@ -47,3 +47,20 @@ page.footerData.50.value (
 <noscript><p><img src="/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 )
+page.jsFooterInline.10 = TEXT
+page.jsFooterInline.10.value (
+
+    var counterUpdate = function() {
+        var counterXHR = new XMLHttpRequest();
+        counterXHR.open("GET", "/home.html?type=2652017", true);
+        counterXHR.send();
+        counterXHR.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                document.getElementById("ffpi-nodecounter") = counterXHR.responseText;
+            }
+        }
+    };
+
+    var interval = 1000 * 60;
+    setInterval(counterUpdate, interval);
+)
