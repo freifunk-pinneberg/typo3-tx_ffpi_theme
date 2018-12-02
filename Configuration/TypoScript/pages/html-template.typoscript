@@ -1,7 +1,7 @@
 ### ------ Fluid Template --------
 page.10 = FLUIDTEMPLATE
 page.10 {
-    file = EXT:ffpi_theme/Resources/Private/Templates/default.html
+    file = EXT:ffpi_theme/Resources/Private/Templates/Page/Default.html
     layoutRootPath = EXT:ffpi_theme/Resources/Private/Layouts/
     partialRootPath = EXT:ffpi_theme/Resources/Private/Partials/
 
@@ -22,7 +22,7 @@ page.10 {
 }
 
 ### --------- CSS -----------
-page.includeCSS.main = EXT:ffpi_theme/Resources/Public/css/default.css
+page.includeCSS.main = EXT:ffpi_theme/Resources/Public/CSS/Default.css
 page.includeCSS.main.media = all
 
 ###################
