@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_stage {
+            iconIdentifier = ffpithemestage
+            title = Stage
+            description = Text and Image
+            tt_content_defValues {
+                CType = ffpitheme_stage
+            }
+        }
+    }
+    show := addToList(ffpitheme_stage)
+}

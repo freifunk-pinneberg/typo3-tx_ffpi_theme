@@ -1,0 +1,17 @@
+tt_content {
+    ffpitheme_stage < lib.ffpiThemeContent
+    ffpitheme_stage {
+        templateName = Content/Stage
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references {
+                    fieldName = media
+                }
+
+
+                as = media
+            }
+        }
+    }
+}

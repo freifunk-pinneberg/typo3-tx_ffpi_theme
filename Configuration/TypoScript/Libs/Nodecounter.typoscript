@@ -1,0 +1,9 @@
+plugin.tx_ffpinodecounter {
+    settings.nodeListFile = http://meshviewer.pinneberg.freifunk.net/data/nodes.json
+    settings.nodeListExternal = TRUE
+}
+
+lib.nodecounter = COA
+lib.nodecounter {
+    15 < tt_content.list.20.ffpinodecounter_counter
+}

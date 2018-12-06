@@ -5,7 +5,7 @@ defined('TYPO3_MODE') or die();
 if(method_exists('\TYPO3\CMS\Core\Utility\ExtensionManagementUtility','registerPageTSConfigFile')){
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $_EXTKEY,
-        'Configuration/PageTSconfig/basePageTs.ts',
+        'Configuration/PageTSconfig/Base.tsconfig',
         'Freifunk Pinneberg - Base PageTs'
     );
 }

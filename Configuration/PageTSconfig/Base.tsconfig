@@ -1,0 +1,30 @@
+# Einstellungen für das Kopieren und Anlegen von Seiten
+##################
+TCEMAIN.table.pages {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 1
+}
+
+TCEMAIN.table.tt_content {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 1
+}
+
+# Setzen der Seitenbaumrechte per TypoScript
+TCEMAIN {
+    # Besitzergruppe festlegen
+    permissions.groupid = 1
+}
+
+
+mod.SHARED {
+    defaultLanguageLabel = Deutsch
+    defaultLanguageFlag = de
+}
+
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    header = Freifunk Pinneberg
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:BackendLayouts/" extensions="tsconfig">
