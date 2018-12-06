@@ -8,8 +8,6 @@ tt_content {
                 references {
                     fieldName = media
                 }
-
-
                 as = media
             }
         }
