@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono:400,700|Roboto:400,700');
+
+/* Allgemeines */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #666666;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    max-height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Fonts */
+body, p {
+    font-family: Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #dc0067;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+a:link {
+    color: rgb(0, 158, 224);
+}
+
+a:link:visited {
+    color: rgba(0, 158, 224, 0.8);
+}
+
+/* Page Sections */
+
+/* Header */
+#header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+img.logo {
+    height: 60px;
+    margin-top: 20px;
+}
+
+body {
+    padding-top: 100px;
+}
+
+div.pageLogo {
+    display: inline-block;
+    text-align: left;
+    float: left;
+}
+
+div.tx-ffpi-nodecounter {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.node-stats {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11px;
+    font-family: Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.node-stats .current {
+    font-family: "Roboto Mono", Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #dc0067;
+}
+
+.client-counter, .node-counter {
+    display: inline-block;
+}
+
+div.navigation {
+    display: inline-block;
+    font-size: 18px;
+    font-family: Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    display: block;
+    position: relative;
+}
+
+nav a:link, nav a:link:visited {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+nav a:link.active {
+    color: #dc0067;
+}
+
+nav ul {
+    display: inline;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+
+/* Body */
+article.content {
+    display: block;
+    width: 100%;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: block;
+    width: 100%;
+}

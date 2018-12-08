@@ -25,6 +25,10 @@ page.headerData.20.value = <meta property="og:image" content="https://pinneberg.
 page.headerData.30 = TEXT
 page.headerData.30.value = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="https://pinneberg.freifunk.net/news/?type=200" />
 
+## ------ Favicon
+page.headerData.40  = TEXT
+page.headerData.40.value = <link rel="icon" type="image/svg+xml" href="/typoerconf/ext/ffpi_theme/Resources/Public/Iamges/Logo.svg" sizes="any">
+
 ## ------- Mobile ----------------------
 page.meta.viewport = width=device-width, initial-scale=1
 

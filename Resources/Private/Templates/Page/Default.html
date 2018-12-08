@@ -6,15 +6,7 @@
 <body>
 
 <f:section name="Top">
-	<f:format.html parseFuncTSPath="">
-		<f:cObject typoscriptObjectPath="lib.donation" />
-		<div class="headerWrap">
-	</f:format.html>
-	<f:render partial="Page/HeaderSimple" arguments="{_all}" />
-	<f:format.html parseFuncTSPath="">
-		<f:cObject typoscriptObjectPath="lib.nodecounter" />
-		</div>
-	</f:format.html>
+	<f:format.raw><f:cObject typoscriptObjectPath="lib.nodecounter" /></f:format.raw>
 </f:section>
 
 <f:section name="Content">

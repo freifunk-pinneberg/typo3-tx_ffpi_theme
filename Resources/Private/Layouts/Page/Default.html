@@ -1,6 +1,11 @@
-<header class="pageHeader">
-	<f:render section="Top"/>
-	<f:render partial="Page/MainNavigation"/>
+<header id="header">
+	<div class="pageLogo">
+        <f:image src="EXT:ffpi_theme/Resources/Public/Images/Logo.svg" class="logo" />
+    </div>
+    <div class="navigation">
+        <f:render section="Top"/>
+        <f:render partial="Page/MainNavigation"/>
+    </div>
 </header>
 <article class="content" role="article">
 	<f:render section="Content" />

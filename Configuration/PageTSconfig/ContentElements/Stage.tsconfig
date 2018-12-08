@@ -1,7 +1,7 @@
 mod.wizards.newContentElement.wizardItems.ffpitheme {
     elements {
         ffpitheme_stage {
-            iconIdentifier = ffpithemestage
+            iconIdentifier = ffpitheme_stage
             title = Stage
             description = Text and Image
             tt_content_defValues {

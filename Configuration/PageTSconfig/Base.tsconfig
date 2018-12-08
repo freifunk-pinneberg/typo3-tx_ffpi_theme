@@ -26,5 +26,7 @@ mod.wizards.newContentElement.wizardItems.ffpitheme {
     header = Freifunk Pinneberg
 }
 
-<INCLUDE_TYPOSCRIPT: source="FILE:RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="DIR:BackendLayouts/" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/ContentElements/" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/BackendLayouts/" extensions="tsconfig">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ffpi_theme/Configuration/PageTSconfig/RTE.tsconfig">
