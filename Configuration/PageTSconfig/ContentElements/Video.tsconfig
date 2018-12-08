@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_video {
+            iconIdentifier = ffpitheme_video
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:video.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:video.wizard.description
+            tt_content_defValues {
+                CType = ffpitheme_video
+            }
+        }
+    }
+    show := addToList(ffpitheme_video)
+}

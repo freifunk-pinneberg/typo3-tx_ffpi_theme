@@ -227,14 +227,20 @@ article.content {
     padding-right: 5px;
 }
 
-.ffpitheme_stage {
-    background-color: #ffffff;
-}
-.ffpitheme_stage .left, .ffpitheme_stage .right {
+.contentElement .left, .contentElement .right {
     display: inline-block;
     max-width: 50%;
     vertical-align: top;
 }
+
+.ffpitheme_stage {
+    background-color: #ffffff;
+}
+
+.ffpitheme_video {
+    background-color: transparent;
+}
+
 /* Footer */
 footer.footer {
     background-color: #ffffff;

@@ -7,6 +7,7 @@ $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
 
 $icons = [
     'ffpitheme_stage' => 'ext_icon.svg',
+    'ffpitheme_video' => 'ext_icon.svg',
 ];
 
 foreach ($icons as $iconName => $iconFile) {

@@ -5,12 +5,14 @@
         <p>
             <f:format.nl2br>{data.bodytext}</f:format.nl2br>
         </p>
-        <a href="#" class="button light">Test Button</a>
+        <f:if condition="{data.pi_flexform.buttonText}">
+            <f:link.typolink parameter="{data.pi_flexform.buttonLink}" class="button">{data.pi_flexform.buttonText}</f:link.typolink>
+        </f:if>
+
     </div>
     <div class="right">
         <f:if condition="{media.0}">
             <f:image image="{media.0}" maxWidth="656"/>
         </f:if>
     </div>
-    <f:debug>{_all}</f:debug>
 </f:section>

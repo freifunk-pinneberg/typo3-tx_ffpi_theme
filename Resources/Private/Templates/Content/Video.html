@@ -1,0 +1,19 @@
+<f:layout name="Content/Default"/>
+<f:section name="Main">
+    <div class="left">
+        <f:if condition="{media.0}">
+            <f:media file="{media.0}"/>
+        </f:if>
+    </div>
+    <div class="right">
+        <h2>{data.header}</h2>
+        <p>
+            <f:format.nl2br>{data.bodytext}</f:format.nl2br>
+        </p>
+        <f:if condition="{data.pi_flexform.buttonText}">
+            <f:link.typolink parameter="{data.pi_flexform.buttonLink}" class="button light">
+                {data.pi_flexform.buttonText}
+            </f:link.typolink>
+        </f:if>
+    </div>
+</f:section>

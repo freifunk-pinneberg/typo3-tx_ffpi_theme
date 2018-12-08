@@ -4,7 +4,18 @@
           product-name="ffpi_theme">
         <header/>
         <body>
-
+            <trans-unit id="stage.wizard.title">
+                <source>Stage</source>
+            </trans-unit>
+            <trans-unit id="stage.wizard.description">
+                <source>Text and Image</source>
+            </trans-unit>
+            <trans-unit id="video.wizard.title">
+                <source>Video</source>
+            </trans-unit>
+            <trans-unit id="video.wizard.description">
+                <source>Video and Text</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
