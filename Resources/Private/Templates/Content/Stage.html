@@ -1,0 +1,16 @@
+<f:layout name="Content/Default"/>
+<f:section name="Main">
+    <div class="left">
+        <h1>{data.header}</h1>
+        <p>
+            <f:format.nl2br>{data.bodytext}</f:format.nl2br>
+        </p>
+        <a href="#" class="button light">Test Button</a>
+    </div>
+    <div class="right">
+        <f:if condition="{media.0}">
+            <f:image image="{media.0}" maxWidth="656"/>
+        </f:if>
+    </div>
+    <f:debug>{_all}</f:debug>
+</f:section>

@@ -10,7 +10,7 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Content
-                                colPos = 0
+                                colPos = 1
                             }
                         }
                     }

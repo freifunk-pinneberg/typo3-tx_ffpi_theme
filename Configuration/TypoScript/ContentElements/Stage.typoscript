@@ -8,8 +8,12 @@ tt_content {
                 references {
                     fieldName = media
                 }
+
                 as = media
             }
+
+            # Make FlexForm available in {settings} and tt_content.* in {data}
+            40 = FFPI\FfpiTheme\DataProcessor\FlexFormProcessor
         }
     }
 }

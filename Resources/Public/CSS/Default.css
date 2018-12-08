@@ -36,6 +36,30 @@ video {
     margin-right: auto;
 }
 
+/* Elemente */
+a:link.button, a:link:visited.button, .button {
+    display: inline-block;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #dc0067;
+    box-shadow: 0px 10px 20px 0px rgba(220,0,103,0.2);
+    font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+a:link.button.light, a:link:visited.button.light, .button.light {
+    background-color: transparent;
+    color: #dc0067;
+    border: solid 2px #dc0067;
+    box-shadow: none;
+}
+
 /* Fonts */
 body, p {
     font-family: Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -87,8 +111,18 @@ a:link:visited {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
+#header .inside {
+    display: block;
+    max-width: 1430px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img.logo {
     height: 60px;
+    width: 60px;
     margin-top: 20px;
 }
 
@@ -100,6 +134,16 @@ div.pageLogo {
     display: inline-block;
     text-align: left;
     float: left;
+    font-size: 16px;
+}
+div.pageLogo p {
+    display: inline-block;
+}
+div.pageLogo .red {
+    color: #dc0067;
+    font-size: 36px;
+    font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 div.tx-ffpi-nodecounter {
@@ -130,6 +174,8 @@ div.navigation {
     display: inline-block;
     font-size: 18px;
     font-family: Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    right: 0;
 }
 
 nav {
@@ -164,6 +210,31 @@ article.content {
     width: 100%;
 }
 
+/* Content */
+.contentElement {
+    display: block;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.contentElement .inside {
+    display: block;
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ffpitheme_stage {
+    background-color: #ffffff;
+}
+.ffpitheme_stage .left, .ffpitheme_stage .right {
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: top;
+}
 /* Footer */
 footer.footer {
     background-color: #ffffff;

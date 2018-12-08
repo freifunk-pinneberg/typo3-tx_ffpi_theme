@@ -1,15 +1,18 @@
 <header id="header">
-	<div class="pageLogo">
-        <f:image src="EXT:ffpi_theme/Resources/Public/Images/Logo.svg" class="logo" />
-    </div>
-    <div class="navigation">
-        <f:render section="Top"/>
-        <f:render partial="Page/MainNavigation"/>
+    <div class="inside">
+        <div class="pageLogo">
+            <f:image src="EXT:ffpi_theme/Resources/Public/Images/Logo.svg" class="logo"/>
+            <p><span class="red">Freifunk Pinneberg</span><br>Freies WLAN im Kreis Pinneberg</p>
+        </div>
+        <div class="navigation">
+            <f:render section="Top"/>
+            <f:render partial="Page/MainNavigation"/>
+        </div>
     </div>
 </header>
 <article class="content" role="article">
-	<f:render section="Content" />
+    <f:render section="Content"/>
 </article>
 <footer class="footer">
-	<f:render section="Footer" />
+    <f:render section="Footer"/>
 </footer>
