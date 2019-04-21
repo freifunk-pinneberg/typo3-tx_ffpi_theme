@@ -6,8 +6,14 @@
             <trans-unit id="stage.wizard.title">
                 <source>Stage</source>
             </trans-unit>
+            <trans-unit id="stage.wizard.description">
+                <source>Text and Image</source>
+            </trans-unit>
             <trans-unit id="video_teaser.wizard.title">
                 <source>Video Teaser</source>
+            </trans-unit>
+            <trans-unit id="video_teaser.wizard.description">
+                <source>Video and Text</source>
             </trans-unit>
         </body>
     </file>

@@ -1,0 +1,32 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <buttonText>
+                <TCEforms>
+                    <label>Button Text</label>
+                    <config>
+                        <type>input</type>
+                        <size>30</size>
+                        <max>30</max>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </buttonText>
+            <buttonLink>
+                <TCEforms>
+                    <label>Button Link</label>
+                    <config>
+                        <type>input</type>
+                        <size>30</size>
+                        <eval>trim</eval>
+                        <renderType>inputLink</renderType>
+                    </config>
+                </TCEforms>
+            </buttonLink>
+        </el>
+    </ROOT>
+</T3DataStructure>

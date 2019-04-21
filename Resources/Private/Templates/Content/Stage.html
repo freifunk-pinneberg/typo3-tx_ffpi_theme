@@ -8,7 +8,9 @@
             <p>
                 <f:format.nl2br>{data.bodytext}</f:format.nl2br>
             </p>
-            <f:link.typolink parameter="{data.pi_flexform.buttonLink}" class="button solid">{data.pi_flexform.buttonText}</f:link.typolink>
+            <f:if condition="{data.pi_flexform.buttonText}">
+                <f:link.typolink parameter="{data.pi_flexform.buttonLink}" class="button solid">{data.pi_flexform.buttonText}</f:link.typolink>
+            </f:if>
         </div>
         <div class="flex-cell cell-2-col">
             <f:if condition="{media.0}">
