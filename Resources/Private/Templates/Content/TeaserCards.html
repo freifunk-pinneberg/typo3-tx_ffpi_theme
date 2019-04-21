@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Content/Default"/>
+<f:section name="Main">
+
+    <div class="teaser-cards">
+        <f:for each="{media}" as="card">
+        <section class="card">
+            <div class="card-image">
+                <f:image image="{card}" />
+            </div>
+            <div class="card-content">
+                <h3>{card.title}</h3>
+                <f:format.html>{card.description}</f:format.html>
+            </div>
+        </section>
+        </f:for>
+    </div>
+
+</f:section>
+</html>

@@ -1,10 +1,13 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
 defined('TYPO3_MODE') || die();
 
 $extensionKey = 'FfpiTheme';
 $extensionPath = 'ffpi_theme';
-$ll = 'LLL:EXT:' . $extensionPath . '/Resources/Private/Language/locallang_backend.xlf';
+$ll = 'LLL:EXT:' . $extensionPath . '/Resources/Private/Language/locallang_backend.xlf:';
 $llCore = 'LLL:EXT:lang/locallang.xlf';
 $llFrontend = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
 $llFrontendDb = 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:';
@@ -18,13 +21,13 @@ foreach ($files as $file) {
     $contentElement = include $file;
     $contentName = strtolower($extensionKey . '_' . $contentElement['name']);
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    ExtensionManagementUtility::addPlugin(
         [
             $ll . $contentElement['name'] . '.wizard.title',
             $contentName,
             $contentElement['icon'] ?: 'EXT:' . $extensionPath . '/ext_icon.svg'
         ],
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
         $extensionPath
     );
     $GLOBALS['TCA']['tt_content']['types'][$contentName] = [

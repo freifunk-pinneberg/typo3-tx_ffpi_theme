@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<nav class="menu" id="top-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+    <ul class="main-navigation">
+        <f:for as="item" each="{mainNavigation}" iteration="iteration">
+            <f:if condition="{item.active}">
+                <f:then>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{item.title}</a></li>
+                </f:then>
+                <f:else>
+                    <li id="p{item.data.uid}"><a href="{item.link}">{item.title}</a></li>
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+    <div class="seperator">&nbsp;</div>
+    <ul class="icon-navigation">
+        <f:for as="item" each="{iconNavigation}" iteration="iteration">
+            <f:if condition="{item.active}">
+                <f:then>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{item.title}</a></li>
+                </f:then>
+                <f:else>
+                    <li id="p{item.data.uid}"><a href="{item.link}">{item.title}</a></li>
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+</nav>
+</html>

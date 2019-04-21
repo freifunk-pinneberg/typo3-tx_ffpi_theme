@@ -3,6 +3,8 @@ plugin.ffpi_theme {
 
     // cat=ffpi; type=int+; label= Page ID for footer navigation
     footernavigation.pid = 34
+    iconnavigation.pid = 15
+    mainnavigation.pid = 1
 
     // cat=ffpi; type=int+; label= Page ID for donation page
     donation.pid = 56

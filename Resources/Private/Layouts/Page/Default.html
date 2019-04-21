@@ -6,7 +6,7 @@
         </div>
         <div class="navigation">
             <f:render section="Top"/>
-            <f:render partial="Page/MainNavigation"/>
+            <f:render partial="Page/TopNavigation" arguments="{'mainNavigation': mainNavigation, 'iconNavigation': iconNavigation}"/>
         </div>
     </div>
 </header>
@@ -16,3 +16,4 @@
 <footer class="footer">
     <f:render section="Footer"/>
 </footer>
+<f:debug>{_all}</f:debug>

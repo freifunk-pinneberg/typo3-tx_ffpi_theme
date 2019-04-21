@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_video_teaser {
+            iconIdentifier = ffpitheme_video_teaser
+            title = Video Teaser
+            description = Text and Video
+            tt_content_defValues {
+                CType = ffpitheme_video_teaser
+            }
+        }
+    }
+    show := addToList(ffpitheme_video_teaser)
+}

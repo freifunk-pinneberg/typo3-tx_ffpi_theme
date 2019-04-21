@@ -2,26 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en"
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
-<f:layout name="Page/Default" />
+<f:layout name="Page/Default"/>
 <body>
 
 <f:section name="Top">
-	<f:format.raw><f:cObject typoscriptObjectPath="lib.nodecounter" /></f:format.raw>
+    <f:format.raw><f:cObject typoscriptObjectPath="lib.nodecounter"/></f:format.raw>
 </f:section>
 
 <f:section name="Content">
-	<f:format.html parseFuncTSPath="">
-		<f:cObject typoscriptObjectPath="lib.content" data="{colPos:1}" />
-	</f:format.html>
+    <f:format.raw><f:cObject typoscriptObjectPath="lib.content" data="{colPos:1}"/></f:format.raw>
 </f:section>
 
 <f:section name="Footer">
-	<f:format.html parseFuncTSPath="">
-		<nav>
-			<f:cObject typoscriptObjectPath="lib.footernavigation.10" />
-		</nav>
-        <f:cObject typoscriptObjectPath="lib.languageNavigation.10" />
-	</f:format.html>
+    <div class="logo">
+        <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Logo.svg" width="60px" height="60px"/>
+    </div>
+    <div class="nav">
+        <f:render partial="Page/FooterNavigation" arguments="{'footerNavigation': footerNavigation}"/>
+    </div>
+    <div class="language">
+        <a href="https://github.com/freifunk-pinneberg" class="github-button"><f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Github.svg" />GitHub</a>
+        <f:render partial="Page/LanguageNavigation" arguments="{'languageNavigation': languageNavigation}"/>
+    </div>
 </f:section>
 
 </body>

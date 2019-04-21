@@ -7,6 +7,7 @@ page.10 {
 
     variables {
         NAVIGATION < lib.navigation.10
+        FOOTERNAVIGATION < lib.footernavigation.10
         ffpi_theme < plugin.ffpi_theme
         ffpi_theme_header_logo_path = TEXT
         ffpi_theme_header_logo_path.value = {$plugin.ffpi_theme.header.logo.path}
