@@ -1,0 +1,32 @@
+tt_content {
+    ffpitheme_news_menu < lib.ffpiThemeContent
+    ffpitheme_news_menu {
+        templateName = Content/NewsMenu
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references {
+                    fieldName = media
+                }
+
+                as = media
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                special = directory
+                special.value.field = pages
+                levels = 1
+                as = menu
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = media
+                    }
+                }
+            }
+
+            # Make FlexForm available in {settings} and tt_content.* in {data}
+            40 = FFPI\FfpiTheme\DataProcessor\FlexFormProcessor
+        }
+    }
+}

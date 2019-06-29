@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_news_menu {
+            iconIdentifier = ffpitheme_news_menu
+            title = News Menu
+            description = Sitemap with Date
+            tt_content_defValues {
+                CType = ffpitheme_news_menu
+            }
+        }
+    }
+    show := addToList(ffpitheme_news_menu)
+}

@@ -15,6 +15,9 @@
             <trans-unit id="video_teaser.wizard.description">
                 <source>Video and Text</source>
             </trans-unit>
+            <trans-unit id="picture_teaser.wizard.title">
+                <source>Picture Teaser</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

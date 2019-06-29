@@ -1,7 +1,7 @@
 tt_content {
-    ffpitheme_video < lib.ffpiThemeContent
-    ffpitheme_video {
-        templateName = Content/Stage
+    ffpitheme_picture_teaser < lib.ffpiThemeContent
+    ffpitheme_picture_teaser {
+        templateName = Content/PictureTeaser
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {

@@ -9,3 +9,9 @@ lib.content.select {
     where.field = colPos
     where.wrap = colPos = |
 }
+
+lib.contentElement {
+    templateRootPaths.200 = EXT:ffpi_theme/Resources/Private/Templates/Content/
+    partialRootPaths.200 = EXT:ffpi_theme/Resources/Private/Partials/Content/
+    layoutRootPaths.200 = EXT:ffpi_theme/Resources/Private/Layouts/Content/
+}

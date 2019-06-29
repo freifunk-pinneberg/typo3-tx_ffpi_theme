@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_picture_teaser {
+            iconIdentifier = ffpitheme_picture_teaser
+            title = Picture Teaser
+            description = Text and Picture
+            tt_content_defValues {
+                CType = ffpitheme_picture_teaser
+            }
+        }
+    }
+    show := addToList(ffpitheme_picture_teaser)
+}

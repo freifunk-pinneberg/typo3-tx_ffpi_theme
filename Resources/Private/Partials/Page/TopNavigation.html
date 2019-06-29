@@ -16,12 +16,19 @@
     <div class="seperator">&nbsp;</div>
     <ul class="icon-navigation">
         <f:for as="item" each="{iconNavigation}" iteration="iteration">
+            <f:variable name="iconHtml">
+                <f:if condition="{item.data.tx_ffpi_theme_icon}">
+                    <f:then>
+                        <f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/{item.data.tx_ffpi_theme_icon}" />
+                    </f:then>
+                </f:if>
+            </f:variable>
             <f:if condition="{item.active}">
                 <f:then>
-                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{iconHtml->f:format.raw()} {item.title}</a></li>
                 </f:then>
                 <f:else>
-                    <li id="p{item.data.uid}"><a href="{item.link}">{item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}">{iconHtml->f:format.raw()} {item.title}</a></li>
                 </f:else>
             </f:if>
         </f:for>
