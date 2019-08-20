@@ -474,6 +474,40 @@ article.content {
     margin-bottom: 0;
 }
 
+/* Gateway Health */
+.gatewayList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gateway {
+    background-color: #ffffff;
+    padding: 30px;
+    flex-basis: 25%;
+    margin: 10px;
+    min-width: 400px;
+}
+
+.gateway dt {
+    float: left;
+    width: 50%;
+}
+.gateway dd:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.gateway .unknown {
+    color: orange;
+}
+.gateway .error {
+    color: red;
+}
+
+.gateway .ok {
+    color: #0D7813;
+}
 
 /* Footer */
 
