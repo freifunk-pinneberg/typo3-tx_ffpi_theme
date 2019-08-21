@@ -484,8 +484,8 @@ article.content {
     background-color: #ffffff;
     padding: 30px;
     flex-basis: 25%;
-    margin: 10px;
-    min-width: 400px;
+    margin: 10px 0;
+    min-width: 460px;
 }
 
 .gateway dt {
