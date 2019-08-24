@@ -1,7 +1,7 @@
 <?php
 return [
     'name' => 'news_menu',
-    'flexform' => true,
+    'flexform' => false,
 
     'showitem' => '
             --palette--;;language,

@@ -18,6 +18,12 @@
             <trans-unit id="picture_teaser.wizard.title">
                 <source>Picture Teaser</source>
             </trans-unit>
+            <trans-unit id="teaser_cards.wizard.title">
+                <source>Teaser Cards</source>
+            </trans-unit>
+            <trans-unit id="news_menu.wizard.title">
+                <source>News Menu</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

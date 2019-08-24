@@ -6,6 +6,13 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    'ffpi_theme',
+    'Configuration/PageTSconfig/Base.tsconfig',
+    'Freifunk Pinneberg - Base PageTs'
+);
+
 $fields = [
     'tx_ffpi_theme_icon' => [
         'label' => 'Icon',

@@ -1,8 +1,4 @@
 <?php
-
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
-
 defined('TYPO3_MODE') || die();
 
 $extensionKey = 'FfpiTheme';
@@ -21,13 +17,13 @@ foreach ($files as $file) {
     $contentElement = include $file;
     $contentName = strtolower($extensionKey . '_' . $contentElement['name']);
 
-    ExtensionManagementUtility::addPlugin(
+    TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
         [
             $ll . $contentElement['name'] . '.wizard.title',
             $contentName,
             $contentElement['icon'] ?: 'EXT:' . $extensionPath . '/ext_icon.svg'
         ],
-        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
+        TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
         $extensionPath
     );
     $GLOBALS['TCA']['tt_content']['types'][$contentName] = [
