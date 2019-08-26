@@ -1,18 +1,26 @@
 <header id="header" class="o-header">
+  <div class="h-container">
     <div class="o-header__inner">
-        <div class="o-header__logo">
-            <f:image src="EXT:ffpi_theme/Resources/Public/Images/Logo.svg" class="logo"/>
-            <p><span class="red">Freifunk Pinneberg</span><br>Freies WLAN im Kreis Pinneberg</p>
+      <div class="o-header__logo">
+        <f:image src="EXT:ffpi_theme/Resources/Public/Images/Logo.svg" class="logo"/>
+        <div class="m-brand">
+          <div class="m-brand__name">Freifunk Pinneberg</div>
+          <div class="m-brand__slogan">Freies WLAN im Kreis Pinneberg</div>
         </div>
-        <div class="o-header__navigation">
-            <f:render section="Top"/>
-            <f:render partial="Page/TopNavigation" arguments="{'mainNavigation': mainNavigation, 'iconNavigation': iconNavigation}"/>
-        </div>
+      </div>
+      <div class="o-header__navigation">
+        <f:render section="Top"/>
+        <f:render partial="Page/TopNavigation"
+                  arguments="{'mainNavigation': mainNavigation, 'iconNavigation': iconNavigation}"/>
+      </div>
     </div>
+  </div>
 </header>
-<article class="content" role="article">
-    <f:render section="Content"/>
-</article>
-<footer class="footer">
-    <f:render section="Footer"/>
+<main class="o-main">
+    <article class="m-article" role="article">
+      <f:render section="Content"/>
+    </article>
+</main>
+<footer class="o-footer">
+  <f:render section="Footer"/>
 </footer>

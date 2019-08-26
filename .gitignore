@@ -21,3 +21,5 @@ Thumbs.db:*
 *.swp
 .settings
 /nbproject/
+/Resources/Public/Compiled/
+/Resources/Private/node_modules/

@@ -1,0 +1,73 @@
+{
+  "name": "Bundesversicherungsamt",
+  "description": "",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "homepage": "https://pinneberg.freifunk.net/",
+  "company": "pinneberg.freifunk.net",
+  "author": {
+    "name": "pinneberg.freifunk.net"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Bogomolov",
+      "email": "github@bogomolov.de",
+      "url": "http://www.bogomolov.dev/"
+    }
+  ],
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production",
+    "generate-icon-font": "./node_modules/icon-font-generator/bin/icon-font-generator web/typo3conf/ext/enm_siteconf/Resources/Private/Fonts/icons/src/*.svg --out=web/typo3conf/ext/enm_siteconf/Resources/Private/Fonts/icons --csstp=web/typo3conf/ext/enm_siteconf/Resources/Private/Fonts/icons/template/css.hbs --csspath=web/typo3conf/ext/enm_siteconf/Resources/Private/Scss/_variables-icons.scss --json=false --htmltp=web/typo3conf/ext/enm_siteconf/Resources/Private/Fonts/icons/template/js-html.hbs --htmlpath=web/typo3conf/ext/enm_siteconf/Resources/Private/Js/_generated--iconFontName.js --name=bva-`date '+%Y-%m-%d-%H-%M-%S'` --height=1000",
+    "cleanup-fonts": "find web/typo3conf/ext/enm_siteconf/Resources/Private/Fonts/icons/ -maxdepth 1 -type f -delete",
+    "build-icon-font": "yarn run cleanup-fonts && yarn run generate-icon-font && git add web/typo3conf/ext/enm_siteconf/Resources/Private/Fonts/icons/* && yarn run dev"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.27.0",
+    "autoprefixer": "^9.6.1",
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "icon-font-generator": "^2.1.10",
+    "node-sass": "^4.12.0",
+    "normalize-scss": "^7.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "sass-rem": "^2.0.1",
+    "webpack-notifier": "^1.8.0"
+  },
+  "dependencies": {
+    "fontfaceobserver": "^2.1.0",
+    "hamburgers": "^1.1.3",
+    "picturefill": "^3.0.3"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "google"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn"
+    },
+    "globals": {
+      "jQuery": true,
+      "$": true
+    }
+  }
+}

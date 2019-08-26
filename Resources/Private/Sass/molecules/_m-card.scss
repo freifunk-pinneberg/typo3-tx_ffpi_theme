@@ -1,0 +1,42 @@
+.m-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.m-card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  padding: rem(15px 0);
+  flex-grow: 0;
+}
+
+.m-card__content {
+  background-color: $color--white;
+  padding: rem(40px 30px 45px 30px);
+  flex-grow: 1;
+
+  P:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.m-card__headline {
+  @include font__highlighted;
+  color: $color--primary;
+  margin-top: 0;
+  margin-bottom: rem(20px);
+}
+
+.m-card__body {
+  a {
+    color: $color--secondary;
+
+    @include hover-focus-active {
+      color: $color--primary;
+    }
+  }
+}

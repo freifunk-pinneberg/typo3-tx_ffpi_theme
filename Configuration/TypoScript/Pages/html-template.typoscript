@@ -23,7 +23,9 @@ page.10 {
 }
 
 ### --------- CSS -----------
-page.includeCSS.main = EXT:ffpi_theme/Resources/Public/CSS/Default.css
+page.includeCSS.font = EXT:ffpi_theme/Resources/Public/Compiled/Css/fonts.css
+page.includeCSS.font.media = all
+page.includeCSS.main = EXT:ffpi_theme/Resources/Public/Compiled/Css/main.css
 page.includeCSS.main.media = all
 
 ###################

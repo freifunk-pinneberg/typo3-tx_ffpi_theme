@@ -1,0 +1,16 @@
+.o-content-element {
+  padding: rem(75px 0);
+
+  &:not(.o-content-element--ffpitheme_stage) {
+    background-color: #f7f7f7;
+  }
+
+  &.o-content-element--ffpitheme_video_teaser {
+    padding-top: rem(150px);
+  }
+}
+
+.o-content-element__inner {
+  @include make-container();
+  @include make-container-max-widths();
+}

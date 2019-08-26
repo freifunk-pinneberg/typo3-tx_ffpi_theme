@@ -1,0 +1,39 @@
+.o-grid {
+  @include make-row();
+}
+
+.o-grid__col {
+  @include make-col-ready();
+  @include make-col(12);
+}
+
+.o-grid--2 {
+  .o-grid__col {
+    &:not(:last-child) {
+      margin-bottom: rem(40px);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(6);
+    }
+  }
+
+  .o-grid__col--first {
+    order: -1;
+
+    @include media-breakpoint-up(lg) {
+      order: inherit;
+    }
+  }
+}
+
+.o-grid--3 {
+  .o-grid__col {
+    &:not(:last-child) {
+      margin-bottom: rem(40px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+  }
+}

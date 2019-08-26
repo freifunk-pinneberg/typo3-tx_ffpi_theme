@@ -6,24 +6,32 @@
 <body>
 
 <f:section name="Top">
-    <f:format.raw><f:cObject typoscriptObjectPath="lib.nodecounter"/></f:format.raw>
+  <f:format.raw>
+    <f:cObject typoscriptObjectPath="lib.nodecounter"/>
+  </f:format.raw>
 </f:section>
 
 <f:section name="Content">
-    <f:format.raw><f:cObject typoscriptObjectPath="lib.content" data="{colPos:1}"/></f:format.raw>
+  <f:format.raw>
+    <f:cObject typoscriptObjectPath="lib.content" data="{colPos:1}"/>
+  </f:format.raw>
 </f:section>
 
 <f:section name="Footer">
-    <div class="logo">
-        <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Logo.svg" width="60px" height="60px"/>
+  <div class="o-footer__inner">
+    <div class="o-footer__logo">
+      <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Logo.svg" width="60px" height="60px"/>
     </div>
-    <div class="nav">
-        <f:render partial="Page/FooterNavigation" arguments="{'footerNavigation': footerNavigation}"/>
+    <div class="o-footer__nav">
+      <f:render partial="Page/FooterNavigation" arguments="{'footerNavigation': footerNavigation}"/>
     </div>
-    <div class="language">
-        <a href="https://github.com/freifunk-pinneberg" class="github-button"><f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Github.svg" />GitHub</a>
-        <f:render partial="Page/LanguageNavigation" arguments="{'languageNavigation': languageNavigation}"/>
+    <div class="o-footer__language">
+      <a href="https://github.com/freifunk-pinneberg" class="github-button">
+        <f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Github.svg"/>
+        GitHub</a>
+      <f:render partial="Page/LanguageNavigation" arguments="{'languageNavigation': languageNavigation}"/>
     </div>
+  </div>
 </f:section>
 
 </body>

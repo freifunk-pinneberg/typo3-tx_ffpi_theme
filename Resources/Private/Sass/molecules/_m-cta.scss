@@ -1,0 +1,17 @@
+.m-cta {
+}
+
+.m-cta__headline {
+  @include font__highlighted;
+  color: $color--primary;
+  font-size: $font-size--xl;
+  line-height: 1;
+
+  .o-content-element--ffpitheme_stage & {
+    font-size: $font-size--xxl;
+  }
+}
+
+.m-cta__body {
+  margin-bottom: 2rem;
+}

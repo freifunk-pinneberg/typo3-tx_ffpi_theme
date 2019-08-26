@@ -1,0 +1,20 @@
+.a-btn {
+  display: inline-block;
+  padding: 12px 50px;
+  text-align: center;
+  appearance: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: $border-radius--default;
+}
+
+.a-btn--primary {
+  background-color: $color--primary;
+  color: $color--white;
+  box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
+}
+.a-btn--secondary {
+    background-color: transparent;
+    color: $color--primary;
+    border: 2px solid $color--primary;
+}

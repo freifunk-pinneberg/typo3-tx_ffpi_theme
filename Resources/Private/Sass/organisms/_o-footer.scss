@@ -1,0 +1,25 @@
+.o-footer {
+  padding: rem(40px 0);
+}
+
+.o-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include make-container-max-widths();
+  margin: 0 auto;
+}
+
+.o-footer__logo {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+
+.o-footer__nav {
+  flex-grow: 1;
+}
+
+.o-footer__language {
+  flex-grow: 1;
+}

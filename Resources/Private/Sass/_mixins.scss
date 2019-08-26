@@ -1,0 +1,104 @@
+@mixin font__default() {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font__default--medium() {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin font__highlighted() {
+  font-family: 'Roboto Condensed', Sans-Serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin vertical-align() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin no-margin-and-padding() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-list() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin rectangle($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include rectangle($size);
+}
+
+@mixin order-first() {
+  order: -1;
+}
+
+@mixin order-last() {
+  order: 13;
+}
+
+@mixin section-margin-bottom($value) {
+  margin-bottom: $value;
+}
+
+@mixin full-width() {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+@mixin full-width-content() {
+  @include media-breakpoint-up(md) {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    left: 76.2%;
+    right: 76.2%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    left: 87.3%;
+    right: 87.3%;
+  }
+}
+
+@mixin zIndex($elementName: 'default') {
+  @if $elementName == 'default' or map_has_key($zIndexes, $elementName) == false {
+    $z-index: 1;
+  }
+
+  z-index: map_get($zIndexes, $elementName);
+}
+
+
+@mixin desktop-navigation-up() {
+  @include media-breakpoint-up(lg) {
+    @content;
+  }
+}
+
+@mixin normalize-content-paragraphs {
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
