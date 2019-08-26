@@ -1,0 +1,20 @@
+{
+  "entrypoints": {
+    "Css/fonts": {
+      "js": [
+        "/typo3conf/ext/ffpi_theme/Resources/Public/Compiled/runtime.js"
+      ],
+      "css": [
+        "/typo3conf/ext/ffpi_theme/Resources/Public/Compiled/Css/fonts.css"
+      ]
+    },
+    "Css/main": {
+      "js": [
+        "/typo3conf/ext/ffpi_theme/Resources/Public/Compiled/runtime.js"
+      ],
+      "css": [
+        "/typo3conf/ext/ffpi_theme/Resources/Public/Compiled/Css/main.css"
+      ]
+    }
+  }
+}
