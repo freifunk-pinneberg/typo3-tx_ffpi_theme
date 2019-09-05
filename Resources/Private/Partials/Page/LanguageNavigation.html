@@ -1,23 +1,20 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<label class="dropdown">
-
-    <div class="language-button">
-        <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Language.svg"> Deutsch
-    </div>
-
-    <input type="checkbox" class="language-input" id="language">
-
-    <ul class="language-menu">
-        <li>
-            <a href="#">Deutsch</a>
-        </li>
-        <li>
-            <a href="#">English</a>
-        </li>
-    </ul>
-
+<label for="m-language-menu__controller" class="a-btn a-btn--secondary a-btn--lang">
+  <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Language.svg"> Deutsch
 </label>
+
+<div class="m-language-menu">
+  <input id="m-language-menu__controller" type="checkbox" class="m-language-menu__controller">
+  <ul class="m-language-menu__list">
+    <li class="m-language-menu__item">
+      <a href="#" class="m-language-menu__link">Deutsch</a>
+    </li>
+    <li class="m-language-menu__item">
+      <a href="#" class="m-language-menu__link">English</a>
+    </li>
+  </ul>
+</div>
 
 </html>

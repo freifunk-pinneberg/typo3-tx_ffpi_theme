@@ -2,10 +2,9 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1242px
+  xl: 1410px
 );
-//$grid-gutter-width: 26px;
-//
+
 //$grid-breakpoints: (
 //  xs: 0,
 //  sm: 576px,
@@ -17,7 +16,7 @@ $container-max-widths: (
 
 // Font size
 $rem-baseline: 20px;
-$font-size--xxl: 3.5rem; //70px;
+$font-size--xxl: 3rem; //60px;
 $font-size--xl: 2.5rem; //50px;
 $font-size--l: 1.8rem; //36px;
 //$font-size--m: 1.1666rem; //21px;

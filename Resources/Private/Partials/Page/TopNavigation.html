@@ -30,14 +30,18 @@
       <f:if condition="{item.active}">
         <f:then>
           <li id="p{item.data.uid}" class="m-nav-main__item m-nav-main__item--2">
-            <a href="{item.link}" class="m-nav-main__link m-nav-main_link--2 m-nav-main_link--active">{iconHtml->f:format.raw()}
-              {item.title}</a>
+            <a href="{item.link}" class="m-nav-main__link m-nav-main_link--2 m-nav-main_link--active">
+              {iconHtml->f:format.raw()}
+              {item.title}
+            </a>
           </li>
         </f:then>
         <f:else>
           <li id="p{item.data.uid}" class="m-nav-main__item m-nav-main__item--2">
-            <a href="{item.link}" class="m-nav-main__link m-nav-main_link--2">{iconHtml->f:format.raw()}
-              {item.title}</a>
+            <a href="{item.link}" class="m-nav-main__link m-nav-main_link--2">
+              {iconHtml->f:format.raw()}
+              {item.title}
+            </a>
           </li>
         </f:else>
       </f:if>

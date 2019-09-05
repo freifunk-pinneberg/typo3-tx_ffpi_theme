@@ -3,6 +3,7 @@
 }
 
 .m-brand__name {
+  @include font__highlighted;
   color: $color--primary;
   font-size: $font-size--l;
 }

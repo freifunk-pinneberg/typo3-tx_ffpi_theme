@@ -1,0 +1,23 @@
+.m-language-menu {
+
+}
+
+.m-language-menu__controller {
+  @include sr-only;
+
+  &:checked {
+    + .m-language-menu__list {
+      display: block;
+    }
+  }
+}
+
+.m-language-menu__list {
+  display: none;
+}
+
+.m-language-menu__item {
+}
+
+.m-language-menu__link {
+}
