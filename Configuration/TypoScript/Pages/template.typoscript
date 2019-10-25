@@ -14,16 +14,16 @@ config.baseURL = {$plugin.ffpi_theme.baseurl}
 config.noPageTitle = 2
 page.headerData.10 = TEXT
 page.headerData.10.field = title
-page.headerData.10.noTrimWrap = | <title>| - Freifunk Pinneberg</title> |
+page.headerData.10.noTrimWrap = | <title>| - {$plugin.ffpi_theme.header.title}</title> |
 page.headerData.10.insertData = 1
 
 ## ------ Facebook ---------------------
 page.headerData.20 = TEXT
-page.headerData.20.value = <meta property="og:image" content="https://pinneberg.freifunk.net/fileadmin/layout/ffpi/bilder/Facebook_preview.png" />
+page.headerData.20.value = <meta property="og:image" content="{$plugin.ffpi_theme.baseurl}/fileadmin/layout/ffpi/bilder/Facebook_preview.png" />
 
 ## ------ RSS Feed ---------------------
 page.headerData.30 = TEXT
-page.headerData.30.value = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="https://pinneberg.freifunk.net/news/?type=200" />
+page.headerData.30.value = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{$plugin.ffpi_theme.baseurl}/news/?type=200" />
 
 ## ------ Favicon
 page.headerData.40  = TEXT
