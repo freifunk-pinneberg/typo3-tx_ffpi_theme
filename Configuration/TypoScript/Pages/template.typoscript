@@ -56,7 +56,7 @@ page.jsFooterInline.10.value (
 
     var counterUpdate = function() {
         var counterXHR = new XMLHttpRequest();
-        counterXHR.open("GET", "/home.html?type=2652017", true);
+        counterXHR.open("GET", "/?type=2652017", true);
         counterXHR.send();
         counterXHR.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {

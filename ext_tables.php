@@ -1,7 +1,7 @@
 <?php
 defined('TYPO3_MODE') or die();
 
-# Register Base PageTs for domains (only 7.6)
+# Register Base PageTs for domains (only 7.6+)
 if(method_exists('\TYPO3\CMS\Core\Utility\ExtensionManagementUtility','registerPageTSConfigFile')){
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $_EXTKEY,
