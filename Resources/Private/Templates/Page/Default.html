@@ -21,7 +21,10 @@
         <f:render partial="Page/FooterNavigation" arguments="{'footerNavigation': footerNavigation}"/>
     </div>
     <div class="language">
-        <a href="https://github.com/freifunk-pinneberg" class="github-button"><f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Github.svg" />GitHub</a>
+        <f:link.typolink parameter="{ffpi_theme_footer_github_link}" class="github-button">
+            <f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Github.svg"/>
+            GitHub
+        </f:link.typolink>
         <f:render partial="Page/LanguageNavigation" arguments="{'languageNavigation': languageNavigation}"/>
     </div>
 </f:section>

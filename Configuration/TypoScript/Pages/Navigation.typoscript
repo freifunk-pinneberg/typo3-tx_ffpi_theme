@@ -29,7 +29,6 @@ page.10.dataProcessing {
     40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
     40 {
         special = language
-        #special.value = {$plugin.ffpi_theme.footernavigation.pid}
         as = languageNavigation
     }
 }
