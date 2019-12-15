@@ -19,13 +19,17 @@ page.10 {
         ffpi_theme_header_title.value = {$plugin.ffpi_theme.header.title}
         ffpi_theme_header_subtitle = TEXT
         ffpi_theme_header_subtitle.value = {$plugin.ffpi_theme.header.subtitle}
+        ffpi_theme_footer_github_link = TEXT
+        ffpi_theme_footer_github_link.value = {$plugin.ffpi_theme.footer.github.link}
     }
 }
 
 ### --------- CSS -----------
 page.includeCSS.font = EXT:ffpi_theme/Resources/Public/Compiled/Css/fonts.css
+//page.includeCSS.font = EXT:ffpi_theme/Resources/Private/Sass/fonts.scss
 page.includeCSS.font.media = all
 page.includeCSS.main = EXT:ffpi_theme/Resources/Public/Compiled/Css/main.css
+//page.includeCSS.main = EXT:ffpi_theme/Resources/Private/Sass/main.scss
 page.includeCSS.main.media = all
 
 ###################
