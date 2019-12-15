@@ -1,4 +1,21 @@
-<section class="o-content-element o-content-element--{data.CType} contentElement {data.CType}" id="c{data.uid}">
+<f:if condition="{data.space_before_class}">
+    <f:then>
+        <f:variable name="space-top">space-top-{data.space_before_class}</f:variable>
+    </f:then>
+    <f:else>
+        <f:variable name="space-top">space-top-none</f:variable>
+    </f:else>
+</f:if>
+<f:if condition="{data.space_after_class}">
+    <f:then>
+        <f:variable name="space-bottom">space-bottom-{data.space_after_class}</f:variable>
+    </f:then>
+    <f:else>
+        <f:variable name="space-bottom">space-bottom-none</f:variable>
+    </f:else>
+</f:if>
+
+<section class="o-content-element o-content-element--{data.CType} {space-top} {space-bottom} contentElement {data.CType}" id="c{data.uid}">
     <div class="o-content-element__inner inside">
         <f:render section="Main"/>
     </div>

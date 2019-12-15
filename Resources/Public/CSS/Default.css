@@ -358,6 +358,26 @@ article.content {
     padding-bottom: 75px;
 }
 
+.contentElement.space-top-large:not(:first-child) {
+    padding-top: 75px;
+}
+.contentElement.space-bottom-large:not(:last-child) {
+    padding-bottom: 75px;
+}
+
+.contentElement.space-top-medium:not(:first-child) {
+    padding-top: 25px;
+}
+.contentElement.space-bottom-medium:not(:last-child) {
+    padding-bottom: 25px;
+}
+.contentElement.space-top-none:not(:first-child) {
+    padding-top: 0;
+}
+.contentElement.space-bottom-none:not(:last-child) {
+    padding-bottom: 0;
+}
+
 .contentElement .inside {
     display: block;
     max-width: 1420px;
@@ -472,6 +492,15 @@ article.content {
 
 .ffpitheme_news_menu .page:last-child {
     margin-bottom: 0;
+}
+
+/* Core Content */
+div.ce-right .ce-gallery {
+    float: right;
+}
+
+div.ce-left .ce-gallery {
+    float: left;
 }
 
 /* Gateway Health */

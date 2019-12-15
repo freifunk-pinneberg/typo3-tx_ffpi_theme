@@ -80,49 +80,6 @@ lib.stdheader.3.headerClass >
 #Klassen Attribut aus P-Tag entfernen
 lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.addAttributes.P.class >
 
-#Sitemap Element für blog Posting
-tt_content.menu.20.4 >
-
-tt_content.menu.20.4 < tt_content.menu.20.1
-tt_content.menu.20.4.stdWrap.outerWrap = <div class="bloglist">|</div>
-
-tt_content.menu.20.4.1.wrap >
-
-tt_content.menu.20.4.1.NO.wrapItemAndSub = |
-tt_content.menu.20.4.1.NO {
-    linkWrap = |
-    allWrap = <section class="bloglist-item" itemscope itemtype="http://schema.org/BlogPosting">|</section>
-    ATagBeforeWrap = 0
-    doNotLinkIt = 1
-    stdWrap.htmlSpecialChars = 0
-    stdWrap.typolink.parameter.field = uid
-    stdWrap.cObject = COA
-    stdWrap.cObject {
-        # Untertitel
-        20 = TEXT
-        20 {
-            field = crdate
-            strftime = %d.%m.%Y
-            wrap = <span class="date" itemprop="dateCreated">|</span>
-        }
-
-        # Titel
-        10 = TEXT
-        10 {
-            field = title
-            wrap = <h4 class="title">|</h4>
-        }
-
-        # Inhaltsangabe (Abstract)
-        30 = TEXT
-        30 {
-            field = abstract
-            htmlSpecialChars = 1
-            wrap = <div class="text" itemprop="description">|</div>
-        }
-    }
-}
-
 # Typo3 Layout Optionen Content-Elemente
 tt_content.stdWrap.innerWrap.cObject = CASE
 tt_content.stdWrap.innerWrap.cObject {

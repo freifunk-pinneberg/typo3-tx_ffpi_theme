@@ -16,6 +16,13 @@ TCEMAIN {
     permissions.groupid = 1
 }
 
+# Einstellungen für Content
+TCEFORM.tt_content.space_before_class {
+    removeItems = extra-small,small,extra-large
+}
+TCEFORM.tt_content.space_after_class {
+    removeItems = extra-small,small,extra-large
+}
 
 mod.SHARED {
     defaultLanguageLabel = Deutsch
