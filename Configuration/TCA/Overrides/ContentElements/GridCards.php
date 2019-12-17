@@ -1,6 +1,6 @@
 <?php
 return [
-    'name' => 'teaser_cards',
+    'name' => 'grid_cards',
     'flexform' => false,
 
     'showitem' => '

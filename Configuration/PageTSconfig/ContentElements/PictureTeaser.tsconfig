@@ -2,8 +2,8 @@ mod.wizards.newContentElement.wizardItems.ffpitheme {
     elements {
         ffpitheme_picture_teaser {
             iconIdentifier = ffpitheme_picture_teaser
-            title = Picture Teaser
-            description = Text and Picture
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:picture_teaser.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:picture_teaser.wizard.description
             tt_content_defValues {
                 CType = ffpitheme_picture_teaser
             }
