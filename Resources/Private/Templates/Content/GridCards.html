@@ -3,11 +3,11 @@
 <f:layout name="Content/Default"/>
 <f:section name="Main">
 
-    <div class="teaser-cards">
+    <div class="grid-cards">
         <f:for each="{media}" as="card">
             <section class="card">
                 <div class="card-image">
-                    <f:image image="{card}"/>
+                    <f:image image="{card}" width="200" height="200" />
                 </div>
                 <div class="card-content">
                     <h3>{card.title}</h3>

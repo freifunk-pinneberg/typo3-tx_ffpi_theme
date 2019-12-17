@@ -7,37 +7,25 @@
                 <source>Stage</source>
             </trans-unit>
             <trans-unit id="stage.wizard.description">
-                <source>Text and Image</source>
+                <source>Text und Bild</source>
             </trans-unit>
             <trans-unit id="video_teaser.wizard.title">
                 <source>Video Teaser</source>
             </trans-unit>
             <trans-unit id="video_teaser.wizard.description">
-                <source>Video and Text</source>
+                <source>Video und Text</source>
             </trans-unit>
             <trans-unit id="picture_teaser.wizard.title">
-                <source>Picture Teaser</source>
-            </trans-unit>
-            <trans-unit id="picture_teaser.wizard.description">
-                <source>Picture Teaser</source>
+                <source>Bild Teaser</source>
             </trans-unit>
             <trans-unit id="teaser_cards.wizard.title">
-                <source>Teaser Cards</source>
-            </trans-unit>
-            <trans-unit id="teaser_cards.wizard.description">
-                <source>Multiple Teaser in Card layout</source>
+                <source>Teaser Karten</source>
             </trans-unit>
             <trans-unit id="grid_cards.wizard.title">
-                <source>Grid Cards</source>
-            </trans-unit>
-            <trans-unit id="grid_cards.wizard.description">
-                <source>Multiple cards in 2xN Grid with icons</source>
+                <source>Grid Karten</source>
             </trans-unit>
             <trans-unit id="news_menu.wizard.title">
-                <source>News Menu</source>
-            </trans-unit>
-            <trans-unit id="news_menu.wizard.description">
-                <source>Menu of subpages with date and text preview</source>
+                <source>News Menü</source>
             </trans-unit>
         </body>
     </file>

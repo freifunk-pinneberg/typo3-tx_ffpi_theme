@@ -10,6 +10,7 @@ $icons = [
     'ffpitheme_video_teaser' => 'ext_icon.svg',
     'ffpitheme_picture_teaser' => 'ext_icon.svg',
     'ffpitheme_teaser_cards' => 'ext_icon.svg',
+    'ffpitheme_grid_cards' => 'ext_icon.svg',
     'ffpitheme_news_menu' => 'ext_icon.svg',
 ];
 

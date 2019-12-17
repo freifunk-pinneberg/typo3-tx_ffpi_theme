@@ -364,7 +364,6 @@ article.content {
 .contentElement.space-bottom-large:not(:last-child) {
     padding-bottom: 75px;
 }
-
 .contentElement.space-top-medium:not(:first-child) {
     padding-top: 25px;
 }
@@ -449,6 +448,43 @@ article.content {
     border-top-right-radius: inherit;
 }
 
+.grid-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.grid-cards .card {
+    display: flex;
+    flex-basis: calc(50% - 20px);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.grid-cards .card .card-image {
+    display: block;
+    flex-basis: 200px;
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 25px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.grid-cards .card .card-content {
+    display: block;
+    padding: 30px;
+}
+
+
 .ffpitheme_news_menu .header {
     display: block;
     width: 100%;
@@ -503,6 +539,38 @@ div.ce-left .ce-gallery {
     float: left;
 }
 
+blockquote {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+    font-style: italic;
+    margin-right: 0px;
+    padding-left: 16px;
+    margin-left: 20px;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-color: #dc0067;
+}
+
+.contentElement table {
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contentElement th {
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+    color: #dc0067;
+    padding: 5px;
+}
+.contentElement td {
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
 /* Gateway Health */
 .gatewayList {
     display: flex;
@@ -544,34 +612,43 @@ footer.footer {
     background-color: #ffffff;
     padding-top: 100px;
     padding-bottom: 100px;
-    display: table;
     width: 100%;
     padding-left: 100px;
     padding-right: 100px;
 }
 
+footer.footer .o-footer__inner {
+    max-width: 1420px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
 footer.footer .logo {
-    float: left;
-    width: 25%;
-    display: table-cell;
+    display: block;
+    vertical-align: top;
+    flex-grow: 0;
+    flex-basis: 120px;
 }
 
 footer.footer .nav {
-    float: left;
-    width: 50%;
-    display: table-cell;
+    display: block;
+    vertical-align: top;
+    flex-grow: 1;
 }
 
 footer.footer .language {
-    float: left;
-    width: 25%;
-    display: table-cell;
+    display: block;
+    text-align: right;
+    vertical-align: top;
+    flex-grow: 0;
+    flex-basis: 400px;
 }
 
 .footer-menu ul {
-    column-count: 3;
     column-gap: 10px;
-    display: table;
     width: 100%;
     margin: 0;
     padding-left: 0;
@@ -579,11 +656,23 @@ footer.footer .language {
     font-size: 20px;
     font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
+    list-style: none;
+}
+
+.footer-menu ul.level-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .footer-menu ul.level-1 li {
-    display: table-cell;
+    display: list-item;
     float: none;
+}
+
+.footer-menu ul.level-2 {
+    margin-top: 20px;
+    display: lis;
 }
 
 .footer-menu ul.level-2 li {
@@ -593,6 +682,7 @@ footer.footer .language {
     font-size: 18px;
     font-family: Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
+    padding-bottom: 5px;
 }
 
 .github-button {
