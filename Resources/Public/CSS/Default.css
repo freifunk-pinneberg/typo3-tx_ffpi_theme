@@ -98,7 +98,7 @@ a:link {
     color: #009ee0;
 }
 
-a:link:visited {
+a:link:visited, a:visited {
     color: rgba(0, 158, 224, 0.8);
 }
 
@@ -159,6 +159,7 @@ div.pageLogo p {
     font-weight: bold;
 }
 
+/* Nodecounter */
 div.tx-ffpi-nodecounter {
     display: block;
     margin-left: auto;
@@ -213,6 +214,8 @@ div.tx-ffpi-nodecounter {
     font-family: "Roboto Medium", Roboto, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
 }
+
+/* Main Navigation */
 
 div.navigation {
     display: inline-block;
@@ -273,6 +276,7 @@ nav ul {
 
 
 .o-header__logo p,
+.o-header__logo a,
 .o-header__logo img {
     align-self: center;
 }
@@ -409,6 +413,7 @@ article.content {
     padding-right: 0;
 }
 
+/* Stage */
 .ffpitheme_stage {
     background-color: #ffffff;
 }
@@ -419,6 +424,8 @@ article.content {
     vertical-align: top;
     padding: 20px;
 }
+
+/* Teaser Cards */
 
 .teaser-cards {
     display: flex;
@@ -448,6 +455,7 @@ article.content {
     border-top-right-radius: inherit;
 }
 
+/* Grid Cards */
 .grid-cards {
     display: flex;
     justify-content: space-between;
@@ -482,6 +490,47 @@ article.content {
 .grid-cards .card .card-content {
     display: block;
     padding: 30px;
+}
+
+/* CE Participate */
+.participate.header {
+    margin-bottom: 40px;
+}
+
+.participate .card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.participate .card .card-image {
+    display: flex;
+    flex-basis: 200px;
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 25px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+.participate .card .card-image img {
+    margin: auto;
+}
+.participate .card .card-content {
+    display: block;
+    padding: 30px;
+}
+.participate .card-arrow img {
+    max-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
@@ -685,7 +734,7 @@ footer.footer .language {
     padding-bottom: 5px;
 }
 
-.github-button {
+.github-button, .github-button:visited {
     display: inline-block;
     position: relative;
     height: 50px;

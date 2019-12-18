@@ -39,6 +39,18 @@
             <trans-unit id="news_menu.wizard.description">
                 <source>Menu of subpages with date and text preview</source>
             </trans-unit>
+            <trans-unit id="participate.wizard.title">
+                <source>Participate</source>
+            </trans-unit>
+            <trans-unit id="participate.wizard.description">
+                <source>Teaser from top to bottom, connected with arrows</source>
+            </trans-unit>
+            <trans-unit id="subpage_menu.wizard.title">
+                <source>Subpage Menu</source>
+            </trans-unit>
+            <trans-unit id="subpage_menu.wizard.description">
+                <source>Menu of subpages with text preview</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

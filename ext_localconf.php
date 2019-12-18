@@ -12,6 +12,8 @@ $icons = [
     'ffpitheme_teaser_cards' => 'ext_icon.svg',
     'ffpitheme_grid_cards' => 'ext_icon.svg',
     'ffpitheme_news_menu' => 'ext_icon.svg',
+    'ffpitheme_subpage_menu' => 'ext_icon.svg',
+    'ffpitheme_participate' => 'ext_icon.svg',
 ];
 
 foreach ($icons as $iconName => $iconFile) {

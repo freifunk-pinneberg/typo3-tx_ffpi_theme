@@ -3,9 +3,8 @@
 <f:layout name="Content/Default"/>
 <f:section name="Main">
     <f:for each="{menu}" as="page">
-        <div class="page" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <div class="page" itemscope="" itemtype="http://schema.org/Article">
             <div class="header">
-                <span class="date" itemprop="dateCreated"><f:format.date format="d.m.Y">{page.data.crdate}</f:format.date></span>
                 <h3 class="title" itemprop="headline">{page.title}</h3>
             </div>
             <div class="body">

@@ -1,7 +1,7 @@
 tt_content {
-    ffpitheme_news_menu < lib.ffpiThemeContent
-    ffpitheme_news_menu {
-        templateName = Content/NewsMenu
+    ffpitheme_subpage_menu < lib.ffpiThemeContent
+    ffpitheme_subpage_menu {
+        templateName = Content/SubpageMenu
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {
