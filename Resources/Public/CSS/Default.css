@@ -302,6 +302,13 @@ nav ul {
     align-content: center;
 }
 
+.menu-toggle {
+    display: none;
+}
+.menu-toggle--label {
+    display: none;
+}
+
 .icon-navigation,
 .main-navigation {
     display: flex;
@@ -400,7 +407,7 @@ article.content {
 }
 
 .cell-2-col {
-    width: 50%;
+    flex-basis: 50%;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -533,8 +540,9 @@ article.content {
     display: block;
 }
 
+/* Subpage & News Menu */
 
-.ffpitheme_news_menu .header {
+.ffpitheme_news_menu .header, .ffpitheme_subpage_menu .header {
     display: block;
     width: 100%;
     background-color: #ebebeb;
@@ -549,7 +557,7 @@ article.content {
     margin-left: 30px;
 }
 
-.ffpitheme_news_menu .body {
+.ffpitheme_news_menu .body, .ffpitheme_subpage_menu .body {
     display: block;
     background-color: #FFFFFF;
     margin: 0;
@@ -565,17 +573,17 @@ article.content {
     font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.ffpitheme_news_menu .page {
+.ffpitheme_news_menu .page, .ffpitheme_subpage_menu .page {
     border-radius: 5px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.ffpitheme_news_menu .page:first-child {
+.ffpitheme_news_menu .page:first-child, .ffpitheme_subpage_menu .page:first-child {
     margin-top: 0;
 }
 
-.ffpitheme_news_menu .page:last-child {
+.ffpitheme_news_menu .page:last-child, .ffpitheme_subpage_menu .page:last-child {
     margin-bottom: 0;
 }
 
@@ -721,7 +729,7 @@ footer.footer .language {
 
 .footer-menu ul.level-2 {
     margin-top: 20px;
-    display: lis;
+    display: list-item;
 }
 
 .footer-menu ul.level-2 li {
@@ -854,3 +862,95 @@ footer.footer .language {
     color: #dc0067;
 }
 
+
+
+/* Mobile */
+@media only screen and (max-width: 1217px) {
+    .o-footer__inner {
+        flex-wrap: wrap;
+    }
+    footer.footer .logo {
+        display: none;
+    }
+
+    .footer-menu ul.level-1 {
+        flex-wrap: wrap;
+    }
+
+    .flex-box {
+        flex-wrap: wrap;
+    }
+
+    .ffpitheme_stage .flex-box {
+        flex-wrap: wrap-reverse;
+    }
+
+    .grid-cards .card {
+        flex-basis: 100%;
+    }
+
+    /* Header */
+    .o-header__logo {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .o-header__navigation {
+        justify-content: center;
+    }
+
+    /* Navigation */
+    div.tx-ffpi-nodecounter {
+        display: none;
+    }
+    .main-navigation, .icon-navigation {
+        flex-wrap: wrap;
+    }
+    .main-navigation li, .icon-navigation li {
+        flex-basis: 100%;
+    }
+    .main-navigation::after {
+        display: none;
+    }
+    #top-nav {
+        display: none;
+    }
+    .menu-toggle:checked ~ #top-nav {
+        display: flex;
+        background-color: #FFFFFF;
+        position: absolute;
+        justify-content: space-around;
+        width: 100%;
+        left: 0;
+        top: 100px;
+        padding-right: 40px;
+    }
+    .menu-toggle--label {
+        display: block;
+        background-color: #dc0067;
+        color: #FFFFFF;
+        width: 40px;
+        height: 40px;
+        margin: 20px;
+        text-align: center;
+        border-radius: 3px;
+        padding: 7px;
+        box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
+        cursor: pointer;
+        z-index: 999;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu-toggle img {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .flex-cell.cell-2-col {
+        flex-basis: 100%;
+    }
+}
