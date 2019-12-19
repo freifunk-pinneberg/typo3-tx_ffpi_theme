@@ -26,9 +26,9 @@ page.10.dataProcessing {
         includeSpacer = 1
         as = footerNavigation
     }
-    40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
     40 {
-        special = language
+        languages = auto
         as = languageNavigation
     }
 }

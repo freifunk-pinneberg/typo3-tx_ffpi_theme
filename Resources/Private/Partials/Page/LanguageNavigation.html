@@ -10,14 +10,12 @@
     <input type="checkbox" class="language-input" id="language">
 
     <ul class="language-menu">
-        <li>
-            <a href="#">Deutsch</a>
-        </li>
-        <li>
-            <a href="#">English</a>
-        </li>
+        <f:for each="{languageNavigation}" as="language">
+            <li>
+                <a href="{language.link}" hreflang="{language.hreflang}">{language.navigationTitle}</a>
+            </li>
+        </f:for>
     </ul>
 
 </label>
-
 </html>
