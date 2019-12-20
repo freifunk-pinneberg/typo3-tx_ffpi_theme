@@ -38,7 +38,7 @@ video {
 }
 
 /* Elemente */
-a:link.button, a:visited.button, .button {
+a:link.button, a:visited.button, .button, button {
     display: inline-block;
     height: 50px;
     color: #ffffff;
@@ -48,6 +48,7 @@ a:link.button, a:visited.button, .button {
     background-color: #dc0067;
     box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
     font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
     border-radius: 3px;
     vertical-align: middle;
     line-height: 50px;
@@ -98,8 +99,45 @@ a:link {
     color: #009ee0;
 }
 
+/* Formulare */
+input, textarea, select {
+    font-size: 20px;
+    font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #666666;
+    border: solid 2px #666666;
+    box-shadow: none;
+    width: 100%;
+    max-width: 450px;
+}
+select {
+    height: 56px;
+}
+input:active, textarea:active, input:focus, textarea:focus {
+    border-color: #009ee0;
+}
+input:invalid, textarea:invalid  {
+    border-color: #dc0067;
+}
+input:invalid:active, textarea:invalid:active, input:invalid:focus, textarea:invalid:focus  {
+    border-color: #ffb400;
+}
+input {
+    height: 50px;
+}
+
 a:link:visited, a:visited {
     color: rgba(0, 158, 224, 0.8);
+}
+
+.form-navigation {
+    padding-top: 20px;
 }
 
 /* Page Sections */
