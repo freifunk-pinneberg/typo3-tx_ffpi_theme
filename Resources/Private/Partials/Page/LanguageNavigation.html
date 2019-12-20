@@ -4,7 +4,11 @@
 <label class="dropdown">
 
     <div class="language-button">
-        <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Language.svg"> Deutsch
+        <f:for each="{languageNavigation}" as="language">
+            <f:if condition="{language.active}">
+                <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Language.svg">{language.navigationTitle}
+            </f:if>
+        </f:for>
     </div>
 
     <input type="checkbox" class="language-input" id="language">
