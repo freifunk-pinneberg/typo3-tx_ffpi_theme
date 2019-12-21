@@ -1,0 +1,142 @@
+
+renderingOptions:
+  submitButtonLabel: Absenden
+type: Form
+identifier: routerAnfordern
+label: 'Router Anfordern'
+prototypeName: standard
+finishers:
+  -
+    options:
+      message: 'Daten wurden gesendet.'
+      contentElementUid: ''
+    identifier: Confirmation
+  -
+    options:
+      subject: Knoten-Anfrage
+      recipientAddress: service@pinneberg.freifunk.net
+      recipientName: ''
+      senderAddress: webseite@pinneberg.freifunk.net
+      senderName: ''
+      replyToAddress: '{email-1}'
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Neue Seite'
+    type: Page
+    identifier: page-1
+    label: Step
+    renderables:
+      -
+        properties:
+          options:
+            'TP-LINK TL-WR841N - 16 €': 'TP-LINK TL-WR841N - 16 €'
+            'Ubiquiti Nano Station Loco m2 - 50 €': 'Ubiquiti Nano Station Loco m2 - 50 €'
+            'Ubiquiti Nano Station m2 - 80 €': 'Ubiquiti Nano Station m2 - 80 €'
+            'TP-LINK CPE 210 - 50 €': 'TP-LINK CPE 210 - 50 €'
+            'TP-LINK WDR4300 - 100 €': 'TP-LINK WDR4300 - 100 € (*EOL)'
+            'Ubiquiti Unifi AC Mesh - 90 €': 'Ubiquiti Unifi AC Mesh - 90 € (*Vorbestellung)'
+            'TP-LINK MR3020 - 30 €': 'TP-LINK MR3020 - 30 €'
+            'GL.iNet GL-AR750 - 50€': 'GL.iNet GL-AR750 - 50€'
+            'PC Engines APU.2D4 - 170€': 'PC Engines APU.2D4 - 170€'
+          fluidAdditionalAttributes:
+            required: required
+          prependOptionLabel: 'Bitte wählen'
+        type: SingleSelect
+        identifier: router
+        label: 'Welchen Router möchtest du?'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        properties:
+          text: "*EOL: Router wird nicht mehr Produziert. Wir versuchen über Restbestände einen zu organisieren\n*Vorbestellung: Firmware ist noch nicht verfügbar aber in Arbeit, wir stellen dich auf eine Merkliste, oder geben dir den Router mit Original Firmware."
+        type: StaticText
+        identifier: statictext-1
+        label: ''
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: 'Router Konfiguration'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: node-name
+            label: 'Wie willst Du den Knoten nennen?'
+            properties:
+              elementDescription: ''
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            type: Checkbox
+            identifier: autoupdate
+            label: 'Automatisches Update aktivieren (empfohlen)'
+            properties:
+              elementDescription: ''
+          -
+            type: Checkbox
+            identifier: mesh-vpn
+            label: 'Internetzugang vorhanden und verwenden (Mesh-VPN aktivieren - wird empfohlen, wenn kein anderer Freifunk-Router in Reichweite ist)'
+            properties:
+              elementDescription: ''
+          -
+            type: Fieldset
+            identifier: fieldset-2
+            label: Standort
+            renderables:
+              -
+                defaultValue: ''
+                type: Text
+                identifier: lat
+                label: Längengrad
+              -
+                defaultValue: ''
+                type: Text
+                identifier: long
+                label: Breitengrad
+              -
+                properties:
+                  text: 'Die exakten Positionsangaben kannst Du mit diesem Tool http://map.pinneberg.freifunk.net/ ermitteln.'
+                type: StaticText
+                identifier: statictext-2
+                label: ''
+          -
+            defaultValue: ''
+            type: Email
+            identifier: node-email
+            label: 'Kontaktdaten (Öffentlich)'
+            properties:
+              elementDescription: 'Optional aber empfohlen'
+            validators:
+              -
+                identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email
+        label: 'Deine E-Mail (Nur zur Abwicklung, nicht öffentlich)'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: message
+        label: 'Persönliche Anmerkungen'
