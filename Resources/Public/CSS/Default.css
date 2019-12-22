@@ -107,6 +107,24 @@ a:active, a:focus, a.active, a:visited.active, a:visited:active, a:visited:focus
 }
 
 /* Formulare */
+fieldset {
+    border: none;
+    padding-left: 0;
+}
+fieldset > fieldset {
+    padding-left: 15px;
+    border: 0 solid #666666;
+    border-left-width: 2px;
+}
+
+fieldset > legend {
+    font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #dc0067;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
 input, textarea, select {
     font-size: 20px;
     font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -126,13 +144,16 @@ input, textarea, select {
 select {
     height: 56px;
 }
-input:active, textarea:active, input:focus, textarea:focus {
+input:active, textarea:active, select:active, fieldset:active, input:focus, textarea:focus, select:focus, fieldset:focus {
+    border-color: #009ee0;
+}
+fieldset ~ input:active, fieldset ~ input:focus {
     border-color: #009ee0;
 }
 input:invalid, textarea:invalid  {
     border-color: #dc0067;
 }
-input:invalid:active, textarea:invalid:active, input:invalid:focus, textarea:invalid:focus  {
+input:invalid:active, textarea:invalid:active, select:invalid:active, input:invalid:focus, textarea:invalid:focus, select:invalid:focus  {
     border-color: #ffb400;
 }
 input {
@@ -988,7 +1009,8 @@ footer.footer .language {
         width: 100%;
         left: 0;
         top: 100px;
-        padding-right: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .menu-toggle--label {
         display: block;
@@ -1015,5 +1037,47 @@ footer.footer .language {
 @media only screen and (max-width: 940px) {
     .flex-cell.cell-2-col {
         flex-basis: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .ffpitheme_news_menu .date {
+        font-size: 24px;
+    }
+
+    .ffpitheme_news_menu .header h3 {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .o-header__logo {
+        font-size: 12px;
+    }
+
+    .o-header__logo .red {
+        color: #dc0067;
+        font-size: 22px;
+        font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width: 335px){
+    .o-header__logo .logo {
+        display: none;
     }
 }
