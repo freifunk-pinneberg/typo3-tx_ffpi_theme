@@ -1,0 +1,12 @@
+imports:
+  # Import default RTE config
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" }
+  # Import the image plugin configuration
+  - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
+
+editor:
+  config:
+    # RTE default config removes image plugin - restore it:
+    removePlugins: null
+    # Rechtschreibprüfung des Browser verwenden
+    disableNativeSpellChecker: false

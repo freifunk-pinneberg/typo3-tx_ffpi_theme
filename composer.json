@@ -26,6 +26,9 @@
   "require": {
     "typo3/cms-core": "8.7.0 - 9.5.99"
   },
+  "suggest": {
+    "ffpi/nodecounter": "Displays a Freifunk Nodecounter"
+  },
   "autoload": {
     "psr-4": {
       "FFPI\\FfpiTheme\\": "Classes"

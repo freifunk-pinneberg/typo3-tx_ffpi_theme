@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono:400,700|Roboto:400,500,700');
 
+/**
+Colors:
+
+Text: #666666
+
+Main Color: #dc0067
+Secondary 1: #009ee0
+Secondary 2: #ffb400
+Secondary 3: #0d7813
+
+Background 1: #f7f7f7
+Background 2: #ffffff
+Background 3: #ebebeb
+ */
+
 /* Allgemeines */
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out, border 1s ease-in-out;
 }
 
 html {
@@ -144,18 +159,23 @@ input, textarea, select {
 select {
     height: 56px;
 }
-input:active, textarea:active, select:active, fieldset:active, input:focus, textarea:focus, select:focus, fieldset:focus {
+input:active, textarea:active, select:active, fieldset:active,
+input:focus, textarea:focus, select:focus, fieldset:focus {
     border-color: #009ee0;
 }
-fieldset ~ input:active, fieldset ~ input:focus {
-    border-color: #009ee0;
-}
-input:invalid, textarea:invalid  {
+input:invalid, textarea:invalid, select:invalid  {
     border-color: #dc0067;
+    color: #dc0067;
 }
-input:invalid:active, textarea:invalid:active, select:invalid:active, input:invalid:focus, textarea:invalid:focus, select:invalid:focus  {
+input:invalid:active, textarea:invalid:active, select:invalid:active,
+input:invalid:focus, textarea:invalid:focus, select:invalid:focus  {
     border-color: #ffb400;
+    color: #ffb400;
 }
+input:required:valid, textarea:required:valid, select:required:valid {
+    border-color: #0d7813;
+}
+
 input {
     height: 50px;
 }
