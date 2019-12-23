@@ -1,0 +1,6 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          21: EXT:ffpi_theme/Resources/Private/Forms/

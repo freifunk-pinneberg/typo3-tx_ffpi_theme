@@ -1,4 +1,5 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/Plugins/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/Libs/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/Form/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/Pages/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/TypoScript/ContentElements/" extensions="typoscript">
