@@ -1011,6 +1011,7 @@ footer.footer .language {
     }
     .main-navigation, .icon-navigation {
         flex-wrap: wrap;
+        flex-basis: 50%;
     }
     .main-navigation li, .icon-navigation li {
         flex-basis: 100%;
