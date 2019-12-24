@@ -19,7 +19,7 @@ page.headerData.10.insertData = 1
 
 ## ------ Facebook ---------------------
 page.headerData.20 = TEXT
-page.headerData.20.value = <meta property="og:image" content="{$plugin.ffpi_theme.baseurl}/fileadmin/layout/ffpi/bilder/Facebook_preview.png" />
+page.headerData.20.value = <meta property="og:image" content="{$plugin.ffpi_theme.baseurl}/typo3conf/ext/ffpi_theme/Resources/Public/Iamges/Facebook_preview.png" />
 
 ## ------ RSS Feed ---------------------
 page.headerData.30 = TEXT
