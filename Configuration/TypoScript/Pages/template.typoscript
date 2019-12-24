@@ -59,8 +59,8 @@ page.jsFooterInline.10.value (
         counterXHR.open("GET", "/?type=2652017", true);
         counterXHR.send();
         counterXHR.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("ffpi-nodecounter") = counterXHR.responseText;
+            if ((this.readyState === 4) && (this.status === 200)) {
+                document.getElementById("ffpi-nodecounter").innerHtml = counterXHR.responseText;
             }
         }
     };

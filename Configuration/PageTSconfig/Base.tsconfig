@@ -35,5 +35,6 @@ mod.wizards.newContentElement.wizardItems.ffpitheme {
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/ContentElements/" extensions="tsconfig">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/BackendLayouts/" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/Plugins/" extensions="tsconfig">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:ffpi_theme/Configuration/PageTSconfig/RTE.tsconfig">
