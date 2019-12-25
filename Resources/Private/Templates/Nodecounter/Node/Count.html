@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<body>
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <div class="node-stats" id="ffpi-nodecounter">
+        <div class="client-counter">
+            <span class="current">{counter.clients}</span>
+            <span class="text"><f:translate key="tx_ffpinodecounter_domain_model_node.clients_online"/></span>
+        </div>
+        <div class="node-counter">
+            <span class="current">{counter.online}</span> <span class="text">/ {counter.total}
+            <f:translate key="tx_ffpinodecounter_domain_model_node.nodes_online"/></span>
+        </div>
+    </div>
+</f:section>
+</body>
+</html>

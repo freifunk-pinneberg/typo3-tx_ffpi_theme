@@ -1,0 +1,16 @@
+tt_content {
+    ffpitheme_participate < lib.ffpiThemeContent
+    ffpitheme_participate {
+        templateName = Content/Participate
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references {
+                    fieldName = media
+                }
+
+                as = media
+            }
+        }
+    }
+}

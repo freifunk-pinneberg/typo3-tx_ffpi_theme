@@ -1,0 +1,20 @@
+<header id="header" class="o-header">
+    <div class="o-header__inner">
+        <div class="o-header__logo">
+            <a href="/"><f:image src="{ffpi_theme_header_logo_path}" class="logo" /></a>
+            <p><span class="red">{ffpi_theme_header_title}</span><br>{ffpi_theme_header_subtitle}</p>
+        </div>
+        <div class="o-header__navigation">
+            <f:render section="Top"/>
+            <f:render partial="Page/TopNavigation" arguments="{'mainNavigation': mainNavigation, 'iconNavigation': iconNavigation}"/>
+        </div>
+    </div>
+</header>
+<article class="content" role="article">
+    <f:render section="Content"/>
+</article>
+<footer class="footer">
+    <div class="o-footer__inner">
+        <f:render section="Footer"/>
+    </div>
+</footer>

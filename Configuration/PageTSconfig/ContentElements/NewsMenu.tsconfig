@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_news_menu {
+            iconIdentifier = ffpitheme_news_menu
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:news_menu.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:news_menu.wizard.description
+            tt_content_defValues {
+                CType = ffpitheme_news_menu
+            }
+        }
+    }
+    show := addToList(ffpitheme_news_menu)
+}

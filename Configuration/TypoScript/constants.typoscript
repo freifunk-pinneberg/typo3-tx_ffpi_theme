@@ -1,0 +1,34 @@
+// customcategory=ffpi=Freifunk Pinneberg
+plugin.ffpi_theme {
+
+    // cat=ffpi; type=int+; label= Page ID for footer navigation
+    footernavigation.pid = 34
+    iconnavigation.pid = 157
+    mainnavigation.pid = 1
+
+    // cat=ffpi; type=file; label= Header logo
+    header.logo.path = EXT:ffpi_theme/Resources/Public/Images/Logo.svg
+    // cat=ffpi; type=string; label= Header logo alt text
+    header.logo.alt = Freifunk Pinneberg Logo
+    // cat=ffpi; type=string; label= Header logo link title
+    header.logo.title = Freifunk Pinneberg
+    // cat=ffpi; type=string; label= Homepage title
+    header.title = Freifunk Pinneberg
+    // cat=ffpi; type=string; label= Homepage subtitle
+    header.subtitle = Freies WLAN im Kreis Pinneberg
+    // cat=ffpi; type=string; label= Github Link
+    footer.github.link = https://github.com/freifunk-pinneberg
+}
+
+# Default
+plugin.ffpi_theme.baseurl = //pinneberg.freifunk.net
+[globalString =  IENV:HTTP_HOST = www.ffpi]
+    #Freifunk Intern
+    plugin.ffpi_theme.baseurl = //www.ffpi
+[globalString =  IENV:HTTP_HOST = pinneberg.freifunk.net.local]
+    #Development
+    plugin.ffpi_theme.baseurl = //pinneberg.freifunk.net.local/
+[globalString =  IENV:HTTP_HOST = www.freifunk-pinneberg.de]
+    #Fallback Domain
+    plugin.ffpi_theme.baseurl = //www.freifunk-pinneberg.de
+[global]

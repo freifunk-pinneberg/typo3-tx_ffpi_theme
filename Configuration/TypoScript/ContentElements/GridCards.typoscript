@@ -1,0 +1,16 @@
+tt_content {
+    ffpitheme_grid_cards < lib.ffpiThemeContent
+    ffpitheme_grid_cards {
+        templateName = Content/GridCards
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references {
+                    fieldName = media
+                }
+
+                as = media
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_stage {
+            iconIdentifier = ffpitheme_stage
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:stage.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:stage.wizard.description
+            tt_content_defValues {
+                CType = ffpitheme_stage
+            }
+        }
+    }
+    show := addToList(ffpitheme_stage)
+}

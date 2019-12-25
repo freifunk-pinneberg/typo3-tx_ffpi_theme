@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_participate {
+            iconIdentifier = ffpitheme_participate
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:participate.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:participate.wizard.description
+            tt_content_defValues {
+                CType = ffpitheme_participate
+            }
+        }
+    }
+    show := addToList(ffpitheme_participate)
+}

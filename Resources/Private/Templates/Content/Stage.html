@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Content/Default"/>
+<f:section name="Main">
+    <div class="flex-box">
+        <div class="flex-cell cell-2-col">
+            <h1>{data.header}</h1>
+            <p>
+                <f:format.nl2br>{data.bodytext}</f:format.nl2br>
+            </p>
+            <f:if condition="{data.pi_flexform.buttonText}">
+                <f:link.typolink parameter="{data.pi_flexform.buttonLink}" class="button solid">{data.pi_flexform.buttonText}</f:link.typolink>
+            </f:if>
+        </div>
+        <div class="flex-cell cell-2-col">
+            <f:if condition="{media.0}">
+                <f:image image="{media.0}" maxWidth="656"/>
+            </f:if>
+        </div>
+    </div>
+</f:section>
+</html>

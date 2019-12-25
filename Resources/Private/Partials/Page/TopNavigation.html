@@ -1,0 +1,39 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<label class="menu-toggle--label" for="menu-toggle"><f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Menu.svg" width="22" height="25" /></label>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<nav class="menu" id="top-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+    <ul class="main-navigation">
+        <f:for as="item" each="{mainNavigation}" iteration="iteration">
+            <f:if condition="{item.active}">
+                <f:then>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{item.title}</a></li>
+                </f:then>
+                <f:else>
+                    <li id="p{item.data.uid}"><a href="{item.link}">{item.title}</a></li>
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+    <ul class="icon-navigation">
+        <f:for as="item" each="{iconNavigation}" iteration="iteration">
+            <f:variable name="iconHtml">
+                <f:if condition="{item.data.tx_ffpi_theme_icon}">
+                    <f:then>
+                        <f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/{item.data.tx_ffpi_theme_icon}" width="18" height="18" />
+                    </f:then>
+                </f:if>
+            </f:variable>
+            <f:if condition="{item.active}">
+                <f:then>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{iconHtml->f:format.raw()} {item.title}</a></li>
+                </f:then>
+                <f:else>
+                    <li id="p{item.data.uid}"><a href="{item.link}">{iconHtml->f:format.raw()} {item.title}</a></li>
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+</nav>
+</html>

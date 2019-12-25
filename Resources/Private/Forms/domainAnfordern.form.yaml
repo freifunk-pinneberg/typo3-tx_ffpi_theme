@@ -1,0 +1,100 @@
+
+renderingOptions:
+  submitButtonLabel: 'Formular Absenden'
+type: Form
+identifier: domainAnfordern
+label: 'Domain Anfordern'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Domain Anfrage'
+      recipientAddress: service@pinneberg.freifunk.net
+      recipientName: ''
+      senderAddress: '{email}'
+      senderName: '{name}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Zurück'
+      nextButtonLabel: 'Weiter'
+    type: Page
+    identifier: page-1
+    label: 'Domain Anfordern'
+    renderables:
+      -
+        type: Fieldset
+        identifier: domain-properties
+        label: 'Domain Eigenschaften'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: domain
+            label: 'Domain Name'
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: Alphanumeric
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: a-records
+            label: 'A Record(s)'
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: aaaa-records
+            label: 'AAAA Record(s)'
+            validators:
+              -
+                identifier: NotEmpty
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+      -
+        type: Fieldset
+        identifier: service-properties
+        label: 'Dienst Eigenschaften'
+        renderables:
+          -
+            defaultValue: ''
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+            type: Email
+            identifier: email
+            label: 'Betreiber E-Mail'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+          -
+            defaultValue: ''
+            type: Text
+            identifier: name
+            label: 'Betreiber Name'
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: description
+            label: 'Berschreibe kurz was für einen Dienst du anbietest / Wofür du die Domain benötigst.'
+            validators:
+              -
+                identifier: NotEmpty
+            properties:
+              fluidAdditionalAttributes:
+                required: required

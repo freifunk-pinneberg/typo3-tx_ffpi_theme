@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<label class="dropdown">
+
+    <div class="language-button">
+        <f:for each="{languageNavigation}" as="language">
+            <f:if condition="{language.active}">
+                <img src="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Language.svg">{language.navigationTitle}
+            </f:if>
+        </f:for>
+    </div>
+
+    <input type="checkbox" class="language-input" id="language">
+
+    <ul class="language-menu">
+        <f:for each="{languageNavigation}" as="language">
+            <li>
+                <a href="{language.link}" hreflang="{language.hreflang}">{language.navigationTitle}</a>
+            </li>
+        </f:for>
+    </ul>
+
+</label>
+</html>

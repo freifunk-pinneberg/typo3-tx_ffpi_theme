@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_grid_cards {
+            iconIdentifier = ffpitheme_grid_cards
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:grid_cards.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:grid_cards.wizard.description
+            tt_content_defValues {
+                CType = ffpitheme_grid_cards
+            }
+        }
+    }
+    show := addToList(ffpitheme_grid_cards)
+}

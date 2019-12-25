@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    elements {
+        ffpitheme_picture_teaser {
+            iconIdentifier = ffpitheme_picture_teaser
+            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:picture_teaser.wizard.title
+            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:picture_teaser.wizard.description
+            tt_content_defValues {
+                CType = ffpitheme_picture_teaser
+            }
+        }
+    }
+    show := addToList(ffpitheme_picture_teaser)
+}

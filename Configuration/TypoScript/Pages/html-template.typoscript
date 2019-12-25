@@ -1,0 +1,81 @@
+### ------ Fluid Template --------
+page.10 = FLUIDTEMPLATE
+page.10 {
+    file = EXT:ffpi_theme/Resources/Private/Templates/Page/Default.html
+    layoutRootPath = EXT:ffpi_theme/Resources/Private/Layouts/
+    partialRootPath = EXT:ffpi_theme/Resources/Private/Partials/
+
+    variables {
+        NAVIGATION < lib.navigation.10
+        FOOTERNAVIGATION < lib.footernavigation.10
+        ffpi_theme < plugin.ffpi_theme
+        ffpi_theme_header_logo_path = TEXT
+        ffpi_theme_header_logo_path.value = {$plugin.ffpi_theme.header.logo.path}
+        ffpi_theme_header_logo_title = TEXT
+        ffpi_theme_header_logo_title.value = {$plugin.ffpi_theme.header.logo.title}
+        ffpi_theme_header_logo_alt = TEXT
+        ffpi_theme_header_logo_alt.value = {$plugin.ffpi_theme.header.logo.alt}
+        ffpi_theme_header_title = TEXT
+        ffpi_theme_header_title.value = {$plugin.ffpi_theme.header.title}
+        ffpi_theme_header_subtitle = TEXT
+        ffpi_theme_header_subtitle.value = {$plugin.ffpi_theme.header.subtitle}
+        ffpi_theme_footer_github_link = TEXT
+        ffpi_theme_footer_github_link.value = {$plugin.ffpi_theme.footer.github.link}
+    }
+}
+
+### --------- CSS -----------
+page.includeCSS.main = EXT:ffpi_theme/Resources/Public/CSS/Default.css
+page.includeCSS.main.media = all
+
+###################
+# Content Elemente
+###################
+
+# Bilder sollen keine Breite oder Höhe bekommen
+tt_content.image.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
+    width.unset = 1
+    height.unset = 1
+    style.unset = 1
+}
+
+tt_content.textpic.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
+    width.unset = 1
+    height.unset = 1
+    style.unset = 1
+}
+
+lib.parseFunc_RTE.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
+    width.unset = 1
+    height.unset = 1
+    style.unset = 1
+}
+
+# default css entfernen
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >
+plugin.tx_felogin_pi1._CSS_DEFAULT_STYLE >
+plugin.tx_indexedsearch._CSS_DEFAULT_STYLE >
+plugin.tx_form._CSS_DEFAULT_STYLE >
+
+# Content Header als H2
+content.defaultHeaderType = 2
+
+#Überschriften von Klassen Attribut befreien
+lib.stdheader {
+    10.1.fontTag = |
+    10.2.fontTag = |
+    10.3.fontTag = |
+    10.4.fontTag = |
+    10.5.fontTag = |
+    stdWrap.dataWrap = |
+}
+
+#csc-header entfernen
+lib.stdheader.stdWrap.dataWrap >
+
+#Überschriften ohne Zusätze
+lib.stdheader.2.headerStyle >
+lib.stdheader.3.headerClass >
+
+#Klassen Attribut aus P-Tag entfernen
+lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.addAttributes.P.class >

@@ -1,0 +1,40 @@
+# Einstellungen für das Kopieren und Anlegen von Seiten
+##################
+TCEMAIN.table.pages {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 1
+}
+
+TCEMAIN.table.tt_content {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 1
+}
+
+# Setzen der Seitenbaumrechte per TypoScript
+TCEMAIN {
+    # Besitzergruppe festlegen
+    permissions.groupid = 1
+}
+
+# Einstellungen für Content
+TCEFORM.tt_content.space_before_class {
+    removeItems = extra-small,small,extra-large
+}
+TCEFORM.tt_content.space_after_class {
+    removeItems = extra-small,small,extra-large
+}
+
+mod.SHARED {
+    defaultLanguageLabel = Deutsch
+    defaultLanguageFlag = de
+}
+
+mod.wizards.newContentElement.wizardItems.ffpitheme {
+    header = Freifunk Pinneberg
+}
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/ContentElements/" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/BackendLayouts/" extensions="tsconfig">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/Plugins/" extensions="tsconfig">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ffpi_theme/Configuration/PageTSconfig/RTE.tsconfig">

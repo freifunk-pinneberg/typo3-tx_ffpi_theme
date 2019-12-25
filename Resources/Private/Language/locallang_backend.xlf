@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file sourcelanguage="en" datatype="plaintext" original="messages" date="2018-12-06T21:59:00Z" product-name="ffpi_theme">
+        <header/>
+        <body>
+            <trans-unit id="stage.wizard.title">
+                <source>Stage</source>
+            </trans-unit>
+            <trans-unit id="stage.wizard.description">
+                <source>Text and Image</source>
+            </trans-unit>
+            <trans-unit id="video_teaser.wizard.title">
+                <source>Video Teaser</source>
+            </trans-unit>
+            <trans-unit id="video_teaser.wizard.description">
+                <source>Video and Text</source>
+            </trans-unit>
+            <trans-unit id="picture_teaser.wizard.title">
+                <source>Picture Teaser</source>
+            </trans-unit>
+            <trans-unit id="picture_teaser.wizard.description">
+                <source>Picture Teaser</source>
+            </trans-unit>
+            <trans-unit id="teaser_cards.wizard.title">
+                <source>Teaser Cards</source>
+            </trans-unit>
+            <trans-unit id="teaser_cards.wizard.description">
+                <source>Multiple Teaser in Card layout</source>
+            </trans-unit>
+            <trans-unit id="grid_cards.wizard.title">
+                <source>Grid Cards</source>
+            </trans-unit>
+            <trans-unit id="grid_cards.wizard.description">
+                <source>Multiple cards in 2xN Grid with icons</source>
+            </trans-unit>
+            <trans-unit id="news_menu.wizard.title">
+                <source>News Menu</source>
+            </trans-unit>
+            <trans-unit id="news_menu.wizard.description">
+                <source>Menu of subpages with date and text preview</source>
+            </trans-unit>
+            <trans-unit id="participate.wizard.title">
+                <source>Participate</source>
+            </trans-unit>
+            <trans-unit id="participate.wizard.description">
+                <source>Teaser from top to bottom, connected with arrows</source>
+            </trans-unit>
+            <trans-unit id="subpage_menu.wizard.title">
+                <source>Subpage Menu</source>
+            </trans-unit>
+            <trans-unit id="subpage_menu.wizard.description">
+                <source>Menu of subpages with text preview</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
