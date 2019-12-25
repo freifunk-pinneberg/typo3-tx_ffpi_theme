@@ -26,6 +26,7 @@ $EM_CONF[$_EXTKEY] = array(
             'ffpi_nodecounter' => '',
             'ffpi_node_updates' => '',
             'rte_ckeditor_image' => '',
+            'tx_seo' => ''
         ),
     ),
 );
