@@ -1,5 +1,5 @@
-### Freifunk Pinneberg Theme ###
-This Plugin brings the Design to http://pinneberg.freifunk.net
+# Freifunk Pinneberg Theme #
+This Plugin brings the Design to https://pinneberg.freifunk.net
 
 ## License ##
 * The Code is licensed under the GPLv3
