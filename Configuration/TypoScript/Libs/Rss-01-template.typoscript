@@ -39,7 +39,7 @@ temp.rssTemplate {
     10 {
         # template einbinden
         template = FILE
-        template.file = EXT:ffpi_theme/Resources/Private/Templates/rss.xml
+        template.file = EXT:ffpi_theme/Resources/Private/Templates/Page/RSS.xml
 
         marks {
             RSS_title = TEXT
@@ -63,7 +63,7 @@ temp.rssTemplate {
             RSS_image_url.insertData = 1
 
             RSS_image_link = TEXT
-            RSS_image_link.value = {getIndpEnv:TYPO3_SITE_URL}index.php?type={register:type}
+            RSS_image_link.value = {getIndpEnv:TYPO3_SITE_URL}news/?type={register:type}
             RSS_image_link.insertData = 1
 
             RSS_image_width = TEXT
