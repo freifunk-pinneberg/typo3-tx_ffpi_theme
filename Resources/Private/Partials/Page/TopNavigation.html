@@ -8,10 +8,10 @@
         <f:for as="item" each="{mainNavigation}" iteration="iteration">
             <f:if condition="{item.active}">
                 <f:then>
-                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active" target="{item.target}">{item.title}</a></li>
                 </f:then>
                 <f:else>
-                    <li id="p{item.data.uid}"><a href="{item.link}">{item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" target="{item.target}">{item.title}</a></li>
                 </f:else>
             </f:if>
         </f:for>
@@ -27,10 +27,10 @@
             </f:variable>
             <f:if condition="{item.active}">
                 <f:then>
-                    <li id="p{item.data.uid}"><a href="{item.link}" class="active">{iconHtml->f:format.raw()} {item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="active" target="{item.target}">{iconHtml->f:format.raw()} {item.title}</a></li>
                 </f:then>
                 <f:else>
-                    <li id="p{item.data.uid}"><a href="{item.link}">{iconHtml->f:format.raw()} {item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" target="{item.target}">{iconHtml->f:format.raw()} {item.title}</a></li>
                 </f:else>
             </f:if>
         </f:for>

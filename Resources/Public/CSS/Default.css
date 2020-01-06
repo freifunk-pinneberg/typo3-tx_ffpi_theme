@@ -81,6 +81,14 @@ a:link.button.light, a:visited.button.light, .button.light {
 a.button.light:hover {
     box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
 }
+a[target="_blank"] {
+    background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/External.svg");
+    background-position: center right;
+    background-position-x: right 1px;
+    background-repeat: no-repeat;
+    padding-right: 16px;
+    background-size: 12px 12px;
+}
 
 /* Fonts */
 html, body, p {
@@ -839,7 +847,7 @@ footer.footer .language {
     padding-bottom: 5px;
 }
 
-.github-button, .github-button:visited {
+.github-button, .github-button:visited, a:link.github-button, a:link:visited.github-button a:visited.github-button {
     display: inline-block;
     position: relative;
     height: 50px;
