@@ -8,10 +8,8 @@ page.bodyTagCObject = HTML
 page.bodyTagCObject.value.field = pid
 page.bodyTagCObject.value.wrap = <body id="p|">
 
-## ------- base URL --------------------
-config.baseURL = {$plugin.ffpi_theme.baseurl}
-
 config.noPageTitle = 2
+config.absRefPrefix = auto
 page.headerData.10 = TEXT
 page.headerData.10.field = title
 page.headerData.10.noTrimWrap = | <title>| - {$plugin.ffpi_theme.header.title}</title> |
@@ -19,15 +17,15 @@ page.headerData.10.insertData = 1
 
 ## ------ Facebook ---------------------
 page.headerData.20 = TEXT
-page.headerData.20.value = <meta property="og:image" content="{$plugin.ffpi_theme.baseurl}/typo3conf/ext/ffpi_theme/Resources/Public/Images/Facebook_preview.png" />
+page.headerData.20.dataWrap = <meta property="og:image" content="{site:base}/typo3conf/ext/ffpi_theme/Resources/Public/Images/Facebook_preview.png" />
 
 ## ------ RSS Feed ---------------------
 page.headerData.30 = TEXT
-page.headerData.30.value = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{$plugin.ffpi_theme.baseurl}/news/?type=200" />
+page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news/?type=200" />
 
 ## ------ Favicon
 page.headerData.40  = TEXT
-page.headerData.40.value = <link rel="icon" type="image/svg+xml" href="/typo3conf/ext/ffpi_theme/Resources/Public/Images/Logo.svg" sizes="any">
+page.headerData.40.dataWrap = <link rel="icon" type="image/svg+xml" href="{site:base}/typo3conf/ext/ffpi_theme/Resources/Public/Images/Logo.svg" sizes="any">
 
 ## ------- Mobile ----------------------
 page.meta.viewport = width=device-width, initial-scale=1

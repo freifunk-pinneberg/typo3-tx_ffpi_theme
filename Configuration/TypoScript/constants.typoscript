@@ -24,7 +24,7 @@ plugin.ffpi_theme {
 
 
 [siteLanguage("twoLetterIsoCode") == "en"]
-    plugin.ffpi_theme.header.subtitle = Fre WiFi in the district of Pinneberg
+    plugin.ffpi_theme.header.subtitle = Free WiFi in the district of Pinneberg
 [condition]
 # Default
 plugin.ffpi_theme.baseurl = //pinneberg.freifunk.net

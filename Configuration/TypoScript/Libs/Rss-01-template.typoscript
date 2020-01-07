@@ -190,7 +190,7 @@ temp.rssTemplate {
                                     40 = TEXT
                                     40 {
                                         wrap = <pubDate>|</pubDate>
-                                        data = field:lastUpdated // field:tstamp // field:crdate
+                                        data = field:crdate
                                         date = r
                                         # output kosmetik
                                         append = TEXT
