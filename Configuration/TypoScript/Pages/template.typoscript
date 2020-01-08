@@ -10,6 +10,11 @@ page.bodyTagCObject.value.wrap = <body id="p|">
 
 config.noPageTitle = 2
 config.absRefPrefix = auto
+
+temp.baseUrl = TEXT
+temp.baseUrl.value.dataWrap = //{site:base}
+config.baseUrl < temp.baseUrl
+
 page.headerData.10 = TEXT
 page.headerData.10.field = title
 page.headerData.10.noTrimWrap = | <title>| - {$plugin.ffpi_theme.header.title}</title> |
