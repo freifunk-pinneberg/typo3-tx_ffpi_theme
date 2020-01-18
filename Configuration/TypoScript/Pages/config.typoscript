@@ -1,7 +1,14 @@
 ###################
-# HTTP Cache
+# Cache / Performance
 ###################
 config.sendCacheHeaders = 1
+config.cache_timeout = 7776000
+config.compressCss = 1
+config.concatenateCss = 1
+config.compressJs = 1
+config.concatenateJs = 1
+config.debug = 0
+
 
 ## -----------------------------------
 ## Sprache
