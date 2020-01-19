@@ -21,6 +21,9 @@ plugin.ffpi_theme {
     // cat=ffpi; type=string; label= Github Link
     footer.github.link = https://github.com/freifunk-pinneberg
 }
+plugin.tx_ffpinodeupdates_freifunkapifile {
+    persistence.storagePid = 113
+}
 
 
 [siteLanguage("twoLetterIsoCode") == "en"]
