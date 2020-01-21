@@ -700,6 +700,9 @@ div.ce-right .ce-gallery {
 div.ce-left .ce-gallery {
     float: left;
 }
+div.ce-gallery .ce-row {
+    display: inline-block;
+}
 
 blockquote {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
