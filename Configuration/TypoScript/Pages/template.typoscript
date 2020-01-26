@@ -20,17 +20,13 @@ page.headerData.10.field = title
 page.headerData.10.noTrimWrap = | <title>| - {$plugin.ffpi_theme.header.title}</title> |
 page.headerData.10.insertData = 1
 
-## ------ Facebook ---------------------
-page.headerData.20 = TEXT
-page.headerData.20.dataWrap = <meta property="og:image" content="{site:base}/typo3conf/ext/ffpi_theme/Resources/Public/Images/Facebook_preview.png" />
-
 ## ------ RSS Feed ---------------------
 page.headerData.30 = TEXT
 page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news/?type=200" />
 
 ## ------ Favicon
 page.headerData.40  = TEXT
-page.headerData.40.dataWrap = <link rel="icon" type="image/svg+xml" href="{site:base}/typo3conf/ext/ffpi_theme/Resources/Public/Images/Logo.svg" sizes="any">
+page.headerData.40.dataWrap = <link rel="icon" type="image/svg+xml" href="{site:base}/favicon.svg" sizes="any">
 
 ## ------- Mobile ----------------------
 page.meta.viewport = width=device-width, initial-scale=1

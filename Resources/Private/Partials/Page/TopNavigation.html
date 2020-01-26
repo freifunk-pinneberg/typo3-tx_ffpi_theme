@@ -7,17 +7,25 @@
     <ul class="main-navigation">
         <f:for as="item" each="{mainNavigation}" iteration="iteration">
             <f:if condition="{item.active}">
+                <f:then><f:variable name="class" value="active" /></f:then>
+                <f:else><f:variable name="class" value="" /></f:else>
+            </f:if>
+            <f:if condition="{item.target}">
                 <f:then>
-                    <li id="p{item.data.uid}"><a href="{item.link}" class="active" target="{item.target}">{item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="{class}" target="{item.target}">{item.title}</a></li>
                 </f:then>
                 <f:else>
-                    <li id="p{item.data.uid}"><a href="{item.link}" target="{item.target}">{item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="{class}">{item.title}</a></li>
                 </f:else>
             </f:if>
         </f:for>
     </ul>
     <ul class="icon-navigation">
         <f:for as="item" each="{iconNavigation}" iteration="iteration">
+            <f:if condition="{item.active}">
+                <f:then><f:variable name="class" value="active" /></f:then>
+                <f:else><f:variable name="class" value="" /></f:else>
+            </f:if>
             <f:variable name="iconHtml">
                 <f:if condition="{item.data.tx_ffpi_theme_icon}">
                     <f:then>
@@ -25,12 +33,12 @@
                     </f:then>
                 </f:if>
             </f:variable>
-            <f:if condition="{item.active}">
+            <f:if condition="{item.target}">
                 <f:then>
-                    <li id="p{item.data.uid}"><a href="{item.link}" class="active" target="{item.target}">{iconHtml->f:format.raw()} {item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="{class}" target="{item.target}">{iconHtml->f:format.raw()} {item.title}</a></li>
                 </f:then>
                 <f:else>
-                    <li id="p{item.data.uid}"><a href="{item.link}" target="{item.target}">{iconHtml->f:format.raw()} {item.title}</a></li>
+                    <li id="p{item.data.uid}"><a href="{item.link}" class="{class}">{iconHtml->f:format.raw()} {item.title}</a></li>
                 </f:else>
             </f:if>
         </f:for>
