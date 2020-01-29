@@ -27,8 +27,14 @@ page.10 {
 }
 
 ### --------- CSS -----------
-page.includeCSS.main = EXT:ffpi_theme/Resources/Public/CSS/Default.css
-page.includeCSS.main.media = all
+page.includeCSS {
+    file1 = EXT:ffpi_theme/Resources/Public/CSS/Default.css
+    file1.title = Default
+    file1.media = all
+    file2 = EXT:ffpi_theme/Resources/Public/CSS/DarkMode.css
+    file2.title = Dark Mode
+    file2.media = prefers-color-scheme: dark
+}
 
 ###################
 # Content Elemente
