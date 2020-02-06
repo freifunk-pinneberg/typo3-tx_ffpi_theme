@@ -33,7 +33,7 @@ page.includeCSS {
     file1.media = all
     file2 = EXT:ffpi_theme/Resources/Public/CSS/DarkMode.css
     file2.title = Dark Mode
-    file2.media = prefers-color-scheme: dark
+    file2.media = (prefers-color-scheme: dark)
 }
 
 ###################
