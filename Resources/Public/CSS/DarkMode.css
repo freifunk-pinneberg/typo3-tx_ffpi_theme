@@ -49,7 +49,7 @@ a, a:link, a:link:visited, a:visited {
 h1, h2, h3, h4, h5, h6 {
     color: #ffb400;
 }
-blockquote {
+blockquote, code {
     background-color: #666666;
 }
 select, input, textarea, select:invalid, input:invalid, textarea:invalid {

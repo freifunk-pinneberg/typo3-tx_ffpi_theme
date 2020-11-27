@@ -704,7 +704,7 @@ div.ce-gallery .ce-row {
     display: inline-block;
 }
 
-blockquote {
+blockquote, code {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
     background-color: #FFFFFF;
     font-style: italic;
@@ -714,6 +714,16 @@ blockquote {
     border-left-width: 4px;
     border-left-style: solid;
     border-color: #dc0067;
+    display: block;
+}
+blockquote {
+    overflow-wrap: break-word;
+}
+code {
+    overflow-x: auto;
+    font-family: Hack, "Roboto Mono", Roboto, monospace !important;
+    font-style: normal;
+    white-space: nowrap;
 }
 
 .contentElement table {

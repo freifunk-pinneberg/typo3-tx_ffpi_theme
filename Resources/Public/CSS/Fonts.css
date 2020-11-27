@@ -147,3 +147,64 @@
     url('../Fonts/roboto-v20-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
     url('../Fonts/roboto-v20-latin-700italic.svg#Roboto') format('svg'); /* Legacy iOS */
 }
+
+/*!
+ *  Hack typeface https://github.com/source-foundry/Hack
+ *  License: https://github.com/source-foundry/Hack/blob/master/LICENSE.md
+ */
+/* FONT PATHS
+ * -------------------------- */
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-regular-subset.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-regular-subset.woff?sha=3114f1256') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-bold-subset.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-bold-subset.woff?sha=3114f1256') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-italic-subset.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-italic-subset.woff?sha=3114f1256') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-bolditalic-subset.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-bolditalic-subset.woff?sha=3114f1256') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-regular.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-regular.woff?sha=3114f1256') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-bold.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-bold.woff?sha=3114f1256') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-italic.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-italic.woff?sha=3114f1256') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('../Fonts/hack-bolditalic.woff2?sha=3114f1256') format('woff2'), url('../Fonts/hack-bolditalic.woff?sha=3114f1256') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
