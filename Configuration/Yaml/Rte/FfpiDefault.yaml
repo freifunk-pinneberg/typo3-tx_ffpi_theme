@@ -10,3 +10,7 @@ editor:
     removePlugins: null
     # Rechtschreibprüfung des Browser verwenden
     disableNativeSpellChecker: false
+    contentsCss: EXT:ffpi_theme/Resources/Public/CSS/rte.css
+    extraAllowedContent:
+      - blockquote
+      - code
