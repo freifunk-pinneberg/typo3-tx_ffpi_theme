@@ -38,16 +38,17 @@ renderables:
       -
         properties:
           options:
+            'Kostenloser Zufallsrouter (So lange vorrat reicht)': 'Kostenloser Zufallsrouter (So lange vorrat reicht)'
             'TP-LINK TL-WR841N - 10 €': 'TP-LINK TL-WR841N - 10 €'
-            'Ubiquiti Nano Station Loco m2 - 50 €': 'Ubiquiti Nano Station Loco m2 - 50 €'
-            'Ubiquiti Nano Station m2 - 80 €': 'Ubiquiti Nano Station m2 - 80 €'
-            'TP-LINK CPE 210 - 50 €': 'TP-LINK CPE 210 - 50 €'
-            'TP-LINK WDR4300 - 100 €': 'TP-LINK WDR4300 - 100 € (*EOL)'
-            #'Ubiquiti Unifi AC Mesh - 90 €': 'Ubiquiti Unifi AC Mesh - 90 € (*Vorbestellung)'
-            'TP-LINK MR3020 - 30 €': 'TP-LINK MR3020 - 30 €'
             'GL.iNet GL-AR750 - 50€': 'GL.iNet GL-AR750 - 50€'
-            'PC Engines APU.2D4 - 170€': 'PC Engines APU.2D4 - 170€'
-            'Futro S550 - 20€': 'Fujitsu Siemens Futro S550 - 20€ (*EOL)'
+            #'Ubiquiti Nano Station Loco m2 - 50 €': 'Ubiquiti Nano Station Loco m2 - 50 €'
+            #'Ubiquiti Nano Station m2 - 80 €': 'Ubiquiti Nano Station m2 - 80 €'
+            'TP-LINK CPE 210 - 50 €': 'TP-LINK CPE 210 - 50 €'
+            'TP-LINK WDR4300 - 100 €': 'TP-LINK WDR4300 - 100 €'
+            'Ubiquiti Unifi AC Mesh - 90 €': 'Ubiquiti Unifi AC Mesh - 90 € (*Vorbestellung)'
+            'TP-LINK MR3020 - 30 €': 'TP-LINK MR3020 - 30 €'
+            'PC Engines APU.2D4 - 170€': 'Offloader: PC Engines APU.2D4 - 170€'
+            'Futro S550 - 20€': 'Offloader: Fujitsu Siemens Futro S550 - 20€ (*EOL)'
           fluidAdditionalAttributes:
             required: required
           prependOptionLabel: 'Bitte wählen'
