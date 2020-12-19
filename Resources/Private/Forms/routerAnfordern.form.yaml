@@ -16,7 +16,7 @@ finishers:
       subject: Knoten-Anfrage
       recipientAddress: service@pinneberg.freifunk.net
       recipientName: ''
-      senderAddress: webseite@pinneberg.freifunk.net
+      senderAddress: '{email}'
       senderName: ''
       replyToAddress: '{email}'
       carbonCopyAddress: ''
@@ -29,11 +29,11 @@ finishers:
 renderables:
   -
     renderingOptions:
-      previousButtonLabel: 'Previous step'
-      nextButtonLabel: 'Neue Seite'
+      previousButtonLabel: 'Zurück'
+      nextButtonLabel: 'Weiter'
     type: Page
     identifier: page-1
-    label: Step
+    label: 'Router anfordern'
     renderables:
       -
         properties:
@@ -44,11 +44,11 @@ renderables:
             #'Ubiquiti Nano Station Loco m2 - 50 €': 'Ubiquiti Nano Station Loco m2 - 50 €'
             #'Ubiquiti Nano Station m2 - 80 €': 'Ubiquiti Nano Station m2 - 80 €'
             'TP-LINK CPE 210 - 50 €': 'TP-LINK CPE 210 - 50 €'
-            'TP-LINK WDR4300 - 100 €': 'TP-LINK WDR4300 - 100 €'
-            'Ubiquiti Unifi AC Mesh - 90 €': 'Ubiquiti Unifi AC Mesh - 90 € (*Vorbestellung)'
+            'TP-LINK WDR4300 - 100 €': 'TP-LINK WDR4300 - 100 € (¹EOL)'
+            #'Ubiquiti Unifi AC Mesh - 90 €': 'Ubiquiti Unifi AC Mesh - 90 € (²Vorbestellung)'
             'TP-LINK MR3020 - 30 €': 'TP-LINK MR3020 - 30 €'
             'PC Engines APU.2D4 - 170€': 'Offloader: PC Engines APU.2D4 - 170€'
-            'Futro S550 - 20€': 'Offloader: Fujitsu Siemens Futro S550 - 20€ (*EOL)'
+            'Futro S550 - 20€': 'Offloader: Fujitsu Siemens Futro S550 - 20€ (¹EOL)'
           fluidAdditionalAttributes:
             required: required
           prependOptionLabel: 'Bitte wählen'
@@ -60,7 +60,7 @@ renderables:
             identifier: NotEmpty
       -
         properties:
-          text: "*EOL: Router wird nicht mehr Produziert. Wir versuchen über Restbestände einen zu organisieren\n*Vorbestellung: Firmware ist noch nicht verfügbar aber in Arbeit, wir stellen dich auf eine Merkliste, oder geben dir den Router mit Original Firmware."
+          text: "¹EOL: Router wird nicht mehr Produziert. Wir versuchen über Restbestände einen zu organisieren\n²Vorbestellung: Firmware ist noch nicht verfügbar aber in Arbeit, wir stellen dich auf eine Merkliste, oder geben dir den Router mit Original Firmware."
         type: StaticText
         identifier: statictext-1
         label: ''
