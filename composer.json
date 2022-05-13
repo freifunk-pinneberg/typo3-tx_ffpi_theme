@@ -2,6 +2,8 @@
   "name": "ffpi/ffpi-theme",
   "description": "Theme for Freifunk Pinneberg",
   "homepage": "https://pinneberg.freifunk.net",
+  "license": "GPL-3.0",
+  "type": "typo3-cms-extension",
   "authors": [
     {
       "name": "Kevin Quiatkowski",
@@ -17,8 +19,6 @@
     "Pinneberg",
     "Theme"
   ],
-  "license": "GPL-3.0",
-  "type": "typo3-cms-extension",
   "replace": {
     "ffpi_theme": "self.version",
     "ffpi/ffpi-theme": "self.version"
@@ -36,6 +36,13 @@
   },
   "autoload-dev": {
     "psr-4": {
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web",
+      "extension-key": "ffpi_theme"
     }
   }
 }
