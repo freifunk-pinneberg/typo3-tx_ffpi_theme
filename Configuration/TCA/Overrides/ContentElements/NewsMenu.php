@@ -1,4 +1,5 @@
 <?php
+
 return [
     'name' => 'news_menu',
     'flexform' => false,

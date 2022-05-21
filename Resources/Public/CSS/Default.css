@@ -81,6 +81,7 @@ a:link.button.light, a:visited.button.light, .button.light {
 a.button.light:hover {
     box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
 }
+
 a[target="_blank"] {
     background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/External.svg");
     background-position: center right;
@@ -122,9 +123,11 @@ h4 {
 a:link {
     color: #009ee0;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 a:active, a:focus, a.active, a:visited.active, a:visited:active, a:visited:focus {
     color: #dc0067;
 }
@@ -134,6 +137,7 @@ fieldset {
     border: none;
     padding-left: 0;
 }
+
 fieldset > fieldset {
     padding-left: 15px;
     border: 0 solid #666666;
@@ -164,22 +168,27 @@ input, textarea, select {
     width: 100%;
     max-width: 450px;
 }
+
 select {
     height: 56px;
 }
+
 input:active, textarea:active, select:active, fieldset:active,
 input:focus, textarea:focus, select:focus, fieldset:focus {
     border-color: #009ee0;
 }
-input:invalid, textarea:invalid, select:invalid  {
+
+input:invalid, textarea:invalid, select:invalid {
     border-color: #dc0067;
     color: #dc0067;
 }
+
 input:invalid:active, textarea:invalid:active, select:invalid:active,
-input:invalid:focus, textarea:invalid:focus, select:invalid:focus  {
+input:invalid:focus, textarea:invalid:focus, select:invalid:focus {
     border-color: #ffb400;
     color: #ffb400;
 }
+
 input:required:valid, textarea:required:valid, select:required:valid {
     border-color: #0d7813;
 }
@@ -187,11 +196,13 @@ input:required:valid, textarea:required:valid, select:required:valid {
 input {
     height: 50px;
 }
-input[type=checkbox]{
+
+input[type=checkbox] {
     width: initial;
     height: initial;
     margin: 10px;
 }
+
 .control-label {
     display: inline-block;
     padding-top: 15px;
@@ -410,6 +421,7 @@ nav ul {
 .menu-toggle {
     display: none;
 }
+
 .menu-toggle--label {
     display: none;
 }
@@ -477,18 +489,23 @@ article.content {
 .contentElement.space-top-large:not(:first-child) {
     padding-top: 75px;
 }
+
 .contentElement.space-bottom-large:not(:last-child) {
     padding-bottom: 75px;
 }
+
 .contentElement.space-top-medium:not(:first-child) {
     padding-top: 25px;
 }
+
 .contentElement.space-bottom-medium:not(:last-child) {
     padding-bottom: 25px;
 }
+
 .contentElement.space-top-none:not(:first-child) {
     padding-top: 0;
 }
+
 .contentElement.space-bottom-none:not(:last-child) {
     padding-bottom: 0;
 }
@@ -599,6 +616,7 @@ article.content {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
+
 .grid-cards .card .card-content {
     display: block;
     padding: 30px;
@@ -619,6 +637,7 @@ article.content {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .participate .card .card-image {
     display: flex;
     flex-basis: 200px;
@@ -631,13 +650,16 @@ article.content {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
 }
+
 .participate .card .card-image img {
     margin: auto;
 }
+
 .participate .card .card-content {
     display: block;
     padding: 30px;
 }
+
 .participate .card-arrow img {
     max-height: 80px;
     margin-left: auto;
@@ -700,6 +722,7 @@ div.ce-right .ce-gallery {
 div.ce-left .ce-gallery {
     float: left;
 }
+
 div.ce-gallery .ce-row {
     display: inline-block;
 }
@@ -716,9 +739,11 @@ blockquote, code {
     border-color: #dc0067;
     display: block;
 }
+
 blockquote {
     overflow-wrap: break-word;
 }
+
 code {
     overflow-x: auto;
     font-family: Hack, "Roboto Mono", Roboto, monospace !important;
@@ -733,6 +758,7 @@ code {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .contentElement th {
     background-color: #ebebeb;
     border: 1px solid #ebebeb;
@@ -740,6 +766,7 @@ code {
     color: #dc0067;
     padding: 5px;
 }
+
 .contentElement td {
     border: 1px solid #ebebeb;
     border-collapse: collapse;
@@ -752,6 +779,7 @@ code {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .gateway {
     background-color: #ffffff;
     padding: 30px;
@@ -764,6 +792,7 @@ code {
     float: left;
     width: 50%;
 }
+
 .gateway dd:after {
     content: "";
     display: block;
@@ -773,6 +802,7 @@ code {
 .gateway .unknown {
     color: orange;
 }
+
 .gateway .error {
     color: red;
 }
@@ -971,11 +1001,13 @@ footer.footer .language {
     white-space: nowrap;
     color: #dc0067;
 }
+
 .language-menu li:hover {
     color: #ffffff;
     background-color: #dc0067;
     box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
 }
+
 .language-menu li:hover a {
     color: #ffffff;
 }
@@ -989,12 +1021,12 @@ footer.footer .language {
 }
 
 
-
 /* Mobile */
 @media only screen and (max-width: 1217px) {
     .o-footer__inner {
         flex-wrap: wrap;
     }
+
     footer.footer .logo {
         display: none;
     }
@@ -1031,19 +1063,24 @@ footer.footer .language {
     div.tx-ffpi-nodecounter {
         display: none;
     }
+
     .main-navigation, .icon-navigation {
         flex-wrap: wrap;
         flex-basis: 50%;
     }
+
     .main-navigation li, .icon-navigation li {
         flex-basis: 100%;
     }
+
     .main-navigation::after {
         display: none;
     }
+
     #top-nav {
         display: none;
     }
+
     .menu-toggle:checked ~ #top-nav {
         display: flex;
         background-color: #FFFFFF;
@@ -1055,6 +1092,7 @@ footer.footer .language {
         padding-right: 20px;
         padding-left: 20px;
     }
+
     .menu-toggle--label {
         display: block;
         background-color: #dc0067;
@@ -1069,9 +1107,11 @@ footer.footer .language {
         cursor: pointer;
         z-index: 999;
     }
+
     .menu-toggle {
         display: none;
     }
+
     .menu-toggle img {
         margin: auto;
     }
@@ -1107,7 +1147,7 @@ footer.footer .language {
     }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px) {
     .o-header__logo {
         font-size: 12px;
     }
@@ -1119,7 +1159,8 @@ footer.footer .language {
         font-weight: bold;
     }
 }
-@media only screen and (max-width: 335px){
+
+@media only screen and (max-width: 335px) {
     .o-header__logo .logo {
         display: none;
     }

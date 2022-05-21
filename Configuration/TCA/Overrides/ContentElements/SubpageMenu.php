@@ -1,4 +1,5 @@
 <?php
+
 return [
     'name' => 'subpage_menu',
     'flexform' => false,

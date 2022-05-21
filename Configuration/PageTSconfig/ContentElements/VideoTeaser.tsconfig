@@ -1,13 +1,14 @@
 mod.wizards.newContentElement.wizardItems.ffpitheme {
-    elements {
-        ffpitheme_video_teaser {
-            iconIdentifier = ffpitheme_video_teaser
-            title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:video_teaser.wizard.title
-            description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:video_teaser.wizard.description
-            tt_content_defValues {
-                CType = ffpitheme_video_teaser
-            }
-        }
+  elements {
+    ffpitheme_video_teaser {
+      iconIdentifier = ffpitheme_video_teaser
+      title = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:video_teaser.wizard.title
+      description = LLL:EXT:ffpi_theme/Resources/Private/Language/locallang_backend.xlf:video_teaser.wizard.description
+      tt_content_defValues {
+        CType = ffpitheme_video_teaser
+      }
     }
-    show := addToList(ffpitheme_video_teaser)
+  }
+
+  show := addToList(ffpitheme_video_teaser)
 }

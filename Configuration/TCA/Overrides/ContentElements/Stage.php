@@ -1,4 +1,5 @@
 <?php
+
 return [
     'name' => 'stage',
     'flexform' => true,

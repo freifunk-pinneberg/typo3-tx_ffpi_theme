@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file sourcelanguage="en" targetlanguage="de" datatype="plaintext" original="messages" date="2018-12-06T21:59:00Z" product-name="ffpi_theme">
-        <header/>
-        <body>
-            <trans-unit id="stage.wizard.title">
-                <target>Stage</target>
-            </trans-unit>
-            <trans-unit id="stage.wizard.description">
-                <target>Text und Bild</target>
-            </trans-unit>
-            <trans-unit id="video_teaser.wizard.title">
-                <target>Video Teaser</target>
-            </trans-unit>
-            <trans-unit id="video_teaser.wizard.description">
-                <target>Video und Text</target>
-            </trans-unit>
-            <trans-unit id="picture_teaser.wizard.title">
-                <target>Bild Teaser</target>
-            </trans-unit>
-            <trans-unit id="picture_teaser.wizard.description">
-                <target>Teaser mit einem Bild</target>
-            </trans-unit>
-            <trans-unit id="teaser_cards.wizard.title">
-                <target>Teaser Karten</target>
-            </trans-unit>
-            <trans-unit id="teaser_cards.wizard.description">
-                <target>Mehrere Teaser im karten layout</target>
-            </trans-unit>
-            <trans-unit id="grid_cards.wizard.title">
-                <target>Grid Karten</target>
-            </trans-unit>
-            <trans-unit id="grid_cards.wizard.description">
-                <target>Mehrere Karten im 2xN Grid mit Icons/Grafiken</target>
-            </trans-unit>
-            <trans-unit id="news_menu.wizard.title">
-                <target>News Menü</target>
-            </trans-unit>
-            <trans-unit id="news_menu.wizard.description">
-                <target>Menü von Unterseiten mit Datum und Textvorschau</target>
-            </trans-unit>
-            <trans-unit id="participate.wizard.title">
-                <target>Mitmachen</target>
-            </trans-unit>
-            <trans-unit id="participate.wizard.description">
-                <target>Teaser von oben nach unten, verbunden mit Pfeilen</target>
-            </trans-unit>
-            <trans-unit id="subpage_menu.wizard.title">
-                <target>Subpage Menü</target>
-            </trans-unit>
-            <trans-unit id="subpage_menu.wizard.description">
-                <target>Menü von Unterseiten mit Textvorschau</target>
-            </trans-unit>
-        </body>
-    </file>
+	<file sourcelanguage="en" targetlanguage="de" datatype="plaintext" original="messages" date="2018-12-06T21:59:00Z" product-name="ffpi_theme">
+		<header />
+		<body>
+			<trans-unit id="stage.wizard.title">
+				<target>Stage</target>
+			</trans-unit>
+			<trans-unit id="stage.wizard.description">
+				<target>Text und Bild</target>
+			</trans-unit>
+			<trans-unit id="video_teaser.wizard.title">
+				<target>Video Teaser</target>
+			</trans-unit>
+			<trans-unit id="video_teaser.wizard.description">
+				<target>Video und Text</target>
+			</trans-unit>
+			<trans-unit id="picture_teaser.wizard.title">
+				<target>Bild Teaser</target>
+			</trans-unit>
+			<trans-unit id="picture_teaser.wizard.description">
+				<target>Teaser mit einem Bild</target>
+			</trans-unit>
+			<trans-unit id="teaser_cards.wizard.title">
+				<target>Teaser Karten</target>
+			</trans-unit>
+			<trans-unit id="teaser_cards.wizard.description">
+				<target>Mehrere Teaser im karten layout</target>
+			</trans-unit>
+			<trans-unit id="grid_cards.wizard.title">
+				<target>Grid Karten</target>
+			</trans-unit>
+			<trans-unit id="grid_cards.wizard.description">
+				<target>Mehrere Karten im 2xN Grid mit Icons/Grafiken</target>
+			</trans-unit>
+			<trans-unit id="news_menu.wizard.title">
+				<target>News Menü</target>
+			</trans-unit>
+			<trans-unit id="news_menu.wizard.description">
+				<target>Menü von Unterseiten mit Datum und Textvorschau</target>
+			</trans-unit>
+			<trans-unit id="participate.wizard.title">
+				<target>Mitmachen</target>
+			</trans-unit>
+			<trans-unit id="participate.wizard.description">
+				<target>Teaser von oben nach unten, verbunden mit Pfeilen</target>
+			</trans-unit>
+			<trans-unit id="subpage_menu.wizard.title">
+				<target>Subpage Menü</target>
+			</trans-unit>
+			<trans-unit id="subpage_menu.wizard.description">
+				<target>Menü von Unterseiten mit Textvorschau</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

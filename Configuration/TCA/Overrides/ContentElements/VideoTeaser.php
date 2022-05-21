@@ -1,4 +1,5 @@
 <?php
+
 return [
     'name' => 'video_teaser',
     'flexform' => false,

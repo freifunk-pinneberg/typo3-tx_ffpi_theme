@@ -25,7 +25,7 @@ page.headerData.30 = TEXT
 page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news/?type=200" />
 
 ## ------ Favicon
-page.headerData.40  = TEXT
+page.headerData.40 = TEXT
 page.headerData.40.dataWrap = <link rel="icon" type="image/svg+xml" href="{site:base}/favicon.svg" sizes="any">
 
 ## ------- Mobile ----------------------

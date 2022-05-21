@@ -1,4 +1,5 @@
 <?php
+
 return [
     'name' => 'grid_cards',
     'flexform' => false,
@@ -36,6 +37,6 @@ return [
                         ]
                     ]
                 ]
-            ]
         ]
-    ];
+    ]
+];

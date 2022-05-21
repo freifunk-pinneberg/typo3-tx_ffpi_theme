@@ -1,4 +1,5 @@
 <?php
+
 return [
     'name' => 'picture_teaser',
     'flexform' => true,

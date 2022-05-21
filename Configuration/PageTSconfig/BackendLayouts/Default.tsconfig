@@ -1,22 +1,23 @@
 mod.web_layout.BackendLayouts {
-    Default {
-        title = Default
-        config {
-            backend_layout {
-                colCount = 1
-                rowCount = 1
-                rows {
-                    1 {
-                        columns {
-                            1 {
-                                name = Content
-                                colPos = 1
-                            }
-                        }
-                    }
-                }
+  Default {
+    title = Default
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Content
+                colPos = 1
+              }
             }
+          }
         }
-        icon = EXT:ffpi_theme/ext_icon.svg
+      }
     }
+
+    icon = EXT:ffpi_theme/ext_icon.svg
+  }
 }

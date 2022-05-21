@@ -1,12 +1,12 @@
 plugin.tx_seo.config {
-    xmlSitemap {
-        sitemaps {
-            pages {
-                config {
-                    excludedDoktypes = 200, 202001192011
-                    additionalWhere = AND no_index = 0
-                }
-            }
+  xmlSitemap {
+    sitemaps {
+      pages {
+        config {
+          excludedDoktypes = 200, 202001192011
+          additionalWhere = AND no_index = 0
         }
+      }
     }
+  }
 }

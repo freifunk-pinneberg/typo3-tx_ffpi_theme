@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file sourcelanguage="en" datatype="plaintext" original="messages" date="2020-01-26T20:13:00Z" product-name="ffpi_theme">
-        <header/>
-        <body>
-            <trans-unit id="news_menu.read_more">
-                <source>Read more</source>
-            </trans-unit>
-        </body>
-    </file>
+	<file sourcelanguage="en" datatype="plaintext" original="messages" date="2020-01-26T20:13:00Z" product-name="ffpi_theme">
+		<header />
+		<body>
+			<trans-unit id="news_menu.read_more">
+				<source>Read more</source>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

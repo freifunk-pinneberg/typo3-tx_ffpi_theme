@@ -1,34 +1,37 @@
 page.10.dataProcessing {
-    10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    10 {
-        special = directory
-        special.value = {$plugin.ffpi_theme.mainnavigation.pid}
-        levels = 1
-        expandAll = 1
-        includeSpacer = 1
-        as = mainNavigation
-    }
-    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    20 {
-        special = directory
-        special.value = {$plugin.ffpi_theme.iconnavigation.pid}
-        levels = 1
-        expandAll = 1
-        includeSpacer = 1
-        as = iconNavigation
-    }
-    30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-    30 {
-        special = directory
-        special.value = {$plugin.ffpi_theme.footernavigation.pid}
-        levels = 3
-        expandAll = 1
-        includeSpacer = 1
-        as = footerNavigation
-    }
-    40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
-    40 {
-        languages = auto
-        as = languageNavigation
-    }
+  10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+  10 {
+    special = directory
+    special.value = {$plugin.ffpi_theme.mainnavigation.pid}
+    levels = 1
+    expandAll = 1
+    includeSpacer = 1
+    as = mainNavigation
+  }
+
+  20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+  20 {
+    special = directory
+    special.value = {$plugin.ffpi_theme.iconnavigation.pid}
+    levels = 1
+    expandAll = 1
+    includeSpacer = 1
+    as = iconNavigation
+  }
+
+  30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+  30 {
+    special = directory
+    special.value = {$plugin.ffpi_theme.footernavigation.pid}
+    levels = 3
+    expandAll = 1
+    includeSpacer = 1
+    as = footerNavigation
+  }
+
+  40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+  40 {
+    languages = auto
+    as = languageNavigation
+  }
 }

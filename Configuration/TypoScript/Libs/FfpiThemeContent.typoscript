@@ -1,17 +1,18 @@
 lib.ffpiThemeContent = FLUIDTEMPLATE
 lib.ffpiThemeContent {
-    templateName = Default
-    templateRootPaths {
-        0 = EXT:ffpi_theme/Resources/Private/Templates/
-        1 = {$plugin.ffpi_theme.templateRootPath}
-    }
-    partialRootPaths {
-        0 = EXT:ffpi_theme/Resources/Private/Partials/
-        1 = {$plugin.ffpi_theme.partialRootPath}
-    }
+  templateName = Default
+  templateRootPaths {
+    0 = EXT:ffpi_theme/Resources/Private/Templates/
+    1 = {$plugin.ffpi_theme.templateRootPath}
+  }
 
-    layoutRootPaths {
-        0 = EXT:ffpi_theme/Resources/Private/Layouts/
-        1 = {$plugin.ffpi_theme.layoutRootPath}
-    }
+  partialRootPaths {
+    0 = EXT:ffpi_theme/Resources/Private/Partials/
+    1 = {$plugin.ffpi_theme.partialRootPath}
+  }
+
+  layoutRootPaths {
+    0 = EXT:ffpi_theme/Resources/Private/Layouts/
+    1 = {$plugin.ffpi_theme.layoutRootPath}
+  }
 }

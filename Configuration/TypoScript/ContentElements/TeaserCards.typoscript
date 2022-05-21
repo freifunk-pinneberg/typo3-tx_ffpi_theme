@@ -1,19 +1,19 @@
 tt_content {
-    ffpitheme_teaser_cards < lib.ffpiThemeContent
-    ffpitheme_teaser_cards {
-        templateName = Content/TeaserCards
-        dataProcessing {
-            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-            10 {
-                references {
-                    fieldName = media
-                }
-
-                as = media
-            }
-
-            # Make FlexForm available in {settings} and tt_content.* in {data}
-            40 = FFPI\FfpiTheme\DataProcessor\FlexFormProcessor
+  ffpitheme_teaser_cards < lib.ffpiThemeContent
+  ffpitheme_teaser_cards {
+    templateName = Content/TeaserCards
+    dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      10 {
+        references {
+          fieldName = media
         }
+
+        as = media
+      }
+
+      # Make FlexForm available in {settings} and tt_content.* in {data}
+      40 = FFPI\FfpiTheme\DataProcessor\FlexFormProcessor
     }
+  }
 }

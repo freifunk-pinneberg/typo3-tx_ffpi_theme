@@ -1,14 +1,15 @@
 plugin.tx_form {
-    settings {
-        yamlConfigurations {
-            121 = EXT:ffpi_theme/Configuration/Yaml/Form/FormConfig.yaml
-        }
+  settings {
+    yamlConfigurations {
+      121 = EXT:ffpi_theme/Configuration/Yaml/Form/FormConfig.yaml
     }
+  }
 }
+
 module.tx_form {
-    settings {
-        yamlConfigurations {
-            121 = EXT:ffpi_theme/Configuration/Yaml/Form/FormConfig.yaml
-        }
+  settings {
+    yamlConfigurations {
+      121 = EXT:ffpi_theme/Configuration/Yaml/Form/FormConfig.yaml
     }
+  }
 }

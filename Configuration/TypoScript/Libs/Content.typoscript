@@ -1,17 +1,17 @@
 lib.content = CONTENT
 lib.content.table = tt_content
 lib.content.select {
-    # "sorting" is a column from the tt_content table and
-    # keeps track of the sorting order which is given in the backend
-    orderBy = sorting
-    languageField = sys_language_uid
-    # header column
-    where.field = colPos
-    where.wrap = colPos = |
+  # "sorting" is a column from the tt_content table and
+  # keeps track of the sorting order which is given in the backend
+  orderBy = sorting
+  languageField = sys_language_uid
+  # header column
+  where.field = colPos
+  where.wrap = colPos = |
 }
 
 lib.contentElement {
-    templateRootPaths.200 = EXT:ffpi_theme/Resources/Private/Templates/Content/
-    partialRootPaths.200 = EXT:ffpi_theme/Resources/Private/Partials/Content/
-    layoutRootPaths.200 = EXT:ffpi_theme/Resources/Private/Layouts/Content/
+  templateRootPaths.200 = EXT:ffpi_theme/Resources/Private/Templates/Content/
+  partialRootPaths.200 = EXT:ffpi_theme/Resources/Private/Partials/Content/
+  layoutRootPaths.200 = EXT:ffpi_theme/Resources/Private/Layouts/Content/
 }
