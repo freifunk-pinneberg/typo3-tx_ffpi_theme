@@ -29,16 +29,18 @@ plugin.tx_ffpinodeupdates_freifunkapifile {
 
 [siteLanguage("twoLetterIsoCode") == "en"]
   plugin.ffpi_theme.header.subtitle = Free WiFi in the district of Pinneberg
-[condition]
+[end]
   # Default
   plugin.ffpi_theme.baseurl = //pinneberg.freifunk.net
-[globalString =  IENV:HTTP_HOST = www.ffpi]
+[request.getNormalizedParams().getHttpHost() == 'www.ffpi']
   #Freifunk Intern
   plugin.ffpi_theme.baseurl = //www.ffpi
-[globalString =  IENV:HTTP_HOST = pinneberg.freifunk.net.local]
+[end]
+[request.getNormalizedParams().getHttpHost() == 'pinneberg.freifunk.net.local']
   #Development
   plugin.ffpi_theme.baseurl = //pinneberg.freifunk.net.local/
-[globalString =  IENV:HTTP_HOST = www.freifunk-pinneberg.de]
+[end]
+[request.getNormalizedParams().getHttpHost() == 'www.freifunk-pinneberg.de']
   #Fallback Domain
   plugin.ffpi_theme.baseurl = //www.freifunk-pinneberg.de
-[global]
+[end]
