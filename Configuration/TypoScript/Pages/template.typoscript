@@ -28,6 +28,10 @@ page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" t
 page.headerData.40 = TEXT
 page.headerData.40.dataWrap = <link rel="icon" type="image/svg+xml" href="{site:base}/favicon.svg" sizes="any">
 
+## ------- Mastodon
+page.headerData.50 = TEXT
+page.headerData.50.dataWrap = <link rel="me" href="https://norden.social/@FreifunkPI" />
+
 ## ------- Mobile ----------------------
 page.meta.viewport = width=device-width, initial-scale=1
 

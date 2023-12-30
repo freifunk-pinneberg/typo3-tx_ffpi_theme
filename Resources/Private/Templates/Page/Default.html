@@ -21,10 +21,10 @@
         <f:render partial="Page/FooterNavigation" arguments="{'footerNavigation': footerNavigation}"/>
     </div>
     <div class="language">
-        <f:link.typolink parameter="{ffpi_theme_footer_github_link}" class="github-button">
+        <a href="{ffpi_theme_footer_github_link}" class="github-button" rel="me">
             <f:image src="EXT:ffpi_theme/Resources/Public/Images/Icons/Github.svg"/>
             GitHub
-        </f:link.typolink>
+        </a>
         <f:render partial="Page/LanguageNavigation" arguments="{'languageNavigation': languageNavigation}"/>
     </div>
 </f:section>
