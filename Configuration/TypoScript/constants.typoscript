@@ -27,8 +27,21 @@ plugin.tx_ffpinodeupdates_freifunkapifile {
 }
 
 
+// Englisch
 [siteLanguage("twoLetterIsoCode") == "en"]
   plugin.ffpi_theme.header.subtitle = Free WiFi in the district of Pinneberg
+[end]
+// Norwegisch
+[siteLanguage("twoLetterIsoCode") == "no"]
+  plugin.ffpi_theme.header.subtitle = Fri WiFi i Pinneberg-distriktet
+[end]
+// Dänisch
+[siteLanguage("twoLetterIsoCode") == "dk"]
+  plugin.ffpi_theme.header.subtitle = Fri WiFi i Pinneberg-distriktet
+[end]
+// Ukrainisch
+[siteLanguage("twoLetterIsoCode") == "uk"]
+  plugin.ffpi_theme.header.subtitle = Безкоштовний Wi-Fi у районі Піннеберг
 [end]
   # Default
   plugin.ffpi_theme.baseurl = //pinneberg.freifunk.net
