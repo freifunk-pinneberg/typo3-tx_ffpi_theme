@@ -1,7 +1,5 @@
 <?php
 
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-
 if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
@@ -30,10 +28,10 @@ $fields = [
 ];
 
 // Add new fields to pages:
-ExtensionManagementUtility::addTCAcolumns('pages', $fields);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $fields);
 
 // Make fields visible in the TCEforms:
-ExtensionManagementUtility::addToAllTCAtypes(
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages', // Table name
     '--palette--;Freifunk;tx_ffpi_theme', // Field list to add
     '1', // List of specific types to add the field list to. (If empty, all type entries are affected)
