@@ -474,6 +474,7 @@ nav ul {
 
 /* Body */
 article.content {
+    scroll-margin-top: 175px;
     display: block;
     width: 100%;
 }
