@@ -1,0 +1,5 @@
+plugin.tx_ffpifirmwarelist_firmwarelist {
+  persistence {
+    storagePid = 113
+  }
+}
