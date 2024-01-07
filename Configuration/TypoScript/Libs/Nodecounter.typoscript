@@ -5,5 +5,5 @@ plugin.tx_ffpinodecounter {
 
 lib.nodecounter = COA
 lib.nodecounter {
-  15 < tt_content.list.20.ffpinodecounter_counter
+  15 < tt_content.list.20.ffpinodecounter_cachedcounter
 }

@@ -22,7 +22,7 @@ page.headerData.10.insertData = 1
 
 ## ------ RSS Feed ---------------------
 page.headerData.30 = TEXT
-page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news/?type=200" />
+page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news.rss" />
 
 ## ------ Favicon
 page.headerData.40 = TEXT
@@ -63,10 +63,12 @@ page.jsFooterInline.10.value (
         counterXHR.send();
         counterXHR.onreadystatechange = function () {
             if ((this.readyState === 4) && (this.status === 200)) {
-                document.getElementById("ffpi-nodecounter").innerHtml = counterXHR.responseText;
+                document.getElementById("ffpi-nodecounter").innerHTML = counterXHR.responseText;
             }
         }
     };
+
+    counterUpdate();
 
     var interval = 1000 * 60;
     setInterval(counterUpdate, interval);
