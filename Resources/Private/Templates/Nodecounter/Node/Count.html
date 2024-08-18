@@ -7,11 +7,11 @@
 <f:section name="main">
     <div class="node-stats" id="ffpi-nodecounter">
         <div class="client-counter">
-            <span class="current">{counter.clients}</span>
+            <span class="current node-counter--clients">{counter.clients}</span>
             <span class="text"><f:translate key="tx_ffpinodecounter_domain_model_node.clients_online"/></span>
         </div>
         <div class="node-counter">
-            <span class="current">{counter.online}</span> <span class="text">/ {counter.total}
+            <span class="current node-counter--online">{counter.online}</span> <span class="text">/ <span class="node-counter--total">{counter.total}</span>
             <f:translate key="tx_ffpinodecounter_domain_model_node.nodes_online"/></span>
         </div>
     </div>

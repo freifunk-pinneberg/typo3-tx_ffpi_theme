@@ -1,5 +1,5 @@
 plugin.tx_ffpinodecounter {
-  settings.nodeListFile = http://meshviewer.pinneberg.freifunk.net/data/nodes.json
+  settings.nodeListFile = https://2.meshviewer.pinneberg.freifunk.net/data/nodes.json
   settings.nodeListExternal = TRUE
 }
 

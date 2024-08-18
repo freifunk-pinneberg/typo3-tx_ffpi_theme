@@ -58,18 +58,24 @@ page.jsFooterInline.10 = TEXT
 page.jsFooterInline.10.value (
 
     var counterUpdate = function() {
-        var counterXHR = new XMLHttpRequest();
-        counterXHR.open("GET", "/?type=2652017", true);
-        counterXHR.send();
-        counterXHR.onreadystatechange = function () {
-            if ((this.readyState === 4) && (this.status === 200)) {
-                document.getElementById("ffpi-nodecounter").innerHTML = counterXHR.responseText;
-            }
+    var counterXHR = new XMLHttpRequest();
+    counterXHR.open("GET", "/?type=2652017", true);
+    counterXHR.send();
+    counterXHR.onreadystatechange = function () {
+        if ((this.readyState === 4) && (this.status === 200)) {
+            // JSON parsen
+            var responseData = JSON.parse(counterXHR.responseText);
+
+            // HTML-Elemente aktualisieren
+            document.querySelector(".node-counter--clients").textContent = responseData.clients;
+            document.querySelector(".node-counter--online").textContent = responseData.online;
+            document.querySelector(".node-counter--total").textContent = responseData.total;
         }
-    };
+    }
+};
 
-    counterUpdate();
+counterUpdate();
 
-    var interval = 1000 * 60;
-    setInterval(counterUpdate, interval);
+var interval = 1000 * 60;
+setInterval(counterUpdate, interval);
 )
