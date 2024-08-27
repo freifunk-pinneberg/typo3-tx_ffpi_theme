@@ -6,6 +6,9 @@
 			<trans-unit id="news_menu.read_more">
 				<target>Læs mere</target>
 			</trans-unit>
+			<trans-unit id="video_teaser.play">
+				<target>Afspil video</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
