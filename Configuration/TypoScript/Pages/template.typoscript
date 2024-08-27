@@ -41,6 +41,7 @@ page.footerData.50.value (
 <!-- statistics -->
 <script type="text/javascript">
   var _paq = window._paq = window._paq || [];
+  _paq.push(['setRequestMethod', 'POST']);
   _paq.push(["setDomains", ["*.pinneberg.freifunk.net","*.forum.pinneberg.freifunk.net","*.nic.ffpi","*.www.ffpi"]]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
