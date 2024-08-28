@@ -24,8 +24,14 @@
 			<trans-unit id="teaser_cards.wizard.title">
 				<source>Teaser Cards</source>
 			</trans-unit>
+			<trans-unit id="wide_teaser_cards.wizard.title">
+				<source>Wide Teaser Cards</source>
+			</trans-unit>
 			<trans-unit id="teaser_cards.wizard.description">
-				<source>Multiple Teaser in Card layout</source>
+				<source>Multiple Teaser in Card layout (each 1/3 desktop width)</source>
+			</trans-unit>
+			<trans-unit id="wide_teaser_cards.wizard.description">
+				<source>Multiple Teaser in wide Card layout (each 1/2 desktop width)</source>
 			</trans-unit>
 			<trans-unit id="grid_cards.wizard.title">
 				<source>Grid Cards</source>
