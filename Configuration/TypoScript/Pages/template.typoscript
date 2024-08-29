@@ -40,9 +40,16 @@ page.footerData.50 = TEXT
 page.footerData.50.value (
 <!-- statistics -->
 <script type="text/javascript">
+  if ( window.matchMedia("(prefers-color-scheme:dark)").matches) {
+      colorScheme="dark";
+  } else {
+      colorScheme="light";
+  }
+
   var _paq = window._paq = window._paq || [];
   _paq.push(['setRequestMethod', 'POST']);
   _paq.push(["setDomains", ["*.pinneberg.freifunk.net","*.forum.pinneberg.freifunk.net","*.nic.ffpi","*.www.ffpi"]]);
+  _paq.push(['setCustomVariable', 1, "prefers-color-scheme", colorScheme, "visit"]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {

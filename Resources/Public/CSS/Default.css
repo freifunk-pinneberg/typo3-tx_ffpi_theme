@@ -645,6 +645,8 @@ article.content {
     min-width: 300px;
     border-radius: 5px;
     background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .file-cards .file-card-content {
