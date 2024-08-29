@@ -28,11 +28,11 @@ a, a:link, a:link:visited, a:visited {
     background-color: #666666;
 }
 
-.teaser-cards .card, .wide-teaser-cards .wide-card  {
+.teaser-cards .card, .wide-teaser-cards .wide-card, .file-cards .file-card  {
     background-color: #666666;
 }
 
-.teaser-cards .card-image, .wide-teaser-cards .wide-card-image {
+.teaser-cards .card-image, .wide-teaser-cards .wide-card-image, .file-cards .file-card-image {
     background-color: #333333;
 }
 
