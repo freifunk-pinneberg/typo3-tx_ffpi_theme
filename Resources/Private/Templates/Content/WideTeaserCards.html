@@ -7,7 +7,8 @@
         <f:for each="{media}" as="card">
             <section class="wide-card">
                 <div class="wide-card-image">
-                    <f:image image="{card}" />
+                    <f:variable name="srcset">{f:uri.image(image: card, width: '685c', height: '685c')} 1x, {f:uri.image(image: card, width: '1370c', height: '1370c')} 2x, {f:uri.image(image: card, width: '2055c', height: '2055c')} 3x</f:variable>
+                    <f:image image="{card}" width="685c" height="685c" additionalAttributes="{srcset: srcset}" />
                 </div>
                 <div class="wide-card-content">
                     <h3>{card.title}</h3>
