@@ -4,7 +4,14 @@
 <f:section name="Main">
 
     <f:if condition="{data.header}">
-        <h3>{data.header}</h3>
+        <f:switch expression="{data.header_layout}">
+            <f:case value="1"><h1>{data.header}</h1></f:case>
+            <f:case value="2"><h2>{data.header}</h2></f:case>
+            <f:case value="3"><h3>{data.header}</h3></f:case>
+            <f:case value="4"><h4>{data.header}</h4></f:case>
+            <f:case value="5"><h5>{data.header}</h5></f:case>
+            <f:defaultCase><h3>{data.header}</h3></f:defaultCase>
+        </f:switch>
     </f:if>
 
 </f:section>

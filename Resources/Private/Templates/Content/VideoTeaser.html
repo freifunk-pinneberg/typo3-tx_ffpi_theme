@@ -14,7 +14,14 @@
             </f:if>
         </div>
         <div class="flex-cell cell-2-col">
-            <h1>{data.header}</h1>
+            <f:switch expression="{data.header_layout}">
+                <f:case value="2"><h2>{data.header}</h2></f:case>
+                <f:case value="3"><h3>{data.header}</h3></f:case>
+                <f:case value="4"><h4>{data.header}</h4></f:case>
+                <f:case value="5"><h5>{data.header}</h5></f:case>
+                <f:case value="100"></f:case>
+                <f:defaultCase><h1>{data.header}</h1></f:defaultCase>
+            </f:switch>
             <p>
                 <f:format.nl2br>{data.bodytext}</f:format.nl2br>
             </p>
