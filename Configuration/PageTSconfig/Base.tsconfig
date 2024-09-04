@@ -35,6 +35,34 @@ TCEFORM.tt_content.space_after_class {
   removeItems = extra-small,small,extra-large
 }
 
+TCEFORM.tt_content.layout {
+  removeItems = 3
+}
+
+TCEFORM.tt_content.frame_class {
+  removeItems = ruler-before,ruler-after,indent,indent-left,indent-right,none
+  disabled = 1
+}
+TCEFORM.tt_content.linkToTop {
+  disabled = 1
+}
+
+TCEFORM.tt_content.layout {
+  keepItems = 0
+}
+
+TCEFORM.tt_content.layout.types.ffpitheme_stage {
+  keepItems = 0,1
+  altLabels.0 = Bild rechts (Standard)
+  altLabels.1 = Bild links
+}
+
+TCEFORM.tt_content.layout.types.ffpitheme_picture_teaser {
+  keepItems = 0,1
+  altLabels.0 = Bild rechts (Standard)
+  altLabels.1 = Bild links
+}
+
 TCEFORM.tt_content.header_layout {
   altLabels.1 = H1
   altLabels.2 = H2
