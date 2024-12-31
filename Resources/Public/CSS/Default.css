@@ -44,6 +44,11 @@ img {
     max-width: 100%;
 }
 
+.hw-img {
+    height: 150px;
+    max-width: 100%;
+}
+
 video {
     display: block;
     max-width: 100%;

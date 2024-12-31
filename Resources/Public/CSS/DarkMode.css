@@ -143,3 +143,8 @@ a:link.button.light, a:visited.button.light, .button.light {
 .gateway .ok {
     color: #63D569;
 }
+
+
+.download-info-button__overlay {
+    background-color: #666666;
+}
