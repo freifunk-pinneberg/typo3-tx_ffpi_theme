@@ -10,6 +10,16 @@ TCEMAIN.table.tt_content {
   disableHideAtCopy = 1
 }
 
+TCEMAIN.table.sys_file_reference {
+  disablePrependAtCopy = 1
+  disableHideAtCopy = 1
+}
+
+TCEMAIN.table.sys_file {
+  disablePrependAtCopy = 1
+  disableHideAtCopy = 1
+}
+
 # Setzen der Seitenbaumrechte per TypoScript
 TCEMAIN {
   # Besitzergruppe festlegen
@@ -23,6 +33,42 @@ TCEFORM.tt_content.space_before_class {
 
 TCEFORM.tt_content.space_after_class {
   removeItems = extra-small,small,extra-large
+}
+
+TCEFORM.tt_content.layout {
+  removeItems = 3
+}
+
+TCEFORM.tt_content.frame_class {
+  removeItems = ruler-before,ruler-after,indent,indent-left,indent-right,none
+  disabled = 1
+}
+TCEFORM.tt_content.linkToTop {
+  disabled = 1
+}
+
+TCEFORM.tt_content.layout {
+  keepItems = 0
+}
+
+TCEFORM.tt_content.layout.types.ffpitheme_stage {
+  keepItems = 0,1
+  altLabels.0 = Bild rechts (Standard)
+  altLabels.1 = Bild links
+}
+
+TCEFORM.tt_content.layout.types.ffpitheme_picture_teaser {
+  keepItems = 0,1
+  altLabels.0 = Bild rechts (Standard)
+  altLabels.1 = Bild links
+}
+
+TCEFORM.tt_content.header_layout {
+  altLabels.1 = H1
+  altLabels.2 = H2
+  altLabels.3 = H3
+  altLabels.4 = H4
+  altLabels.5 = H5
 }
 
 mod.SHARED {

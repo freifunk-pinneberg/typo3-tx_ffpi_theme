@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Content/Default"/>
+<f:section name="Main">
+
+    <div class="wide-teaser-cards">
+        <f:for each="{media}" as="card">
+            <section class="wide-card">
+                <div class="wide-card-image">
+                    <f:variable name="srcset">{f:uri.image(image: card, width: '918c', height: '685c')} 1x, {f:uri.image(image: card, width: '1836c', height: '1370c')} 2x, {f:uri.image(image: card, width: '2754c', height: '2055c')} 3x</f:variable>
+                    <f:image image="{card}" width="918c" height="685c" additionalAttributes="{srcset: srcset}" />
+                </div>
+                <div class="wide-card-content">
+                    <h3>{card.title}</h3>
+                    <p>
+                        <f:format.nl2br>{card.description}</f:format.nl2br>
+                    </p>
+                    <p>
+                        <f:link.typolink parameter="{card.link}" class="button light"/>
+                    </p>
+                </div>
+            </section>
+        </f:for>
+    </div>
+
+</f:section>
+</html>

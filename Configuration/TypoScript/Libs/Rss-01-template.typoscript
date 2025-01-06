@@ -14,9 +14,9 @@ temp.rssTemplate {
     # type, welche auf URL passt : index.php?type=200
     type = 200
     # hier die ID von Seite angeben, bei welcher das Content Element zu finden ist
-    pageid = 68
+    pageid = 5
     # hier die ID von Content Element angeben
-    contentid = 166
+    contentid = 11
 
     title = Freifunk Pinneberg News
     description = Neues aus dem Pinneberger Freifunk Netz.
@@ -35,13 +35,12 @@ temp.rssTemplate {
     item_author_email = service@pinneberg.freifunk.net
   }
 
-  10 = TEMPLATE
+  10 = FLUIDTEMPLATE
   10 {
     # template einbinden
-    template = FILE
-    template.file = EXT:ffpi_theme/Resources/Private/Templates/Page/RSS.xml
+    file = EXT:ffpi_theme/Resources/Private/Templates/Page/RSS.xml
 
-    marks {
+    variables {
       RSS_title = TEXT
       RSS_title.data = register:title
 
@@ -49,7 +48,7 @@ temp.rssTemplate {
       RSS_description.data = register:description
 
       RSS_link = TEXT
-      RSS_link.value = {getIndpEnv:TYPO3_SITE_URL}news/?type={register:type}
+      RSS_link.value = {getIndpEnv:TYPO3_SITE_URL}news.rss
       RSS_link.insertData = 1
 
       RSS_copyright = TEXT
@@ -63,7 +62,7 @@ temp.rssTemplate {
       RSS_image_url.insertData = 1
 
       RSS_image_link = TEXT
-      RSS_image_link.value = {getIndpEnv:TYPO3_SITE_URL}news/?type={register:type}
+      RSS_image_link.value = {getIndpEnv:TYPO3_SITE_URL}news.rss
       RSS_image_link.insertData = 1
 
       RSS_image_width = TEXT

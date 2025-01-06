@@ -14,3 +14,4 @@ editor:
     extraAllowedContent:
       - blockquote
       - code
+      - img[class,src,alt,width,height,data-*]{*}(*);

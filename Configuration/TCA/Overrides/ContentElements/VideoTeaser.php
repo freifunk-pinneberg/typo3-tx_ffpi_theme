@@ -8,6 +8,7 @@ return [
             --palette--;;language,
             --palette--;' . $llFrontend . 'palette.general;general,
             header,
+            header_layout,
             bodytext,
             media,
         --div--;' . $llFrontend . 'tabs.appearance,

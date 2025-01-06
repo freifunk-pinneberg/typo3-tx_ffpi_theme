@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => 'teaser_cards',
+    'name' => 'wide_teaser_cards',
     'flexform' => false,
 
     'showitem' => '

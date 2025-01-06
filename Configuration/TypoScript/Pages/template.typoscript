@@ -22,11 +22,15 @@ page.headerData.10.insertData = 1
 
 ## ------ RSS Feed ---------------------
 page.headerData.30 = TEXT
-page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news/?type=200" />
+page.headerData.30.dataWrap = <link rel="alternate" type="application/rss+xml" title="Freifunk Pinneberg - News (RSS)" href="{site:base}/news.rss" />
 
 ## ------ Favicon
 page.headerData.40 = TEXT
 page.headerData.40.dataWrap = <link rel="icon" type="image/svg+xml" href="{site:base}/favicon.svg" sizes="any">
+
+## ------- Mastodon
+page.headerData.50 = TEXT
+page.headerData.50.dataWrap = <link rel="me" href="https://norden.social/@FreifunkPI" />
 
 ## ------- Mobile ----------------------
 page.meta.viewport = width=device-width, initial-scale=1
@@ -34,36 +38,53 @@ page.meta.viewport = width=device-width, initial-scale=1
 ## ---------- Analytics --------
 page.footerData.50 = TEXT
 page.footerData.50.value (
-<!-- Piwik -->
+<!-- statistics -->
 <script type="text/javascript">
-	var _paq = _paq || [];
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-		var u="/piwik/";
-		_paq.push(['setTrackerUrl', u+'piwik.php']);
-		_paq.push(['setSiteId', 1]);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-	})();
+  if ( window.matchMedia("(prefers-color-scheme:dark)").matches) {
+      colorScheme="dark";
+  } else {
+      colorScheme="light";
+  }
+
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['setRequestMethod', 'POST']);
+  _paq.push(["setDomains", ["*.pinneberg.freifunk.net","*.forum.pinneberg.freifunk.net","*.nic.ffpi","*.www.ffpi"]]);
+  _paq.push(['setCustomVariable', 1, "prefers-color-scheme", colorScheme, "visit"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="/stats/";
+    _paq.push(['setTrackerUrl', u+'hello.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'hello.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<noscript><p><img src="/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
+<noscript><p><img src="/stats/hello.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End statistics Code -->
 )
 page.jsFooterInline.10 = TEXT
 page.jsFooterInline.10.value (
 
     var counterUpdate = function() {
-        var counterXHR = new XMLHttpRequest();
-        counterXHR.open("GET", "/?type=2652017", true);
-        counterXHR.send();
-        counterXHR.onreadystatechange = function () {
-            if ((this.readyState === 4) && (this.status === 200)) {
-                document.getElementById("ffpi-nodecounter").innerHtml = counterXHR.responseText;
-            }
-        }
-    };
+    var counterXHR = new XMLHttpRequest();
+    counterXHR.open("GET", "/?type=2652017", true);
+    counterXHR.send();
+    counterXHR.onreadystatechange = function () {
+        if ((this.readyState === 4) && (this.status === 200)) {
+            // JSON parsen
+            var responseData = JSON.parse(counterXHR.responseText);
 
-    var interval = 1000 * 60;
-    setInterval(counterUpdate, interval);
+            // HTML-Elemente aktualisieren
+            document.querySelector(".node-counter--clients").textContent = responseData.clients;
+            document.querySelector(".node-counter--online").textContent = responseData.online;
+            document.querySelector(".node-counter--total").textContent = responseData.total;
+        }
+    }
+};
+
+counterUpdate();
+
+var interval = 1000 * 60;
+setInterval(counterUpdate, interval);
 )

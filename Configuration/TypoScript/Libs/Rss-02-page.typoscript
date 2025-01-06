@@ -6,9 +6,8 @@ rss200 {
     # keine header daten aus TYPO3
     disableAllHeaderCode = 1
     # type und charset anpassen
-    additionalHeaders = Content-type: application/rss+xml;charset=utf-8
-    # nicht zwingend noetig...
-    linkVars = L
+    additionalHeaders.10.header = Content-type: text/xml;charset=utf-8
+    additionalHeaders.10.replace = 1
     # cleaning deaktivieren
     xhtml_cleaning = 0
     # kein adminpanel anzeigen

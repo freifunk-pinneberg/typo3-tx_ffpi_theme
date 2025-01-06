@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:if condition="{files}">
+        <div class="file-cards">
+            <f:for each="{files}" as="file" iteration="fileIterator">
+                <section class="file-card">
+                    <div class="file-card-image">
+                    <f:if condition="{data.uploads_type} == 1">
+                        <img src="{f:uri.resource(path: 'Icons/FileIcons/{file.extension}.gif', extensionName: 'frontend')}" alt="">
+                    </f:if>
+                    <f:if condition="{data.uploads_type} == 2">
+                        <f:if condition="{file.type} > 1">
+                            <f:if condition="{f:uri.image(src: 'file:{f:if(condition: file.originalFile, then: \'file:{file.originalFile.uid}\', else: \'file:{file.uid}\')}')} != '/'">
+                                <f:then>
+                                    <f:variable name="srcset">{f:uri.image(image: file, maxWidth: '340', maxHeight: '300')} 1x, {f:uri.image(image: file, maxWidth: '680', maxHeight: '600')} 2x, {f:uri.image(image: file, maxWidth: '1020', maxHeight: '900')} 3x</f:variable>
+                                    <a href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"')}{f:if(condition: file.title, then: ' title="{file.title}"')}>
+                                        <f:image image="{file}" maxWidth="340" maxHeight="300" alt="{file.properties.alternative}" additionalAttributes="{srcset: srcset}" />
+                                    </a>
+                                </f:then>
+                                <f:else>
+                                    <img src="{f:uri.resource(path: 'Icons/FileIcons/{file.extension}.gif', extensionName: 'frontend')}" alt="">
+                                </f:else>
+                            </f:if>
+                        </f:if>
+                    </f:if>
+                    </div>
+                    <div class="file-card-content">
+                        <h5>{f:if(condition: file.properties.title, then: file.properties.title, else: file.name) -> f:format.htmlspecialchars()}</h5>
+                        <p>
+                        <f:if condition="{file.properties.description}">
+                            <f:if condition="{data.uploads_description}">
+                                <span class="ce-uploads-description"><f:format.nl2br>{file.properties.description}</f:format.nl2br></span>
+                            </f:if>
+                        </f:if>
+                        </p>
+                        <f:if condition="{data.filelink_size}">
+                            <p class="ce-uploads-filesize">{file.properties.mime_type}, <f:format.bytes value="{file.properties.size}" /></p>
+                        </f:if>
+                        <a href="{file.publicUrl}" class="button light" {f:if(condition:data.target,then: ' target="{data.target}"')}{f:if(condition: file.title, then: ' title="{file.title}"')} download>Download</a>
+                    </div>
+                </section>
+            </f:for>
+        </div>
+    </f:if>
+
+</f:section>
+</html>

@@ -28,11 +28,11 @@ a, a:link, a:link:visited, a:visited {
     background-color: #666666;
 }
 
-.teaser-cards .card {
+.teaser-cards .card, .wide-teaser-cards .wide-card, .file-cards .file-card  {
     background-color: #666666;
 }
 
-.teaser-cards .card-image {
+.teaser-cards .card-image, .wide-teaser-cards .wide-card-image, .file-cards .file-card-image {
     background-color: #333333;
 }
 
@@ -142,4 +142,9 @@ a:link.button.light, a:visited.button.light, .button.light {
 
 .gateway .ok {
     color: #63D569;
+}
+
+
+.download-info-button__overlay {
+    background-color: #666666;
 }
