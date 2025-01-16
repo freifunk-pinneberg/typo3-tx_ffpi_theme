@@ -23,7 +23,7 @@ if($files) {
             [
                 $ll . $contentElement['name'] . '.wizard.title',
                 $contentName,
-                $contentElement['icon'] ?: 'EXT:' . $extensionPath . '/ext_icon.svg'
+                $contentElement['icon'] ?? 'EXT:' . $extensionPath . '/ext_icon.svg'
             ],
             TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
             $extensionPath
