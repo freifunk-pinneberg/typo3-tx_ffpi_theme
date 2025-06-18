@@ -1,5 +1,6 @@
 imports:
   # Import default RTE config
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
   - { resource: "EXT:rte_ckeditor/Configuration/RTE/Default.yaml" }
   # Import the image plugin configuration
   - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
@@ -8,10 +9,21 @@ editor:
   config:
     # RTE default config removes image plugin - restore it:
     removePlugins: null
+    removeButtons: null
     # Rechtschreibprüfung des Browser verwenden
     disableNativeSpellChecker: false
     contentsCss: EXT:ffpi_theme/Resources/Public/CSS/rte.css
+    # Styles für das Dropdown (CKEditor-4-Syntax!)
+    stylesSet:
+      - { name: "Button",        element: "a", attributes: { class: "button" } }
+      - { name: "Button light",  element: "a", attributes: { class: "button light" } }
+    # Styles für das Dropdown (CKEditor-5-Syntax!)
+    #style:
+    #  definitions:
+    #    - { name: "Button", element: "a", classes: ["button"] }
+    #    - { name: "Button light", element: "a", classes: [ "button light" ] }
     extraAllowedContent:
       - blockquote
       - code
       - img[class,src,alt,width,height,data-*]{*}(*);
+      - a[class];

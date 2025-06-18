@@ -45,6 +45,34 @@ a:active, a:focus, a.active, a:visited.active, a:visited:active, a:visited:focus
     color: #dc0067;
 }
 
+a:link.button, a:visited.button, .button, button {
+    display: inline-block;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #dc0067;
+    box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
+    font-family: "Roboto Condensed", "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 3px;
+    vertical-align: middle;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+a:link.button.light, a:visited.button.light, .button.light {
+    background-color: transparent;
+    color: #dc0067;
+    border: solid 2px #dc0067;
+    box-shadow: none;
+}
+
+a.button.light:hover {
+    box-shadow: 0px 10px 20px 0px rgba(220, 0, 103, 0.2);
+}
+
 a[target="_blank"] {
     background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/External.svg");
     background-position: center right;
