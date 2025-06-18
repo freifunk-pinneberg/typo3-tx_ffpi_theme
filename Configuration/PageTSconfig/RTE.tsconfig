@@ -1,1 +1,6 @@
 RTE.default.preset = ffpi_default
+#this makes the images in bodytext larger
+RTE.default.buttons.image.options.magic {
+  maxWidth = 1920
+  maxHeight = 1080
+}
