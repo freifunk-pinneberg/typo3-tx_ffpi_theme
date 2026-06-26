@@ -1,6 +1,6 @@
 <?php
 
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 $extensionKey = 'FfpiTheme';
 $extensionPath = 'ffpi_theme';
@@ -13,7 +13,7 @@ $llFrontendDb = 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:';
 // Add Content Elements from Subfolder
 $files = glob(__DIR__ . '/ContentElements/*.php');
 
-if($files) {
+if ($files) {
     foreach ($files as $file) {
         /** @var array<mixed> $contentElement */
         $contentElement = include $file;
@@ -21,11 +21,12 @@ if($files) {
 
         TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
             [
-                $ll . $contentElement['name'] . '.wizard.title',
-                $contentName,
-                $contentElement['icon'] ?? 'EXT:' . $extensionPath . '/ext_icon.svg'
+                'label' => $ll . $contentElement['name'] . '.wizard.title',
+                'value' => $contentName,
+                'icon' => $contentElement['icon'] ?? 'ffpitheme_' . $contentElement['name'],
+                'group' => 'default',
             ],
-            TYPO3\CMS\Extbase\Utility\ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
+            'CType',
             $extensionPath
         );
         $GLOBALS['TCA']['tt_content']['types'][$contentName] = [
@@ -34,8 +35,11 @@ if($files) {
         ];
 
         if ($contentElement['flexform']) {
-            $GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',' . $contentName] =
-                'FILE:EXT:' . $extensionPath . '/Configuration/FlexForms/' . ucfirst($contentElement['name']) . '.xml';
+            TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+                '*',
+                'FILE:EXT:' . $extensionPath . '/Configuration/FlexForms/' . ucfirst($contentElement['name']) . '.xml',
+                $contentName
+            );
         }
     }
 }

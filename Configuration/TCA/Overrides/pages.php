@@ -1,8 +1,6 @@
 <?php
 
-if (!defined('TYPO3_MODE')) {
-    die ('Access denied.');
-}
+defined('TYPO3') || die();
 
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
@@ -19,9 +17,18 @@ $fields = [
             'type' => 'select',
             'renderType' => 'selectSingle',
             'items' => [
-                ['', ''],
-                ['Question', 'Question.svg'],
-                ['Arrow', 'Arrow.svg'],
+                [
+                    'label' => '',
+                    'value' => '',
+                ],
+                [
+                    'label' => 'Question',
+                    'value' => 'Question.svg',
+                ],
+                [
+                    'label' => 'Arrow',
+                    'value' => 'Arrow.svg',
+                ],
             ],
         ],
     ]

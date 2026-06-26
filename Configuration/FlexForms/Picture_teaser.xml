@@ -6,26 +6,22 @@
         <type>array</type>
         <el>
             <buttonText>
-                <TCEforms>
-                    <label>Button Text</label>
+                <label>Button Text</label>
                     <config>
                         <type>input</type>
                         <size>30</size>
                         <max>30</max>
                         <eval>trim</eval>
                     </config>
-                </TCEforms>
             </buttonText>
             <buttonLink>
-                <TCEforms>
-                    <label>Button Link</label>
+                <label>Button Link</label>
                     <config>
                         <type>input</type>
                         <size>30</size>
                         <eval>trim</eval>
                         <renderType>inputLink</renderType>
                     </config>
-                </TCEforms>
             </buttonLink>
         </el>
     </ROOT>
