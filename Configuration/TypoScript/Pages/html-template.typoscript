@@ -24,6 +24,24 @@ page.10 {
     ffpi_theme_footer_github_link = TEXT
     ffpi_theme_footer_github_link.value = {$plugin.ffpi_theme.footer.github.link}
   }
+
+  settings {
+      theme {
+        header {
+          logo {
+            path = {$plugin.ffpi_theme.header.logo.path}
+            alt = {$plugin.ffpi_theme.header.logo.alt}
+            title = {$plugin.ffpi_theme.header.logo.title}
+          }
+          title = {$plugin.ffpi_theme.header.title}
+          subtitle = {$plugin.ffpi_theme.header.subtitle}
+          homeLink = {$plugin.ffpi_theme.header.home.link}
+        }
+        footer {
+          githubLink = {$plugin.ffpi_theme.footer.github.link}
+        }
+      }
+    }
 }
 
 ### --------- CSS -----------

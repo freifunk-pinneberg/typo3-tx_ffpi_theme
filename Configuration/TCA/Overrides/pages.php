@@ -1,9 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') || die();
 
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+ExtensionManagementUtility::registerPageTSConfigFile(
     'ffpi_theme',
     'Configuration/PageTSconfig/Base.tsconfig',
     'Freifunk Pinneberg - Base PageTs'
@@ -35,10 +39,10 @@ $fields = [
 ];
 
 // Add new fields to pages:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $fields);
+ExtensionManagementUtility::addTCAcolumns('pages', $fields);
 
 // Make fields visible in the TCEforms:
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+ExtensionManagementUtility::addToAllTCAtypes(
     'pages', // Table name
     '--palette--;Freifunk;tx_ffpi_theme', // Field list to add
     '1', // List of specific types to add the field list to. (If empty, all type entries are affected)

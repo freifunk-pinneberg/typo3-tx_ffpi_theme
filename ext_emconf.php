@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Freifunk Pinneberg Theme',
     'description' => 'Theme for Freifunk Pinneberg',

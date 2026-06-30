@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+use TYPO3\CMS\Core\Resource\FileType;
+
 return [
     'name' => 'participate',
     'flexform' => false,
@@ -35,7 +39,7 @@ return [
             'config' => [
                 'overrideChildTca' => [
                     'types' => [
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                        FileType::IMAGE->value => [
                             'showitem' => '
                                     --palette--;LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette,title,description,
                                     --palette--;;filePalette',

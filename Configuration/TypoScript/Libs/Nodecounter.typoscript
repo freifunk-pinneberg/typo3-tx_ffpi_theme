@@ -5,5 +5,10 @@ plugin.tx_ffpinodecounter {
 
 lib.nodecounter = COA
 lib.nodecounter {
-  15 < tt_content.list.20.ffpinodecounter_cachedcounter
+  15 = USER
+    15 {
+      userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+      extensionName = FfpiNodecounter
+      pluginName = CachedCounter
+    }
 }

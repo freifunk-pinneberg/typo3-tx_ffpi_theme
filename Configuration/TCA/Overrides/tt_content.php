@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') || die();
 
 $extensionKey = 'FfpiTheme';
@@ -19,7 +23,7 @@ if ($files) {
         $contentElement = include $file;
         $contentName = strtolower($extensionKey . '_' . $contentElement['name']);
 
-        TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+        ExtensionManagementUtility::addPlugin(
             [
                 'label' => $ll . $contentElement['name'] . '.wizard.title',
                 'value' => $contentName,
@@ -35,9 +39,9 @@ if ($files) {
         ];
 
         if ($contentElement['flexform']) {
-            TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+            ExtensionManagementUtility::addPiFlexFormValue(
                 '*',
-                'FILE:EXT:' . $extensionPath . '/Configuration/FlexForms/' . ucfirst($contentElement['name']) . '.xml',
+                'FILE:EXT:' . $extensionPath . '/Configuration/FlexForms/' . ucfirst((string) $contentElement['name']) . '.xml',
                 $contentName
             );
         }

@@ -319,11 +319,11 @@ div.tx-ffpi-nodecounter {
 }
 
 .node-stats .client-counter .current::before {
-    background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Connected.svg");
+    background-image: url("/_assets/ffpi_theme/Images/Icons/Connected.svg");
 }
 
 .node-stats .node-counter .current::before {
-    background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/Signal.svg");
+    background-image: url("/_assets/ffpi_theme/Images/Icons/Signal.svg");
 }
 
 .node-stats .current {
