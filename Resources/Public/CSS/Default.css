@@ -88,7 +88,7 @@ a.button.light:hover {
 }
 
 a[target="_blank"] {
-    background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/External.svg");
+    background-image: url("../Images/Icons/External.svg");
     background-position: center right;
     background-position-x: right 1px;
     background-repeat: no-repeat;
@@ -319,11 +319,11 @@ div.tx-ffpi-nodecounter {
 }
 
 .node-stats .client-counter .current::before {
-    background-image: url("/_assets/ffpi_theme/Images/Icons/Connected.svg");
+    background-image: url("../Images/Icons/Connected.svg");
 }
 
 .node-stats .node-counter .current::before {
-    background-image: url("/_assets/ffpi_theme/Images/Icons/Signal.svg");
+    background-image: url("../Images/Icons/Signal.svg");
 }
 
 .node-stats .current {
@@ -616,6 +616,7 @@ article.content {
 .wide-teaser-cards .wide-card-content {
     padding: 30px;
 }
+
 .wide-teaser-cards .wide-card-content .button {
     width: 100%;
     text-align: center;
@@ -630,6 +631,7 @@ article.content {
     overflow: hidden;
     height: 300px;
 }
+
 .wide-teaser-cards .wide-card-image img {
     height: auto;
     width: auto;
@@ -658,6 +660,7 @@ article.content {
     padding: 30px;
     overflow-wrap: break-word;
 }
+
 .file-cards .file-card-content .button {
     width: 100%;
     text-align: center;
@@ -672,6 +675,7 @@ article.content {
     overflow: hidden;
     height: 300px;
 }
+
 .file-cards .file-card-image img {
     height: auto;
     width: auto;
