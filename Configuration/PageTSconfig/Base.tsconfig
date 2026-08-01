@@ -80,8 +80,8 @@ mod.wizards.newContentElement.wizardItems.ffpitheme {
   header = Freifunk Pinneberg
 }
 
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/ContentElements/" extensions="tsconfig">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/BackendLayouts/" extensions="tsconfig">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ffpi_theme/Configuration/PageTSconfig/Plugins/" extensions="tsconfig">
+@import "EXT:ffpi_theme/Configuration/PageTSconfig/ContentElements/*.tsconfig"
+@import "EXT:ffpi_theme/Configuration/PageTSconfig/BackendLayouts/*.tsconfig"
+@import "EXT:ffpi_theme/Configuration/PageTSconfig/Plugins/*.tsconfig"
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ffpi_theme/Configuration/PageTSconfig/RTE.tsconfig">
+@import "EXT:ffpi_theme/Configuration/PageTSconfig/RTE.tsconfig"

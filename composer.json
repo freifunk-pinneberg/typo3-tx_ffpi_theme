@@ -2,7 +2,7 @@
   "name": "ffpi/ffpi-theme",
   "description": "Theme for Freifunk Pinneberg",
   "homepage": "https://pinneberg.freifunk.net",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "type": "typo3-cms-extension",
   "authors": [
     {
@@ -20,11 +20,11 @@
     "Theme"
   ],
   "replace": {
-    "ffpi_theme": "self.version",
-    "ffpi/ffpi-theme": "self.version"
+    "typo3-ter/ffpi-theme": "self.version"
   },
   "require": {
-    "typo3/cms-core": "10.0.0 - 11.5.99"
+    "typo3/cms-core": "^12.4 || ^13.4",
+    "typo3/cms-frontend": "^12.4 || ^13.4"
   },
   "suggest": {
     "ffpi/nodecounter": "Displays a Freifunk Nodecounter",
@@ -37,8 +37,7 @@
     }
   },
   "autoload-dev": {
-    "psr-4": {
-    }
+    "psr-4": {}
   },
   "extra": {
     "typo3/cms": {

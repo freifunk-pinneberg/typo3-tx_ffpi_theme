@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace FFPI\FfpiTheme\DataProcessor;
 
 /*
@@ -30,10 +32,7 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
  */
 class FlexFormProcessor implements DataProcessorInterface
 {
-    /**
-     * @var FlexFormService
-     */
-    protected $flexFormService;
+    protected ?FlexFormService $flexFormService;
 
     /**
      * Constructor

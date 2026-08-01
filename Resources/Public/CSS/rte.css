@@ -74,7 +74,7 @@ a.button.light:hover {
 }
 
 a[target="_blank"] {
-    background-image: url("/typo3conf/ext/ffpi_theme/Resources/Public/Images/Icons/External.svg");
+    background-image: url("../Images/Icons/External.svg");
     background-position: center right;
     background-position-x: right 1px;
     background-repeat: no-repeat;

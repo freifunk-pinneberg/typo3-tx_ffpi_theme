@@ -7,7 +7,7 @@
         <el>
             <buttonText>
                 <TCEforms>
-                    <label>Button Text</label>
+                <label>Button Text</label>
                     <config>
                         <type>input</type>
                         <size>30</size>
@@ -18,7 +18,7 @@
             </buttonText>
             <buttonLink>
                 <TCEforms>
-                    <label>Button Link</label>
+                <label>Button Link</label>
                     <config>
                         <type>input</type>
                         <size>30</size>
