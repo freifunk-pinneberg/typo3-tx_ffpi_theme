@@ -58,22 +58,16 @@ page.includeCSS {
 # Content Elemente
 ###################
 
-# Bilder sollen keine Breite oder Höhe bekommen
+# Bilder sollen keine inline styles bekommen
 tt_content.image.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-  width.unset = 1
-  height.unset = 1
   style.unset = 1
 }
 
 tt_content.textpic.20.stdWrap.parseFunc.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-  width.unset = 1
-  height.unset = 1
   style.unset = 1
 }
 
 lib.parseFunc_RTE.nonTypoTagStdWrap.HTMLparser.tags.img.fixAttrib {
-  width.unset = 1
-  height.unset = 1
   style.unset = 1
 }
 

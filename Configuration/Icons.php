@@ -6,15 +6,15 @@ use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
 return [
     'ffpitheme_stage' => [
         'provider' => SvgIconProvider::class,
-        'source' => 'EXT:ffpi-theme/Resources/Public/Icons/Extension.svg',
+        'source' => 'EXT:ffpi_theme/Resources/Public/Icons/Extension.svg',
     ],
     'ffpitheme_video_teaser' => [
         'provider' => SvgIconProvider::class,
-        'source' => 'EXT:ffpi-theme/Resources/Public/Icons/Extension.svg',
+        'source' => 'EXT:ffpi_theme/Resources/Public/Icons/Extension.svg',
     ],
     'ffpitheme_picture_teaser' => [
         'provider' => SvgIconProvider::class,
-        'source' => 'EXT:ffpi-theme/Resources/Public/Icons/Extension.svg',
+        'source' => 'EXT:ffpi_theme/Resources/Public/Icons/Extension.svg',
     ],
     'ffpitheme_teaser_cards' => [
         'provider' => SvgIconProvider::class,

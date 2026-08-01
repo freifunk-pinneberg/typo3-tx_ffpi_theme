@@ -9,7 +9,7 @@ defined('TYPO3') || die();
 $extensionKey = 'FfpiTheme';
 $extensionPath = 'ffpi_theme';
 $ll = 'LLL:EXT:' . $extensionPath . '/Resources/Private/Language/locallang_backend.xlf:';
-$llCore = 'LLL:EXT:core/Resources/Private/Language/locallang.xlf';
+$llCore = 'LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:';
 $llFrontend = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
 $llFrontendDb = 'LLL:EXT:frontend/Resources/Private/Language/Database.xlf:';
 
