@@ -8,14 +8,14 @@ finishers:
   -
     options:
       subject: 'Domain Anfrage'
-      recipientAddress: service@pinneberg.freifunk.net
-      recipientName: ''
+      recipients:
+        service@pinneberg.freifunk.net: ''
       senderAddress: '{email}'
       senderName: '{name}'
-      replyToAddress: ''
-      carbonCopyAddress: ''
-      blindCarbonCopyAddress: ''
-      format: html
+      replyToRecipients: {  }
+      carbonCopyRecipients: {  }
+      blindCarbonCopyRecipients: {  }
+      addHtmlPart: true
       attachUploads: true
       translation:
         language: ''

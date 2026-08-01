@@ -13,14 +13,15 @@ finishers:
   -
     options:
       subject: Knoten-Anfrage
-      recipientAddress: service@pinneberg.freifunk.net
-      recipientName: ''
+      recipients:
+        service@pinneberg.freifunk.net: ''
       senderAddress: '{email}'
       senderName: ''
-      replyToAddress: '{email}'
-      carbonCopyAddress: ''
-      blindCarbonCopyAddress: ''
-      format: html
+      replyToRecipients:
+        '{email}': ''
+      carbonCopyRecipients: {  }
+      blindCarbonCopyRecipients: {  }
+      addHtmlPart: true
       attachUploads: true
       translation:
         language: ''
